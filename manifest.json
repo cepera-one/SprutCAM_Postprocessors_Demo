@@ -1,0 +1,2166 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Work/Sources/SprutCAM/SprutCAM15/DotNet/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ArcBreakMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ArcBreakMode.html",
+          "hash": "WmFplXgrk05p0tFNBlnfLeyuFwlypGNFOVlUSOI+A7M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ArcSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ArcSettings.html",
+          "hash": "e0cFhrthku0I42LSgmg8vC0xwlJ5XuB07GoenH44Hus="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.BrakeAxesEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.BrakeAxesEnumerator.html",
+          "hash": "pBh5JUuQ00bou2XYQN4A0f5lcOfZXE4XIMUeRTyOCvg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDArray.html",
+          "hash": "LdpCMeDwhhIsnGtSjjIWVoPysitklcmvIZiRGH+CNgw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDAxisBrake.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDAxisBrake.html",
+          "hash": "3r3iziW41ZytblZhJBfF2bR51E3/dgWvo3BWnJekUos="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDCmdType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDCmdType.html",
+          "hash": "dRXHPoG+xkTTaxDZFkGuRAZd02vk+16s06iH8DqVNWM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDCmdTypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDCmdTypeExtensions.html",
+          "hash": "LVs14egEdaGq8lHR+ToBx23MAOh1jl0Btd3j2doiLOg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDConst.html",
+          "hash": "RZe+yNbmSsSVyEIfWpN7GH4xbZNkfHWewI75O34pNfM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDCycle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDCycle.html",
+          "hash": "65yM4o3kTCCAgG7rimBP5MrABZkSndnbiVFWOebgieg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDEDMMotionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDEDMMotionMode.html",
+          "hash": "HEcE6O99BCCwEZvxKyPhn0bsWvADzjNP80Iye/dbS8U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDFeedKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDFeedKind.html",
+          "hash": "nck04O2J+dmFeuMyk3/sWYOSAlCZgGOCSZLfg9j9HiU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDFeedUnits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDFeedUnits.html",
+          "hash": "EmaI30QNWBVWMudaBcn1956To/Ds9jcdDHld/E8BlbE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDFileType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDFileType.html",
+          "hash": "slgYl4r9JByNkN4QuVX/yozsEx1doJt1EvPL5gFMcCI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDInterpMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDInterpMode.html",
+          "hash": "CvGO7K4U3dbArkHBFJc9ocSuZW3PpMtoxEB2xa7VCCs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDMultiMotionAxis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDMultiMotionAxis.html",
+          "hash": "Ept07+swlfCyeQAFOg23XyZp3v9OEQa0OEPbU1Rrw/I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDOriginPositionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDOriginPositionMode.html",
+          "hash": "ZluMCfwAVpX+zQzr3bgf5YFUz00t26YQGioictYKiaI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDOriginType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDOriginType.html",
+          "hash": "eWt8TNiqbdwS5qh6bljdx4U9UCk/3lgUAR03CMXcuGw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDPlaneType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDPlaneType.html",
+          "hash": "T95h9zYpQh0aya+aq0miETCtSE/7Ck97Ed+AzXoXYGI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDRotationDir.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDRotationDir.html",
+          "hash": "qbOY1/aHxkyvNP31qeEKAwbdiGIILjckyWKMzc9tDNQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDSpindleAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDSpindleAction.html",
+          "hash": "K52UHHgaOcePBKJwdsA5Xqhh6P53TApXdNw97mcA1co="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDSpindleSpeedMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDSpindleSpeedMode.html",
+          "hash": "7Ybiq/vFk9VjDaXR9BJSjj8IiCsS5YAGyzxm9O9SWEo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDThreadOrient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDThreadOrient.html",
+          "hash": "9a9LMz3ap0iN73igNsdL+ZeceJKwRSEVZoat18NzI94="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CLDThreadUnits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CLDThreadUnits.html",
+          "hash": "1pbQlIIeHQJkejBCgdfY/5UHhLFqVDvSR+BGrCV43aI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CommonFuncs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CommonFuncs.html",
+          "hash": "ttP1eCwNByuNvrt8XbRF2XaoKwvK6WvmZuM/TO7sjtE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.CountingNCWord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.CountingNCWord.html",
+          "hash": "SUOUNeGNVA+tNq2h5ouZ1LUZ2P0jO8OUNZaYQgSxcS0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.EDMRollMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.EDMRollMode.html",
+          "hash": "LNfQkLsF3vZWavFuhTZvwQBr2subXyylO+TKMdFTDxA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.EPostprocessorException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.EPostprocessorException.html",
+          "hash": "NRZ/W6CgGpil6EyXw153adGNeMncQsgQflvyx159Zhs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IArrayNamedPropertyIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IArrayNamedPropertyIndexer.html",
+          "hash": "B19M2BR75kIENQmbChUvWTpOij28rCtgLT8YQqEND9c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IBinaryNCStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IBinaryNCStorage.html",
+          "hash": "Wcm90Ca39gbLjUEDZDf8x8zczIQzL6hpzw3nQFK/gws="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IBooleanNamedPropertyIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IBooleanNamedPropertyIndexer.html",
+          "hash": "8pTL56HDysdsZ1wFU7S9CpWzYfhT736uYDN/xweLtIA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDAxesBrakeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDAxesBrakeCommand.html",
+          "hash": "fzLEW3pl7AfCOziaIA7hWpihEIkUg0P4uqKmAjpfRLc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDBrakeAxesIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDBrakeAxesIndexer.html",
+          "hash": "0hy+nT+D7WwJUdVmxAsamoYh25gCSu/8eY2WX66EmJ0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCircleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCircleCommand.html",
+          "hash": "k24NJHxR8JFil40VYchCCyMe8EY9I9Tf4fuU911VDBM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCommand.html",
+          "hash": "92Kp6KLIRAfXlWjeiCX5WMrpKfkO75rx3aQgcoP5cW0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCommentCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCommentCommand.html",
+          "hash": "o0UYKPqLrZZiXuMhP2xCPdWwCElmvNIuAuNZpxeSUjU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCoolantCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCoolantCommand.html",
+          "hash": "BI4L7cHMZx9ZIigh7kXHhA+Z33+L92H1sbulwYfkPuU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCoolantTubeIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCoolantTubeIndexer.html",
+          "hash": "eL+SHZRrvzE4WLcmPDJwPVBGEjAEHNJaebrEMUFE2KI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCutComCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCutComCommand.html",
+          "hash": "eEhQPH4uZd5oXOj3jyo9tcDmrM5QbbWXfe2kd/sf02w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCycleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDCycleCommand.html",
+          "hash": "G+mD/ySSAI6Cjx3BhT7O3BGc49ZnDktuQPXZC5JC8XI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDDelayCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDDelayCommand.html",
+          "hash": "0lcOBPjWBBO/bqh2HAwPkSGlYTgkVJ1qWJKJiZx+6SY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDEDMMoveCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDEDMMoveCommand.html",
+          "hash": "Ycrt5jKhfVGdYtdcAEDLt+W1k+/tGQJnCnxESPj/464="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDEDMMoveSpan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDEDMMoveSpan.html",
+          "hash": "te2UJgHvahDWcScZ0uGZC/eLBxrIXjAlRjTR9p81MS0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDExtCycleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDExtCycleCommand.html",
+          "hash": "/nEfmwkuHRyC6XW2ip284zcPZ5Cqsdez+mQwGnyTa9s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDFeedrateCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDFeedrateCommand.html",
+          "hash": "ymE7wxKKhWpHysBWNFXptn0wDmkhrgBtpjIR1tK5Cek="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDFile.html",
+          "hash": "QpYsV8pyR9r7rH/fOpygib1FVWl08ZKs2xXyzr/4dmc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDFileCmdIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDFileCmdIndexer.html",
+          "hash": "k2vRIT97jROnb3A5wia+rBmh2c7GaOSTz10gyGK1wtY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDFileList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDFileList.html",
+          "hash": "5MF6Rrh/GVsSGncDxqCyZQ1Q7DJ/xUNOvjZGW55BAqg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDFiniCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDFiniCommand.html",
+          "hash": "UigloyeunrrV4g/JQJEAEJpEAKQ7/rYM1aAMCyk+dT8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDFromCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDFromCommand.html",
+          "hash": "rd9TcOCxJTj2KSRz5P3Z4hHE6KPx+NV8MuLTbPAFFzM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDGoHomeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDGoHomeCommand.html",
+          "hash": "wqH4xH0qVwK/ubIIJZhdxdcVnLHBQr/iNcH7s9hvgdA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDGotoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDGotoCommand.html",
+          "hash": "yfoZNZ/AfWzd6wexvzk9FWXxgIAwe+Sajn4Tsa9a7es="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDInsertCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDInsertCommand.html",
+          "hash": "TSQYA7AqvzgM1P8XaeUCj3Jk/OeSTL82YRBbzcirFUY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDInterpolationCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDInterpolationCommand.html",
+          "hash": "cKgXFpYT+C4NcwALeyX6YZHASPdC7nkCbJL2XWuIzSE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDLoadToolCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDLoadToolCommand.html",
+          "hash": "5LvVp3Qh0Ejr4SH9/fm+nfITIoNclcKGT09TsiEBksE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMachineAxesIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMachineAxesIndexer.html",
+          "hash": "KRRs4rctZgfYTdIPc8gxIBnZkmYBrLWuXvrfK+GmRhU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMachineAxisInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMachineAxisInfo.html",
+          "hash": "LHhFfhocLu+H1+1aB6qkRXzV61w2cSJ0P5gLQLRNznM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMachineInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMachineInfo.html",
+          "hash": "hlVXc3OX29XKSpvnms+3QmADI9F+/w0Tdz4PJU0JFKM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMachiningTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMachiningTool.html",
+          "hash": "EYAgv2vEEoIGb1zbv6Y0wEIcrild7hAQ+vIPBYAMknI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMotionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMotionCommand.html",
+          "hash": "Oi/biozSUUhHYaKIpDdIWgAowCIlw9Iw62RIDqWVGdY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMoveVelocityCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMoveVelocityCommand.html",
+          "hash": "U+L99qwhIMbSLmsSC9z/tRIdN2FPWsm8dZPFPIOd9J4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMultiArcCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMultiArcCommand.html",
+          "hash": "zlAUEeMwXjmKxLZ3CCpf+dz0YBM9GzrBN4yNsKiMsZ8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMultiArcPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMultiArcPoint.html",
+          "hash": "UL4HAaZRYJkNrm9KmcB68iJD1xEyEr+4C/VPxorYm78="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMultiAxisArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMultiAxisArray.html",
+          "hash": "8AOxNn38GaFtPwS9AvxbMGFteBzGhastGNI0EOdjOgM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMultiGotoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMultiGotoCommand.html",
+          "hash": "X6An77sKxYD/VQ6yzw/1iiqqv4L/PHK1zqdohrMORFk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMultiMotionAxesIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMultiMotionAxesIndexer.html",
+          "hash": "dLWJ2HLE0JO9saLUSRzF+6CvKVTeb1rojpZmhLzEHcI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMultiMotionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDMultiMotionCommand.html",
+          "hash": "j3YrIfW71FbR8mF5tEUdB0q9b6jYdRtkYJhot6QdyRQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDOpStopCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDOpStopCommand.html",
+          "hash": "Amu/u8ZWyJERs8zZw6rHKz2j/N7SkIdCgLddxSicl3s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDOriginCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDOriginCommand.html",
+          "hash": "vcTUUbp0uQlJeYXGV3YInDxGdc+BZaEDDLo3rftJF4g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDPPFunCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDPPFunCommand.html",
+          "hash": "0lka0arwqWojo1XTAuzlXPHKS4xb77lIs1SLWm9XE6w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDPartNoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDPartNoCommand.html",
+          "hash": "p2yY7LeIgo4Hd7PYW18QA3HWWqRewhkWD0tWosKKxSQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDPhysicGotoCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDPhysicGotoCommand.html",
+          "hash": "/Frs4b0IptrZxLzesfX8BvqeBWgas37g6ecDt/rMmos="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDPlaneCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDPlaneCommand.html",
+          "hash": "Ij4xjVf/LCihXHnXyP7Ajenr4REcQW3/DDfzkcDvYOA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDPowerCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDPowerCommand.html",
+          "hash": "6av+Jvq01wSFZnXDkjCeB/WCnxoQIXBun5k4mtnRGdo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDPrintCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDPrintCommand.html",
+          "hash": "PtIcGIGfy0qf7l2idYAQ9gri8qbPJUAaLMIzLX/jA80="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDProject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDProject.html",
+          "hash": "WN9nMw8YY2VWGbyrD7Y2NfrTC4958F85Qs1kbCvOewI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDRapidCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDRapidCommand.html",
+          "hash": "pWR1Uz8Zu8fJqFLf+2EgscRtniA5JtIrX/x2LB74Zjg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSelWorkpieceCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSelWorkpieceCommand.html",
+          "hash": "FMuG9gJGlOOZRcPmWgrDZwF1yByg9Bt3IaejH3ZDkMw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSinglePassThreadCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSinglePassThreadCommand.html",
+          "hash": "L0U1FXTj7CQHpCapGYmiKix8/QoLDeeMTtauufJdE5E="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSpindleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSpindleCommand.html",
+          "hash": "cFWoUfgTJAW6HiUQzA+L62Sb+Ay5MB0iZy0HG1QiZl8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDStopCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDStopCommand.html",
+          "hash": "vXS6YDxZRjISFWJFwmVz9UahJ7Tam2J5+Ewezbq1WJ8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDStructureCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDStructureCommand.html",
+          "hash": "btLv7uDebdpo/SzaDrl+g8V6AXfLglPHu/0DDvj0d10="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSub.html",
+          "hash": "bXAZxEWveBx4sqQ5fRUwPE6R22iMl9Q2neJW3227aDc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSubList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSubList.html",
+          "hash": "purZPKPEUyVO6gIyw64BVB41om2O8V944yBiajgvRQ4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSyncAxesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSyncAxesCommand.html",
+          "hash": "h8Zk4vWeC23HCQHU2XMjOQE+YwIkC999DtcPfi4Rwng="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSyncWaitCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDSyncWaitCommand.html",
+          "hash": "sMTBhP16ztRYueB0uZFNZdmxnT5GBJEoULGjhk/l/lY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDTLContactCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDTLContactCommand.html",
+          "hash": "jUQuMqyQ+UD28KcjYX+V8JbqscZ3fIjT+cl+AUecLVM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDTakeoverCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDTakeoverCommand.html",
+          "hash": "Zo2iQoPLFaX5zaTblGeec1AQXXs+6B+TQv6xFaAxTMs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDTechOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDTechOperation.html",
+          "hash": "44fkgwwpY08S1ZgEb7jWKYRY6JkLzfX6f54ZfHr5nkw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDTechOperationList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDTechOperationList.html",
+          "hash": "09DDqdywwgOfEywMuhcNQ2cK1Pzqj7NIQTpPzi/aivU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ICLDTranslator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ICLDTranslator.html",
+          "hash": "6ir709rJzg103TZmwkVUnRlcbg297xImL7WwV0FINtA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IFloatNamedPropertyIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IFloatNamedPropertyIndexer.html",
+          "hash": "9NoIjxpC4yVwwGxEvpx3Z2Fj3zJ4SxGaNjSTi47q0Kw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IInputBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IInputBox.html",
+          "hash": "CjvZb3m385pERwkBP7PhuZkyBpMqtzAxwuuXYzM/eYg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IInputBoxEnumValuesList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IInputBoxEnumValuesList-1.html",
+          "hash": "ZeuQFU68S9VitXAvv2rv1toNTNk+3u5TywSoLpEyrJ8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IInputBoxFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IInputBoxFactory.html",
+          "hash": "GNqrkMsRGd7ULZL+h1WWp4MU9txiVmO3o4wboQnWKHk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IInputBoxProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IInputBoxProperty.html",
+          "hash": "9T1fjvXzBZHVfEHmiZJlyOIz8Uon+AfJgQEJBrCFmbc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IIntegerNamedPropertyIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IIntegerNamedPropertyIndexer.html",
+          "hash": "2Eb0BPjccvRfSNHDAgt144QhAcgGsWO7igCKd7ZZfQM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.INCBlockOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.INCBlockOwner.html",
+          "hash": "TmymEVaNuNPRKu3H8zwnFzSAtz4Lduw9Tl1Ov0M6I4o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.INCFileOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.INCFileOwner.html",
+          "hash": "vz+u4G05KIUBtg3tmE/EFPKPTlLMQXBFc4hglRcGd7Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.INCLabel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.INCLabel.html",
+          "hash": "5z9HeF/OaAX1ngOaALWeyjNyr0OfggOVHFWdZAZoOg4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.INCStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.INCStorage.html",
+          "hash": "0SkXLIIMpygFrsFXFSqBn5ly6MU+ZfXglk2cq2TmicU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.INCStorageManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.INCStorageManager.html",
+          "hash": "rWUu7v/OgH2FxIWuV19kSt+cVCavU7AI+wxrOtyIY+o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.INamedPropertiesCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.INamedPropertiesCollection.html",
+          "hash": "4jI4KOqiZTZrmJcd3EriR/8pt8HVtUQ17HKuKRnnuv0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.INamedProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.INamedProperty.html",
+          "hash": "KeNiZeJjepBylCwkv7qeiPod8ybE4DZPdaIAWfZs/cQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.INamedPropertyIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.INamedPropertyIndexer.html",
+          "hash": "TAyKjpZJAoagS1ABNYhFWr1QXvM3rp30DNIBgWZZdaM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IPPFunTechInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IPPFunTechInfo.html",
+          "hash": "svv5pERU+hCMFFvIkN5MRftXeeAgRe/jqGxu+39KWu8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IPPFunTechInfoTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IPPFunTechInfoTool.html",
+          "hash": "UDCGq01utjmgzMKVHs4ILgKYrvsL5SRh6Q27JrLUZq0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IPPFunTechInfoWorkpiece.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IPPFunTechInfoWorkpiece.html",
+          "hash": "dDsJS832qYIuD0uB37hAaz0UcQ9K0ssihR735nPg44g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IPostprocessingLogReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IPostprocessingLogReceiver.html",
+          "hash": "zpM70c98ZB7/Zl3btr0RDPM7tATCNshAsgrXLDsxuS8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IStringNamedPropertyIndexer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IStringNamedPropertyIndexer.html",
+          "hash": "g3S6VdA06vgzf75mRNxWHIo1qMtgu9VKPvH4zw7OZYg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.ITextNCStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.ITextNCStorage.html",
+          "hash": "yOOtscPqaVbce96bVmHwiG+wNFQnIc/DCeIB1moZKjQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.IToolGeometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.IToolGeometry.html",
+          "hash": "Tp3CqM/zz2NFbU97HbXHkNYl+jp54uXvxjBlxgk1c/M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.InitNamesProc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.InitNamesProc.html",
+          "hash": "H2fVTN0ude9AJSWRTkN2bb1a2bpc71Fk1Ht5TBiskn8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.InpArray-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.InpArray-1.html",
+          "hash": "hlJQqBP/SwMgpD1or845aweVsDMTAqPVKffguJbcuwg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.InpNumber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.InpNumber.html",
+          "hash": "lufy4wxkNzkxMRoYJPEpv+AStax6AfAITHSnrMawBgc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.InputBoxEnumValuesFormer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.InputBoxEnumValuesFormer-1.html",
+          "hash": "lsgyM54alexh7LJBnvs4DrEl/xFYV/rumrL8YfQioIg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.InputBoxValueSetter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.InputBoxValueSetter-1.html",
+          "hash": "7p+4guwURMwA4FhqT6q+Y9FU3ARR3vhmWxnB6tPuF3c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.Log.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.Log.html",
+          "hash": "V4wELO4SSDg7XMxFrjd1LrvMiTGWMkr6QpkJk7H1gTo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.LogMessageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.LogMessageType.html",
+          "hash": "W8j6Xy9P2YQqmbO/uFo3jmCKoZDogSD9gpI+ednKpNw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.MsgBtnSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.MsgBtnSet.html",
+          "hash": "/8k/2/oSIfw4zCl4/s7f98SPSaA/sHBU5EgrEQ7RLM8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.MsgClickedBtn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.MsgClickedBtn.html",
+          "hash": "xv4aixPkNJoTkojbnoTGgnEJfIp4J+VBmZrhq5M+d6A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.MsgDefBtn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.MsgDefBtn.html",
+          "hash": "dIhvqKOgs0eTVjg6bu76MjWBBcogjTA21/xXDZ1tRi8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.MsgType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.MsgType.html",
+          "hash": "wPfEdOchGzkUZp7enb5XUzmApTXJ4fj+CED+vBknSmw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.MultiMotionAxesEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.MultiMotionAxesEnumerator.html",
+          "hash": "xwD2eY4Yd/o/cVf/Mz3oqzW43Kf4z+lyYp+sP9x6fR4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.NCBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.NCBlock.html",
+          "hash": "GsIoW5ZUDCr1zZ/sEbxN0/nx84UABNAGlATrtEfs8dM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator.html",
+          "hash": "558Gf3VFoglwbHgeHfZgAxgkbYVIjKbpbIaZw+LL2lI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.NCLabelSnapMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.NCLabelSnapMode.html",
+          "hash": "59YX8MFi4S3h5D9PT2Xjk6RG83yh6HDiCa/egK3Oj9Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.NCWord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.NCWord.html",
+          "hash": "Oh/RsDyGw+F1e3QMUeZWqvAqyIkKa08LFxLDVW/Fxgc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.NCWordDecPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.NCWordDecPoint.html",
+          "hash": "zU10mEiq19EBmdtPd/PIcZuubfFjoxNd5XWcMP7XNfQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.NCWordSign.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.NCWordSign.html",
+          "hash": "xp/Xe3IgPPaozF3yKR9Uj/01PfxZrRRcjijw7ZgstAY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.NCWordState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.NCWordState.html",
+          "hash": "pr4XXbVlNCLuj4NQFSaSSEmHQgBCRtrXSk9foyH+jfM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.NCWordTextCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.NCWordTextCase.html",
+          "hash": "rSCB01RzUAcBTfJypFmr5QCuj19MlsUG1ARxQd0LfC4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.NamedParamType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.NamedParamType.html",
+          "hash": "Nu4zKvtU6tGnUuZLKo+UKe80Jnyq0lmY6Ese4yjHS5k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.NamedPropIterator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.NamedPropIterator.html",
+          "hash": "dZLMfhZJ2+bf93BVT2WnHZs+hWeFELUgYhhzkobEKgc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.NumericNCWord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.NumericNCWord.html",
+          "hash": "qGfYwS/risPD0QlYTDgF/0vMSLWyia3335DPZuKdN3g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.PostprocessorSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.PostprocessorSettings.html",
+          "hash": "ilRKMaq7pPLeUmRFcK5az3xL2egTTDv8UKCtl5dLW3Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html",
+          "hash": "KagsqNDxZf+Vwhk3AlnVRl+dVpQfko7nGkCx/fJ2WmY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TBinaryNCFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TBinaryNCFile.html",
+          "hash": "99wh+dJtL9+jGT9q1Q94pFWhGCjLWLbVTHQTOtXWYFc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TExternalNCFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TExternalNCFile.html",
+          "hash": "AlIHpj9qyWN1Oqkm6ZuxeTUK+rcQ/cDAIYHejOUnmm8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TInp2DPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TInp2DPoint.html",
+          "hash": "/4e3c3PxSEfipkUKWHC9eWPFr2m9E+ok4v/c9qSQz6k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TInp3DPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TInp3DPoint.html",
+          "hash": "z6ntQBGucUSj9BCT4fvbDymCancFkgWEM1YLzZ6R2qU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TInp5DPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TInp5DPoint.html",
+          "hash": "41yl9YYr66m2aLVpCIahwF29T9fBfEqW8J4A6L8pFGw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TInpComplexRotationConvention.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TInpComplexRotationConvention.html",
+          "hash": "K9eGRNuQmAB8DC+XoC1kvbGN3mn/U6E9mm1D6eLfKJM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TInpLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TInpLocation.html",
+          "hash": "aIMJ3xHgYXQ4RuiOx1U/1amsy3jimE7MqXoFSOwpRpc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TInpQuaternion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TInpQuaternion.html",
+          "hash": "JSQfqcE84Q/r2Q9/Lk/0gORYjw6+iZymt+CurpFFqiA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TInpRotation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TInpRotation.html",
+          "hash": "f+NlNGJCu1c8s00afjqLYMkZWYGVWSGnZMxd9Wy6Qe8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TInpRotationConvention.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TInpRotationConvention.html",
+          "hash": "izS1+EabfbU4ttgXpjBZrPytCdWKAmQSTC5ziO/9ZBo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TNCFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TNCFile.html",
+          "hash": "loac2PJGAYYCA1y5GXTG5kBi43uAZeqdtpPe2TmCpfk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TNCFilesManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TNCFilesManager.html",
+          "hash": "FwrqsTADA7xYoU+Xc/YjUKcY5lQG+DTbxp54tc75q8o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TNCStorageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TNCStorageType.html",
+          "hash": "4vIsZsiCyPtHPSojJ9cZpMy5WiluOvx4+oXc0dGmOSk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TPostprocessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TPostprocessor.html",
+          "hash": "BWcVrAr6DS6lYgHwWrPeZ9+g5qzN4O/vGnRuXNj+gx8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TSimpleTextNCFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html",
+          "hash": "I3YrG3ed26yFS41Bld6xVfVG+qvUZ97Di2aaDjbFxTU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TTextNCFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TTextNCFile.html",
+          "hash": "RuR+n8vjAip1yXqVRWY1G5Q7Z3xxQSeeQE1Y9QtloLs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TextNCWord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TextNCWord.html",
+          "hash": "mi+NMhJFLryEBvLlob4nesW6p+AzXYdefV/rFKrhrrY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TrailingZeroesMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TrailingZeroesMode.html",
+          "hash": "kyxk85TONjcjULMfYBwiwOxerDqmWxTJupymdyRCoJI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TranslitPair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TranslitPair.html",
+          "hash": "TsHWLxh+0ePaq6JmjE6+b2HrBj+godkNo32ZufSceWw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.TransliterationTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.TransliterationTable.html",
+          "hash": "PrRym3qsa4qtIyJIKBDaDXHaglAIz1h7Suh6lk6NH94="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.Transliterator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.Transliterator.html",
+          "hash": "CzuZVCNItqAPMlonM6lVpHegmmgc/XWNo9MLrYCrM14="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.SCPostprocessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.SCPostprocessor.html",
+          "hash": "60W5d+GD9f8AMwMcYWce6fP7cwXyhUjrEgbMTsO8c1g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.STDefLib.AngleUnits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.STDefLib.AngleUnits.html",
+          "hash": "eldDMFkod60CKeESWGwXCX/YpBrB5N990RQtab6f5CY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.STDefLib.STDef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.STDefLib.STDef.html",
+          "hash": "udjopGRPoCwqj4dGqVfCRTST0CuU5YgJzYJWebL2uf0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.STDefLib.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.STDefLib.html",
+          "hash": "Q6XAPRDVuVCYhkL+j/RtG4o83uQcvst5hGbibwV9hqw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.T2DPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.T2DPoint.html",
+          "hash": "iqUDhbdbKo0tLPQ0uKXbgo3T21pdI66IiXOWnPKjYDc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.T3DArc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.T3DArc.html",
+          "hash": "7nd8puUFRxe52PM2YOe4sImCEBc/u7+7KMB/HhV/oO0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.T3DCut.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.T3DCut.html",
+          "hash": "k1ZuU/7gm4wqPov4oZHDxwMgeA6unm3mfFSHDuOHow4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.T3DMatrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.T3DMatrix.html",
+          "hash": "xzH7a74kUtB+ghfDzwB5ChVRD7dJtTw7hs/Fq0NLux8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.T3DPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.T3DPoint.html",
+          "hash": "TPQ1BgfHhS59IotPISUwJT+CZz8RjlCE6qmd9igWGqY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.T5DPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.T5DPoint.html",
+          "hash": "+Bii0RsBiqtdiMjUmWXAU3pl/Aymwixt4uf9JMF0Hjc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.TComplexRotationConvention.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.TComplexRotationConvention.html",
+          "hash": "5qyhUCA+tbWcRNIhA+6dHdCqj2AGPXkIrwHsWGEiEf8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.TLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.TLocation.html",
+          "hash": "57br6BQ4euzUQPrCuohbfbSNvvisXgpZRhc8HX3f5Po="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.TQuaternion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.TQuaternion.html",
+          "hash": "H3KmQQeGxXU/pON7dtqBc1qKk9NtXvvaEjr4lBGv3fw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.TRotation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.TRotation.html",
+          "hash": "Q3nretrbhTpYxv9CYiJho2tyTipvIpVne9yL9yF82YY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.TRotationConvention.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.TRotationConvention.html",
+          "hash": "2lOcTE3RfZzfNVI1m4lQ/4wu6P2EOoFrGcq72uTUaLU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.VML.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.VML.html",
+          "hash": "Y6XdTagVSIm1EWyT81a8pVLdGMwZHt1odrfahJrXJtA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SprutTechnology.VecMatrLib.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SprutTechnology.VecMatrLib.html",
+          "hash": "KI2DjNzQKJs9pv6uC+k7wE//LEKRQuDbzw5jeJf5/fs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "WJZ5ZgHRqLFhmco3dgrcz/JcvDn3PRKMJ2bYs9tO+v0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "ucveT0VGeKe+zKEox7p5tGiE2Vcrcp32Aw1o2sb4Ar4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 1
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 174,
+          "skipped_file_count": 174
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

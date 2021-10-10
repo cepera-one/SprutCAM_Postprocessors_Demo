@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Documentation for the postprocessing subsystem of SprutCAM. </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Documentation for the postprocessing subsystem of SprutCAM. ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="articles/intro.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="api/SprutTechnology.SCPostprocessor.html" title="Api Documentation">Api Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="main_page">
+<h1 id="documentation-for-the-postprocessing-subsystem-of-sprutcam">Documentation for the postprocessing subsystem of <strong>SprutCAM</strong>.</h1>
+
+<p>Starting from version 15 <a href="https://www.sprutcam.com/">SprutCAM</a> has two independent postprocessing systems.</p>
+<ol>
+<li><a href="https://kb.sprutcam.com/INPmanual/15/en">Postprocessors generator</a>. This is an integrated postprocessor development environment, which has its own format, programming language and debugger.</li>
+<li>New open postprocessing system based on the <a href="https://dotnet.microsoft.com/">.NET platform</a>, using C # as a programming language and <a href="https://code.visualstudio.com/">Visual Studio Code</a> as an environment of development and code debugger.</li>
+</ol>
+<p>Both systems are actual and can be used by your choice.</p>
+<p>Here you will find the documentation only for the second (based on .NET) system. Documentation for the Postprocessors generator is available <a href="https://kb.sprutcam.com/INPmanual/15/en">here</a>.</p>
+<h2 id="why-to-use-the-new-system-vs-postprocessors-generator">Why to use the new system vs Postprocessors generator</h2>
+<ul>
+<li>Based on widespread, accessible to all, free and opensource top-class systems: .NET, C# and Visual Studio Code. Now all modern programming technologies are available to the postprocessors developers.
+<ul>
+<li>Unlimited power and at the same time incredible simplicity of a C# programming language. Object-oriented style, strong typing and safe, has automatic garbage collection, delicious features like generics, lambda expressions, LINQ, tuples etc.</li>
+<li>Syntax highlighting and autocomplete with IntelliSense.</li>
+<li>First-class debugger with different kind of break points, call stacks, an interactive console, local variables view and the watch list.</li>
+<li>High end code editor. Just visit <a href="https://code.visualstudio.com/docs/getstarted/userinterface">the official site</a>.</li>
+<li>A huge number of useful extensions for all occasions.</li>
+<li>An unlimited number of all sorts of documentation on the network.</li>
+<li>Postprocessor documentation available directly in the code in the form of comments and pop-up tips.</li>
+</ul>
+</li>
+<li>The familiar concept of the Postprocessors generator based on registers implemented from scratch on a new level with the modern paradigm of object-oriented programming, taking into account the thirty years of experience in the development of postprocessors. This provides advantages such as.
+<ul>
+<li>Easy writing of post-processors that generate many files at the same time.</li>
+<li>The ability to append to an arbitrary location in the file, and not just to the end.</li>
+<li>Generate output files in any encoding.</li>
+<li>Multiple independent sets of registers can be created.</li>
+<li>Text registers in addition to numeric registers.</li>
+<li>Developer defined settings individual for each postprocessor.</li>
+<li>Integrated library of functions for geometric calculations.</li>
+<li>Opened to use third party libraries widely available through <a href="https://www.nuget.org/">Nuget</a>.</li>
+<li>etc.</li>
+</ul>
+</li>
+</ul>
+<h2 id="introduction-video">Introduction video</h2>
+<div class="embeddedvideo"><iframe src="https://www.youtube-nocookie.com/embed/9wW6rOPUGnk" frameborder="0" allowfullscreen="true"></iframe></div>
+<h2 id="сontinue-to-read">Сontinue to read</h2>
+<ol>
+<li><a href="https://kb.sprutcam.com/display/SKB/Prepare+computer+to+develop+.NET+postprocessors">How to prepare the computer to start writing the postprocessors</a>.</li>
+<li><a href="https://kb.sprutcam.com/display/SKB/.NET+based+postprocessing">The list of tutorial videos.</a></li>
+<li><a href="https://youtube.com/playlist?list=PL0ro0ar_MBbOt-DJJYNdHE0fFODUkFZio">Video lectures about the postprocessing (on the russian language)</a>.</li>
+<li><a class="xref" href="api/SprutTechnology.SCPostprocessor.html">API documentation</a></li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
