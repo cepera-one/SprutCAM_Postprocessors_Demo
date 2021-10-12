@@ -624,8 +624,8 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_NCWordState" data-uid="SprutTechnology.SCPostprocessor.NCWordState" class="text-break">Enum NCWordState
   </h1>
-  <div class="markdown level0 summary"><p>The possible values for an <cref>NCWord</cref> <cref>State</cref> (<cref>Unchanged</cref>, <cref>Changed</cref>
-or <cref>Disabled</cref>).</p>
+  <div class="markdown level0 summary"><p>The possible values for an <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_State">State</a> (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html#SprutTechnology_SCPostprocessor_NCWordState_Unchanged">Unchanged</a>,
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html#SprutTechnology_SCPostprocessor_NCWordState_Changed">Changed</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html#SprutTechnology_SCPostprocessor_NCWordState_Disabled">Disabled</a>).</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SprutTechnology.SCPostprocessor.html">SprutTechnology.SCPostprocessor</a></h6>
@@ -646,21 +646,24 @@ or <cref>Disabled</cref>).</p>
     <tbody>
       <tr>
         <td id="SprutTechnology_SCPostprocessor_NCWordState_Changed">Changed</td>
-        <td><p>Changed state means that the <cref>NCWord</cref> <strong>will output</strong> on the next call of <cref>NCBlock.Out</cref> or
-<cref>NCBlock.Form</cref>. You can use <cref>Show</cref> method to switch the NCWord to changed state.</p>
+        <td><p>Changed state means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>. You can use <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Show">Show()</a> method to switch
+the NCWord to changed state.</p>
 </td>
       </tr>
       <tr>
         <td id="SprutTechnology_SCPostprocessor_NCWordState_Disabled">Disabled</td>
-        <td><p>Disabled state means that the <cref>NCWord</cref> will not be output by the block at all and will not change its state
-until it is explicitly switched to another state (using <cref>Show</cref> or <cref>Hide</cref>).
-You can use <cref>Disable</cref> method to switch the NCWord to Disabled state.</p>
+        <td><p>Disabled state means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> will not be output by the block at all and will not change its state
+until it is explicitly switched to another state (using <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Show">Show()</a> or
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Hide">Hide()</a>).
+You can use <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Disable">Disable()</a> method to switch the NCWord to Disabled state.</p>
 </td>
       </tr>
       <tr>
         <td id="SprutTechnology_SCPostprocessor_NCWordState_Unchanged">Unchanged</td>
-        <td><p>Unchanged state means that the <cref>NCWord</cref> <strong>will NOT output</strong> on the next call of
-<cref>NCBlock.Out</cref> or <cref>NCBlock.Form</cref>. You can use <cref>Hide</cref> method to
+        <td><p>Unchanged state means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will NOT output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>. You can use <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Hide">Hide()</a> method to
 switch the NCWord to unchanged state.</p>
 </td>
       </tr>

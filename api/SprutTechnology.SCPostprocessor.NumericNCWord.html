@@ -632,7 +632,7 @@ the output G-code.
 </p>
 <p>
 Optionally, NumericNCWord can also help you to filter the output. It contains two values - 
-current <cref>v</cref> and previous <cref>v0</cref> (which has already been output earlier). 
+current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> and previous <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> (which has already been output earlier). 
 If both of these values are the same, then re-output the value can be skipped automatically.
 </p>
 </div>
@@ -710,37 +710,37 @@ If both of these values are the same, then re-output the value can be skipped au
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord__ctor_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord__ctor_System_String_System_Double_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.#ctor(System.String,System.Double)">NumericNCWord(String, Double)</h4>
-  <div class="markdown level1 summary"><p>The main constructor to create a new instance of the <cref>NumericNCWord</cref>.
-It is used the <cref>format</cref> string parameter to define the all formatting rules
+  <div class="markdown level1 summary"><p>The main constructor to create a new instance of the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html">NumericNCWord</a>.
+It is used the <code>format&quot;</code> string parameter to define the all formatting rules
 for the NumericNCWord.</p>
-<p>For example, the <cref>format</cref> parameter can be: &quot;X = {-####!0##};&quot;. 
+<p>For example, the <code>format&quot;</code> parameter can be: &quot;X = {-####!0##};&quot;. 
 The formatting rules are below.</p>
 <ol><li>The curly braces divide the expression into three parts.</li><li>Anything to the left of the braces is assigned to the Address property and passed 
 to the output line unchanged (here is &quot;X = &quot;).</li><li>Anything to the right of the braces is assigned to the TailString property and also 
 goes to the output string as it is (here is &quot;;&quot;).</li><li>The expression inside the braces defines the formatting rules applied to the current 
-<cref>v</cref> value (here is &quot;-####!0##&quot;). It can only include these characters &quot;-+.!_#0&quot;.</li><li>If the first character in braces is &quot;-&quot;, then the sign of the number will output only 
-for negative numbers. It corresponds to <cref>SignMode</cref> property value 
-<cref>NCWordSign.Minus</cref>.</li><li>If the first character in braces is &quot;+&quot;, then the sign of the number will output both 
-for positive and negative numbers. It corresponds to <cref>SignMode</cref> property value 
-<cref>NCWordSign.PlusAndMinus</cref>.</li><li>If the first character in braces is not &quot;+&quot; or &quot;-&quot;, then the sign of the number will 
-not output at all. It corresponds to <cref>SignMode</cref> property value 
-<cref>NCWordSign.No</cref>.</li><li>One of the characters &quot;.!_&quot; in curly braces separates the integer part from the fractional 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> value (here is &quot;-####!0##&quot;). It can only include these characters &quot;-+.!_#0&quot;.</li><li>If the first character in braces is &quot;-&quot;, then the sign of the number will output only 
+for negative numbers. It corresponds to <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_SignMode">SignMode</a> property value 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordSign.html#SprutTechnology_SCPostprocessor_NCWordSign_Minus">Minus</a>.</li><li>If the first character in braces is &quot;+&quot;, then the sign of the number will output both 
+for positive and negative numbers. It corresponds to <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_SignMode">SignMode</a> property value 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordSign.html#SprutTechnology_SCPostprocessor_NCWordSign_PlusAndMinus">PlusAndMinus</a>.</li><li>If the first character in braces is not &quot;+&quot; or &quot;-&quot;, then the sign of the number will 
+not output at all. It corresponds to <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_SignMode">SignMode</a> property value 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordSign.html#SprutTechnology_SCPostprocessor_NCWordSign_No">No</a>.</li><li>One of the characters &quot;.!_&quot; in curly braces separates the integer part from the fractional 
 part and determines how to output the decimal point.</li><li>The point &quot;.&quot; means the optional output, so the decimal point will output for fractional numbers, 
-and for integers it will be skipped. It corresponds to the property <cref>PointMode</cref> = 
-<cref>NCWordDecPoint.No</cref>.</li><li>An exclamation point &quot;!&quot; indicates a required output, so the decimal point will output both 
-for fractional and integer numbers. It corresponds to the property <cref>PointMode</cref> = 
-<cref>NCWordDecPoint.Always</cref>.</li><li>The underscore &quot;_&quot; or the absence of any of the characters &quot;.!_&quot; at all means that 
-the decimal point will never be output. It corresponds to the property <cref>PointMode</cref> = 
-<cref>NCWordDecPoint.No</cref>.</li><li>The number of characters &quot;0&quot; or &quot;#&quot; before the characters &quot;.!_&quot; indicates the number of 
-characters allowed before the decimal point. It corresponds to the property <cref>DigitsBeforePoint</cref>.</li><li>If at least one of the characters before the point is zero &quot;0&quot;, then non-significant 
-zeros are required. It corresponds to the property <cref>LeadingZeroes</cref> = true.</li><li>If all characters before the point are &quot;#&quot;, then non-significant zeros will not output. 
-It corresponds to the property <cref>LeadingZeroes</cref> = false.</li><li>The number of characters &quot;0&quot; or &quot;#&quot; after the characters &quot;.!_&quot; indicates the number of 
-characters allowed after the decimal point. It corresponds to the property <cref>DigitsAfterPoint</cref>.
+and for integers it will be skipped. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a> = 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordDecPoint.html#SprutTechnology_SCPostprocessor_NCWordDecPoint_No">No</a>.</li><li>An exclamation point &quot;!&quot; indicates a required output, so the decimal point will output both 
+for fractional and integer numbers. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a> = 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordDecPoint.html#SprutTechnology_SCPostprocessor_NCWordDecPoint_Always">Always</a>.</li><li>The underscore &quot;_&quot; or the absence of any of the characters &quot;.!_&quot; at all means that 
+the decimal point will never be output. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a> = 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordDecPoint.html#SprutTechnology_SCPostprocessor_NCWordDecPoint_No">No</a>.</li><li>The number of characters &quot;0&quot; or &quot;#&quot; before the characters &quot;.!_&quot; indicates the number of 
+characters allowed before the decimal point. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsBeforePoint">DigitsBeforePoint</a>.</li><li>If at least one of the characters before the point is zero &quot;0&quot;, then non-significant 
+zeros are required. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_LeadingZeroes">LeadingZeroes</a> = true.</li><li>If all characters before the point are &quot;#&quot;, then non-significant zeros will not output. 
+It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_LeadingZeroes">LeadingZeroes</a> = false.</li><li>The number of characters &quot;0&quot; or &quot;#&quot; after the characters &quot;.!_&quot; indicates the number of 
+characters allowed after the decimal point. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsAfterPoint">DigitsAfterPoint</a>.
 The number will be rounded to the specified number of digits before output.</li><li>If all characters after the point are &quot;#&quot;, then non-significant zeros will not output. 
-It corresponds to the property <cref>TrailingZeroes</cref> = <cref>TrailingZeroes.No</cref>.</li><li>If all characters after the point are &quot;0&quot;, then non-significant zeros are required. 
-It corresponds to the property <cref>TrailingZeroes</cref> = <cref>TrailingZeroes.Yes</cref>.</li><li>If the first character after the point is &quot;0&quot; and the rest are &quot;#&quot;, then only first non-significant 
+It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_TrailingZeroes">TrailingZeroes</a> = <a class="xref" href="SprutTechnology.SCPostprocessor.TrailingZeroesMode.html#SprutTechnology_SCPostprocessor_TrailingZeroesMode_No">No</a>.</li><li>If all characters after the point are &quot;0&quot;, then non-significant zeros are required. 
+It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_TrailingZeroes">TrailingZeroes</a> = <a class="xref" href="SprutTechnology.SCPostprocessor.TrailingZeroesMode.html#SprutTechnology_SCPostprocessor_TrailingZeroesMode_Yes">Yes</a>.</li><li>If the first character after the point is &quot;0&quot; and the rest are &quot;#&quot;, then only first non-significant 
 zero will output and the rest will be skipped. It corresponds to the property 
-<cref>TrailingZeroes</cref> = <cref>TrailingZeroes.OneOnly</cref>.</li></ol>
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_TrailingZeroes">TrailingZeroes</a> = <a class="xref" href="SprutTechnology.SCPostprocessor.TrailingZeroesMode.html#SprutTechnology_SCPostprocessor_TrailingZeroesMode_OneOnly">OneOnly</a>.</li></ol>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -769,7 +769,7 @@ For example: &quot;X = {-####!0##};&quot;. See description of the constructor fo
         <td><span class="parametername">defaultValue</span></td>
         <td><p>The parameter to define a default value for the NumericNCWord. It is used to assing initial values
 to the current v and the previous v0 values just after creation of the NumericNCWord or when you call
-<cref>RestoreDefaultValue</cref> method manually.</p>
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_RestoreDefaultValue_System_Boolean_">RestoreDefaultValue(Boolean)</a> method manually.</p>
 </td>
       </tr>
     </tbody>
@@ -978,7 +978,7 @@ to the current v and the previous v0 values just after creation of the NumericNC
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_DefaultValue" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.DefaultValue">DefaultValue</h4>
   <div class="markdown level1 summary"><p>The property to store a default value for the NumericNCWord. It is used to assing initial values
 to the current v and the previous v0 values just after creation of the NCWord or when you call
-<cref>RestoreDefaultValue</cref> method manually.</p>
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_RestoreDefaultValue_System_Boolean_">RestoreDefaultValue(Boolean)</a> method manually.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1183,7 +1183,7 @@ to the current v and the previous v0 values just after creation of the NCWord or
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_v" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.v">v</h4>
   <div class="markdown level1 summary"><p>The current v value of the NumericNCWord. It is used to make the output string using the all
 formatting rules (numbers before and after decimal point, leading and trailing zeroes, etc.).
-Together with the previous <cref>v0</cref> value and the <cref>NCBlock</cref>, it can be used to filter
+Together with the previous <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> value and the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a>, it can be used to filter
 the output. If v == v0, then the output line formed by the NCBlock.Out and NCBlock.Form commands
 will not include this NumericNCWord (it will be skipped).</p>
 </div>
@@ -1212,7 +1212,7 @@ will not include this NumericNCWord (it will be skipped).</p>
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_v0_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.v0*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_v0" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.v0">v0</h4>
   <div class="markdown level1 summary"><p>The previous v0 value of the NumericNCWord.
-Together with the current <cref>v</cref> value and the <cref>NCBlock</cref>, it can be used to filter
+Together with the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> value and the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a>, it can be used to filter
 the output. If v == v0, then the output line formed by the NCBlock.Out and NCBlock.Form commands
 will not include this NumericNCWord (it will be skipped).</p>
 </div>

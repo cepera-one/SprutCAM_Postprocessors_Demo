@@ -681,8 +681,8 @@ the coordinate value x = 5.18 to the string &quot;X0005.180&quot;. This correspo
 the output G-code.
 </p>
 <p>
-Optionally, NCWord can also help you to filter the output. It contains two values - current <cref>v</cref> and 
-previous <cref>v0</cref> (which has already been output earlier). If both of these values are the same, then 
+Optionally, NCWord can also help you to filter the output. It contains two values - current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> and 
+previous <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> (which has already been output earlier). If both of these values are the same, then 
 re-output the value can be skipped automatically.
 </p>
 </section>
@@ -695,7 +695,7 @@ the output G-code.
 </p>
 <p>
 Optionally, NumericNCWord can also help you to filter the output. It contains two values - 
-current <cref>v</cref> and previous <cref>v0</cref> (which has already been output earlier). 
+current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> and previous <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> (which has already been output earlier). 
 If both of these values are the same, then re-output the value can be skipped automatically.
 </p>
 </section>
@@ -713,8 +713,8 @@ If both of these values are the same, then re-output the value can be skipped au
 string values to a text format that the CNC machine understands. 
 </p>
 <p>
-Optionally, TextNCWord can also help you to filter the output. It contains two values - current <cref>v</cref> and 
-previous <cref>v0</cref> (which has already been output earlier). If both of these values are the same, then 
+Optionally, TextNCWord can also help you to filter the output. It contains two values - current <a class="xref" href="SprutTechnology.SCPostprocessor.TextNCWord.html#SprutTechnology_SCPostprocessor_TextNCWord_v">v</a> and 
+previous <a class="xref" href="SprutTechnology.SCPostprocessor.TextNCWord.html#SprutTechnology_SCPostprocessor_TextNCWord_v0">v0</a> (which has already been output earlier). If both of these values are the same, then 
 re-output the value can be skipped automatically.
 </p>
 </section>
@@ -735,7 +735,7 @@ However, most of the declared methods have empty implementation.
 </p>
 <p>
 A significant number of methods are SprutCAM&apos;s CLData command handlers, for example
-<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+<ul><li>OnGoto,</li><li>OnCircle,</li><li>OnSpindle,</li><li>OnLoadTool,</li><li>OnCoolant</li><li>etc.</li></ul>
 If you want to implement any logic, or a set of actions that 
 should be executed by any of these commands, then you must override the implementation of 
 the corresponding method with your own inside your inherited class.
@@ -1037,7 +1037,7 @@ unique name using a convenient syntax with square brackets <code>Flt[&quot;Neste
       <section><p>The InputBox window. It can be used to ask some additional information from a user.
 You can create a new instance of this object using CreateInputBox() method. Then use methods
 of this instance to add properties of type you need:</p>
-<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+<ul><li>AddStringProp</li><li>AddDoubleProp</li><li>AddIntegerProp</li><li>AddBooleanProp</li><li>AddFilePathProp</li><li>etc.</li></ul>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.IInputBoxEnumValuesList-1.html">IInputBoxEnumValuesList&lt;T&gt;</a></h4>
       <section><p>The list of possible values for the proerty inside the InputBox window. This list will be shown inside the
@@ -1047,7 +1047,7 @@ combo box when user clicks to the value field of the property.</p>
       <section><p>External object that can create new instances of an InputBox window.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.IInputBoxProperty.html">IInputBoxProperty</a></h4>
-      <section><p>The property to be show inside the InputBox window.</p>
+      <section><p>The property to be shown inside the InputBox window.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.IIntegerNamedPropertyIndexer.html">IIntegerNamedPropertyIndexer</a></h4>
       <section><p>A helper interface that allows you to quickly get the integer value of a nested property by its
@@ -1073,7 +1073,10 @@ using a convenient syntax with square brackets <code>Ptr[&quot;NestedPropName&qu
 the output file. When editing a file, the label moves with the text. When adding new data to a file,
 you can use labels to specify where the data should be inserted.</p>
 <p>
-When calling the <cref>Write</cref> or <cref>WriteLine</cref> methods, simply provide a label in the parameters, or you can use the DefaultLabel property to specify the default position at which to insert new text.
+When calling the <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_Write_System_String_SprutTechnology_SCPostprocessor_INCLabel_">Write(String, INCLabel)</a> or 
+<a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_WriteLine_System_String_SprutTechnology_SCPostprocessor_INCLabel_">WriteLine(String, INCLabel)</a> methods, simply provide a label in 
+the parameters, or you can use the DefaultLabel property to specify the default 
+position at which to insert new text.
 </p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.INCStorage.html">INCStorage</a></h4>
@@ -1178,8 +1181,8 @@ numbers only or output it always for fractional and integer numbers.</p>
       <section><p>The enumeration shows how to output a sign for numbers: don't output, minus only or plus and minus always.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html">NCWordState</a></h4>
-      <section><p>The possible values for an <cref>NCWord</cref> <cref>State</cref> (<cref>Unchanged</cref>, <cref>Changed</cref>
-or <cref>Disabled</cref>).</p>
+      <section><p>The possible values for an <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_State">State</a> (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html#SprutTechnology_SCPostprocessor_NCWordState_Unchanged">Unchanged</a>,
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html#SprutTechnology_SCPostprocessor_NCWordState_Changed">Changed</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html#SprutTechnology_SCPostprocessor_NCWordState_Disabled">Disabled</a>).</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.NCWordTextCase.html">NCWordTextCase</a></h4>
       <section><p>Determines whether or not to convert the case of characters.</p>

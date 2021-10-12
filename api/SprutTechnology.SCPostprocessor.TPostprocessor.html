@@ -634,7 +634,7 @@ However, most of the declared methods have empty implementation.
 </p>
 <p>
 A significant number of methods are SprutCAM&apos;s CLData command handlers, for example
-<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+<ul><li>OnGoto,</li><li>OnCircle,</li><li>OnSpindle,</li><li>OnLoadTool,</li><li>OnCoolant</li><li>etc.</li></ul>
 If you want to implement any logic, or a set of actions that 
 should be executed by any of these commands, then you must override the implementation of 
 the corresponding method with your own inside your inherited class.
@@ -704,13 +704,13 @@ which are described in the separate <strong>Settings.xml</strong> file inside th
 </p>
 <p>
 For example
-<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+<ul><li>Comments - any text comments to the postprocessor for customers.</li><li>CNCSystem - the CNC system the postprocessor was developed for.</li><li>MachineName - the name of a machine or robot for which the postprocessor is intended.</li><li>BreakArcs - whether the system should automatically split circular arcs into halves, quarters, or cuts.</li><li>BreakHelix - whether the system should automatically split helix into cuts.</li><li>etc.</li></ul>
 </p>
 <p>
 A separate important part is the UserDefinedParameters section. Inside it, the postprocessor 
 developer can add any properties of his choice, which the user will have to specify before 
 starting the process of generating the output G-code files. This can be, for example, 
-<ul><li></li><li></li><li></li><li></li></ul>
+<ul><li>the name of the output file,</li><li>program number,</li><li>textual description for the machine operator,</li><li>etc.</li></ul>
 Later at a runtime you can ask the value of a property by it&apos;s name using syntax like following.
 <pre><code>nc.OutputFileName = Settings.Params.Str[&quot;OutFiles.NCFileName&quot;];</code></pre>
 </p>
@@ -892,7 +892,7 @@ Later at a runtime you can ask the value of a property by it&apos;s name using s
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_IsBreakedTranslation_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.IsBreakedTranslation*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_IsBreakedTranslation" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.IsBreakedTranslation">IsBreakedTranslation</h4>
   <div class="markdown level1 summary"><p>An auxiliary boolean flag that symbolizes whether the translation was interrupted early by calling
-the <cref>BreakTranslation</cref> method.</p>
+the <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_BreakTranslation">BreakTranslation()</a> method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -949,7 +949,7 @@ the <cref>BreakTranslation</cref> method.</p>
 find any errors in the input data, or if the user tries to use operations that are not supported
 by the controller.
 You can additionally indicate the reason for the interruption using the syntax for outputting
-information to the <cref>Log</cref> report like following.</p>
+information to the <a class="xref" href="SprutTechnology.SCPostprocessor.Log.html">Log</a> report like following.</p>
 <pre><code>Log.Error($&quot;The cycle {cycleNumber} doesn&apos;t supported by the controller.&quot;);</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -979,7 +979,7 @@ information to the <cref>Log</cref> report like following.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><ul><li></li><li></li><li></li></ul>
+        <td><ul><li>0 - the two segments connect smoothly</li><li>1 - the two segments intersect</li><li>-1 - cannot determine connectedness</li></ul>
 </td>
       </tr>
     </tbody>
@@ -1052,7 +1052,7 @@ such as the end of the file.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><ul><li></li><li></li><li></li></ul>
+        <td><ul><li>1 - inner corner</li><li>0 - outer corner</li><li>-1 - the type of angle cannot be determined, for example, a tangent case</li></ul>
 </td>
       </tr>
     </tbody>
@@ -1702,7 +1702,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFini_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFini*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFini_SprutTechnology_SCPostprocessor_ICLDFiniCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFini(SprutTechnology.SCPostprocessor.ICLDFiniCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnFini(ICLDFiniCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>FINI. Use <cref>OnFinishProject</cref> instead.</p>
+  <div class="markdown level1 summary"><p>FINI. Use <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnFinishProject_SprutTechnology_SCPostprocessor_ICLDProject_">OnFinishProject(ICLDProject)</a> instead.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2400,7 +2400,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPartNo_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPartNo*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPartNo_SprutTechnology_SCPostprocessor_ICLDPartNoCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPartNo(SprutTechnology.SCPostprocessor.ICLDPartNoCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnPartNo(ICLDPartNoCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>PARTNO. Use <cref>OnStartProject</cref> instead.</p>
+  <div class="markdown level1 summary"><p>PARTNO. Use <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnStartProject_SprutTechnology_SCPostprocessor_ICLDProject_">OnStartProject(ICLDProject)</a> instead.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3186,7 +3186,7 @@ such as the end of the file.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><ul><li></li><li></li><li></li></ul>
+        <td><ul><li>1 - there were no tool change but there will be tool change in the following commands</li><li>0 - there were a tool change</li><li>-1 - the current tool change is the last one in the CLData commands list</li></ul>
 </td>
       </tr>
     </tbody>

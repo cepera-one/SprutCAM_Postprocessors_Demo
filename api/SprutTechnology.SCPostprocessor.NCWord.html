@@ -631,8 +631,8 @@ the coordinate value x = 5.18 to the string &quot;X0005.180&quot;. This correspo
 the output G-code.
 </p>
 <p>
-Optionally, NCWord can also help you to filter the output. It contains two values - current <cref>v</cref> and 
-previous <cref>v0</cref> (which has already been output earlier). If both of these values are the same, then 
+Optionally, NCWord can also help you to filter the output. It contains two values - current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> and 
+previous <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> (which has already been output earlier). If both of these values are the same, then 
 re-output the value can be skipped automatically.
 </p>
 </div>
@@ -680,7 +680,7 @@ re-output the value can be skipped automatically.
   
   <a id="SprutTechnology_SCPostprocessor_NCWord__ctor_" data-uid="SprutTechnology.SCPostprocessor.NCWord.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCWord__ctor" data-uid="SprutTechnology.SCPostprocessor.NCWord.#ctor">NCWord()</h4>
-  <div class="markdown level1 summary"><p>Creates a new instance of an <cref>NCWord</cref> and initializes it's state.</p>
+  <div class="markdown level1 summary"><p>Creates a new instance of an <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> and initializes it's state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -721,8 +721,8 @@ Address is &quot;&lt; X &gt;&quot;. An expression in curly braces is a part auto
   
   <a id="SprutTechnology_SCPostprocessor_NCWord_AutoUpdateState_" data-uid="SprutTechnology.SCPostprocessor.NCWord.AutoUpdateState*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCWord_AutoUpdateState" data-uid="SprutTechnology.SCPostprocessor.NCWord.AutoUpdateState">AutoUpdateState</h4>
-  <div class="markdown level1 summary"><p>The &quot;AutoUpdateState&quot; property determines whether the <cref>NCWord</cref> <cref>State</cref> should be
-automatically updated when the current <cref>v</cref> or previous <cref>v0</cref> value changes.
+  <div class="markdown level1 summary"><p>The &quot;AutoUpdateState&quot; property determines whether the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_State">State</a> should be
+automatically updated when the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> or previous <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> value changes.
 Default is &quot;True&quot;.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -750,10 +750,10 @@ Default is &quot;True&quot;.</p>
   <a id="SprutTechnology_SCPostprocessor_NCWord_Changed_" data-uid="SprutTechnology.SCPostprocessor.NCWord.Changed*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCWord_Changed" data-uid="SprutTechnology.SCPostprocessor.NCWord.Changed">Changed</h4>
   <div class="markdown level1 summary"><p>Returns &quot;True&quot; if the NCWord is in the &quot;Changed&quot; state, otherwise returns &quot;False&quot;.
-It means that the <cref>NCWord</cref> <strong>will output</strong> on the next call of
-<cref>NCBlock.Out</cref> or <cref>NCBlock.Form</cref>.</p>
+It means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>.</p>
 <p>It doesn&apos;t check the actual equality of the current v and previous v0 values. 
-You can use <cref>ValuesSame</cref> or <cref>ValuesDiffer</cref> properties for this.</p>
+You can use <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_ValuesSame">ValuesSame</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_ValuesDiffer">ValuesDiffer</a> properties for this.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -780,8 +780,8 @@ You can use <cref>ValuesSame</cref> or <cref>ValuesDiffer</cref> properties for 
   <a id="SprutTechnology_SCPostprocessor_NCWord_Disabled_" data-uid="SprutTechnology.SCPostprocessor.NCWord.Disabled*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCWord_Disabled" data-uid="SprutTechnology.SCPostprocessor.NCWord.Disabled">Disabled</h4>
   <div class="markdown level1 summary"><p>Returns &quot;True&quot; if the NCWord is in the &quot;Disabled&quot; state, otherwise returns &quot;False&quot;.
-It means that the <cref>NCWord</cref> will not be output by the block at all and will not change its state
-until it is explicitly switched to another state (using <cref>Show</cref> or <cref>Hide</cref>).</p>
+It means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> will not be output by the block at all and will not change its state
+until it is explicitly switched to another state (using <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Show">Show()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Hide">Hide()</a>).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -809,10 +809,10 @@ until it is explicitly switched to another state (using <cref>Show</cref> or <cr
   <h4 id="SprutTechnology_SCPostprocessor_NCWord_Marked" data-uid="SprutTechnology.SCPostprocessor.NCWord.Marked">Marked</h4>
   <div class="markdown level1 summary"><p>The &quot;Marked&quot; property means nothing for the postprocessing system. It doesn't check it at all.
 So the developer of a postprocessor can use it for their own purposes.
-For example, you can loop through all the <cref>NCWords</cref> from an <cref>NCBlock</cref> and
+For example, you can loop through all the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> from an <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a> and
 mark with this flag only those that you need in a particular case. After that you can use
 foreach cycle with the NCBlock.MarkedWords collection to quick loop through the marked words only.</p>
-<p>You can use also the <cref>NCBlock.SetMarks</cref> method to simply set the Marked flag 
+<p>You can use also the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_SetMarks_System_Boolean_">SetMarks(Boolean)</a> method to simply set the Marked flag 
 to a desired value for all words of the NCBlock.  
 </p>
 <remarks>
@@ -854,9 +854,9 @@ nc.WriteLine(s);</code></pre>
   
   <a id="SprutTechnology_SCPostprocessor_NCWord_State_" data-uid="SprutTechnology.SCPostprocessor.NCWord.State*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCWord_State" data-uid="SprutTechnology.SCPostprocessor.NCWord.State">State</h4>
-  <div class="markdown level1 summary"><p>The state of the <cref>NCWord</cref>. It affects whether or not this NCWord will be output to the file
-on the next call of <cref>NCBlock.Out</cref> or <cref>NCBlock.Form</cref>. It can be
-<cref>Unchanged</cref>, <cref>Changed</cref> or <cref>Disabled</cref>.</p>
+  <div class="markdown level1 summary"><p>The state of the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>. It affects whether or not this NCWord will be output to the file
+on the next call of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>. It can be
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Unchanged">Unchanged</a>, <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Changed">Changed</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Disabled">Disabled</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -911,10 +911,10 @@ TailString is &quot;&lt; /X &gt;&quot;. An expression in curly braces is a part 
   <a id="SprutTechnology_SCPostprocessor_NCWord_Unchanged_" data-uid="SprutTechnology.SCPostprocessor.NCWord.Unchanged*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCWord_Unchanged" data-uid="SprutTechnology.SCPostprocessor.NCWord.Unchanged">Unchanged</h4>
   <div class="markdown level1 summary"><p>Returns &quot;True&quot; if the NCWord is in the &quot;Unchanged&quot; state, otherwise returns &quot;False&quot;.
-It means that the <cref>NCWord</cref> <strong>will NOT output</strong> on the next call of
-<cref>NCBlock.Out</cref> or <cref>NCBlock.Form</cref>.</p>
+It means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will NOT output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>.</p>
 <p>It doesn&apos;t check the actual equality of the current v and previous v0 values. 
-You can use <cref>ValuesSame</cref> or <cref>ValuesDiffer</cref> properties for this.</p>
+You can use <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_ValuesSame">ValuesSame</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_ValuesDiffer">ValuesDiffer</a> properties for this.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -940,11 +940,11 @@ You can use <cref>ValuesSame</cref> or <cref>ValuesDiffer</cref> properties for 
   
   <a id="SprutTechnology_SCPostprocessor_NCWord_Unstable_" data-uid="SprutTechnology.SCPostprocessor.NCWord.Unstable*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCWord_Unstable" data-uid="SprutTechnology.SCPostprocessor.NCWord.Unstable">Unstable</h4>
-  <div class="markdown level1 summary"><p>Returns &quot;True&quot; if the NCWord is in the so-called &quot;Unstable&quot; state after the call of <cref>Reset</cref> method.
+  <div class="markdown level1 summary"><p>Returns &quot;True&quot; if the NCWord is in the so-called &quot;Unstable&quot; state after the call of <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Reset">Reset()</a> method.
 Actually it checks that the previous v0 value is equal to the &quot;undefined&quot; value (&quot;double.MaxValue&quot; for
 the NumericNCWord and &quot;null&quot; for the TextNCWord).
-This state means that the <cref>NCWord</cref> <strong>will NOT output</strong> on the next call of
-<cref>NCBlock.Out</cref> or <cref>NCBlock.Form</cref>. But it will output just after the first change of
+This state means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will NOT output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>. But it will output just after the first change of
 the current v value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1027,10 +1027,10 @@ identical output string.</p>
   
   <a id="SprutTechnology_SCPostprocessor_NCWord_Disable_" data-uid="SprutTechnology.SCPostprocessor.NCWord.Disable*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCWord_Disable" data-uid="SprutTechnology.SCPostprocessor.NCWord.Disable">Disable()</h4>
-  <div class="markdown level1 summary"><p>Switches the <cref>NCWord</cref> to the <cref>Disabled</cref> state.
-It means that the <cref>NCWord</cref> will not be output by the block at all and will not change its state
-until it is explicitly switched to another state (using <cref>Show</cref> or <cref>Hide</cref>).</p>
-<p>It doesn&apos;t change the current <cref>v</cref> or previous <cref>v0</cref> value of the NCWord.</p> 
+  <div class="markdown level1 summary"><p>Switches the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> to the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Disabled">Disabled</a> state.
+It means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> will not be output by the block at all and will not change its state
+until it is explicitly switched to another state (using <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Show">Show()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Hide">Hide()</a>).</p>
+<p>It doesn&apos;t change the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> or previous <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> value of the NCWord.</p> 
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1041,11 +1041,12 @@ until it is explicitly switched to another state (using <cref>Show</cref> or <cr
   
   <a id="SprutTechnology_SCPostprocessor_NCWord_Hide_" data-uid="SprutTechnology.SCPostprocessor.NCWord.Hide*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCWord_Hide" data-uid="SprutTechnology.SCPostprocessor.NCWord.Hide">Hide()</h4>
-  <div class="markdown level1 summary"><p>Switches the <cref>NCWord</cref> to the <cref>Unchanged</cref> state.
-It means that the <cref>NCWord</cref> <strong>will NOT output</strong> on the next call of
-<cref>NCBlock.Out</cref> or <cref>NCBlock.Form</cref>.</p>
-<p>It doesn&apos;t change the current <cref>v</cref> or previous <cref>v0</cref> value of the NCWord.</p> 
-<p>Later you can use the <cref>UpdateState</cref> method to restore the changed-unchanged state 
+  <div class="markdown level1 summary"><p>Switches the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> to the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Unchanged">Unchanged</a> state.
+It means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will NOT output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>.</p>
+<p>It doesn&apos;t change the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> or previous 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> value of the NCWord.</p> 
+<p>Later you can use the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_UpdateState">UpdateState()</a> method to restore the changed-unchanged state 
 depend on equality ot the v and v0.</p> 
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1068,13 +1069,13 @@ depend on equality ot the v and v0.</p>
   
   <a id="SprutTechnology_SCPostprocessor_NCWord_Reset_" data-uid="SprutTechnology.SCPostprocessor.NCWord.Reset*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCWord_Reset" data-uid="SprutTechnology.SCPostprocessor.NCWord.Reset">Reset()</h4>
-  <div class="markdown level1 summary"><p>Switches the <cref>NCWord</cref> to the <cref>Unchanged</cref> state and changes the previous v0 value
+  <div class="markdown level1 summary"><p>Switches the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> to the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Unchanged">Unchanged</a> state and changes the previous v0 value
 to an undefined value (&quot;double.MaxValue&quot; for the NumericNCWord and &quot;null&quot; for the TextNCWord).
-It means that the <cref>NCWord</cref> <strong>will NOT output</strong> on the next call of
-<cref>NCBlock.Out</cref> or <cref>NCBlock.Form</cref>. But it will output just after the first change of
+It means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will NOT output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>. But it will output just after the first change of
 the current v value.</p>
-<p>It is the so-called &quot;<cref>Unstable</cref>&quot; state.</p>
-<p>It doesn&apos;t change the current <cref>v</cref> value of the NCWord.</p> 
+<p>It is the so-called &quot;<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Unstable">Unstable</a>&quot; state.</p>
+<p>It doesn&apos;t change the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> value of the NCWord.</p> 
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1116,10 +1117,11 @@ then it switches the state to Changed.</p>
   
   <a id="SprutTechnology_SCPostprocessor_NCWord_Show_" data-uid="SprutTechnology.SCPostprocessor.NCWord.Show*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCWord_Show" data-uid="SprutTechnology.SCPostprocessor.NCWord.Show">Show()</h4>
-  <div class="markdown level1 summary"><p>Switches the <cref>NCWord</cref> to the <cref>Changed</cref> state.
-It means that the <cref>NCWord</cref> <strong>will output</strong> on the next call of
-<cref>NCBlock.Out</cref> or <cref>NCBlock.Form</cref>.</p>
-<p>It doesn&apos;t change the current <cref>v</cref> or previous <cref>v0</cref> value of the NCWord.</p> 
+  <div class="markdown level1 summary"><p>Switches the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> to the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Changed">Changed</a> state.
+It means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>.</p>
+<p>It doesn&apos;t change the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> or previous 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> value of the NCWord.</p> 
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1130,10 +1132,10 @@ It means that the <cref>NCWord</cref> <strong>will output</strong> on the next c
   
   <a id="SprutTechnology_SCPostprocessor_NCWord_UpdateState_" data-uid="SprutTechnology.SCPostprocessor.NCWord.UpdateState*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCWord_UpdateState" data-uid="SprutTechnology.SCPostprocessor.NCWord.UpdateState">UpdateState()</h4>
-  <div class="markdown level1 summary"><p>Switches the <cref>State</cref> of the NCWord to <cref>Changed</cref> or <cref>Unchanged</cref>
+  <div class="markdown level1 summary"><p>Switches the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_State">State</a> of the NCWord to <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Changed">Changed</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Unchanged">Unchanged</a>
 depend on the current v and previous v0 values. If the values are same then the state will
 &quot;Unchanged&quot;, otherwise it will &quot;Changed&quot;.</p>
-<p>If the NCWord is <cref>Disabled</cref> or has the <cref>AutoUpdateState</cref>=false then 
+<p>If the NCWord is <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Disabled">Disabled</a> or has the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_AutoUpdateState">AutoUpdateState</a>=false then 
 the method does nothing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>

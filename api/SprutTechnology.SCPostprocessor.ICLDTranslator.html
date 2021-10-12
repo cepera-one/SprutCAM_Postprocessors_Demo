@@ -808,7 +808,7 @@ Log.Error(&quot;reason&quot;) or Log.Warning(&quot;reason&quot;)) to explain the
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><ul><li></li><li></li><li></li></ul>
+        <td><ul><li>0 - the two segments connect smoothly</li><li>1 - the two segments intersect</li><li>-1 - cannot determine connectedness</li></ul>
 </td>
       </tr>
     </tbody>
@@ -835,7 +835,8 @@ Log.Error(&quot;reason&quot;) or Log.Warning(&quot;reason&quot;)) to explain the
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><ul><li></li><li></li><li></li></ul>
+        <td><ul><li>1 - inner corner</li><li>0 - outer corner</li><li>-1 - the type of angle cannot be determined, for example, 
+</li></ul>
 </td>
       </tr>
     </tbody>
@@ -909,7 +910,9 @@ the first tool number.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><ul><li></li><li></li><li></li></ul>
+        <td><ul><li>1 - there were no tool change but there will be tool change in 
+the following commands</li><li>0 - there were a tool change</li><li>-1 - the current tool change is the last one in the CLData 
+commands list</li></ul>
 </td>
       </tr>
     </tbody>
