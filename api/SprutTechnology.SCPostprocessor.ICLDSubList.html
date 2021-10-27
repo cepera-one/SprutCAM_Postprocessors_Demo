@@ -83,6 +83,18 @@
                   <ul class="nav level1">
                     <li class="">
                       <span class="expand-stub"></span>
+                      <a href="SprutTechnology.GeWatchDNClient.html" title="SprutTechnology.GeWatchDNClient" class="">SprutTechnology.GeWatchDNClient</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SprutTechnology.GeWatchDNClient.STGeWatch.html" title="STGeWatch" class="">STGeWatch</a>
+                          </li>
+                          <li class="">
+                            <a href="SprutTechnology.GeWatchDNClient.STGeWatchClient.html" title="STGeWatchClient" class="">STGeWatchClient</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
                       <a href="SprutTechnology.SCPostprocessor.html" title="SprutTechnology.SCPostprocessor" class="">SprutTechnology.SCPostprocessor</a>
                         
                         <ul class="nav level2">
@@ -576,6 +588,21 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="SprutTechnology.VecMatrLib.EVecMatrLibError.html" title="EVecMatrLibError" class="">EVecMatrLibError</a>
+                          </li>
+                          <li class="">
+                            <a href="SprutTechnology.VecMatrLib.GWConsts.html" title="GWConsts" class="">GWConsts</a>
+                          </li>
+                          <li class="">
+                            <a href="SprutTechnology.VecMatrLib.ISTGeWatch.html" title="ISTGeWatch" class="">ISTGeWatch</a>
+                          </li>
+                          <li class="">
+                            <a href="SprutTechnology.VecMatrLib.ISTGeWatchable.html" title="ISTGeWatchable" class="">ISTGeWatchable</a>
+                          </li>
+                          <li class="">
+                            <a href="SprutTechnology.VecMatrLib.ISTGeWatchClient.html" title="ISTGeWatchClient" class="">ISTGeWatchClient</a>
+                          </li>
+                          <li class="">
                             <a href="SprutTechnology.VecMatrLib.T2DPoint.html" title="T2DPoint" class="">T2DPoint</a>
                           </li>
                           <li class="">
@@ -607,6 +634,9 @@
                           </li>
                           <li class="">
                             <a href="SprutTechnology.VecMatrLib.TRotationConvention.html" title="TRotationConvention" class="">TRotationConvention</a>
+                          </li>
+                          <li class="">
+                            <a href="SprutTechnology.VecMatrLib.TRotationsConverter.html" title="TRotationsConverter" class="">TRotationsConverter</a>
                           </li>
                           <li class="">
                             <a href="SprutTechnology.VecMatrLib.VML.html" title="VML" class="">VML</a>
@@ -818,7 +848,8 @@ for this subroutine will not be started and it just will be skipped.</p>
   <div class="markdown level1 summary"><p>This method can be called by the postprocessor developer to start translation of commands
 inside the subroutine with the given cldSubCode. Usually you should do it inside OnCallNCSub, OnStartProject,
 OnFinishProject or OnExtCycle handlers. This method does not take into account the fact whether
-the subroutine has already been translated previously, so translation will be called anyway.</p>
+the subroutine has already been translated previously, so translation will be called anyway.
+After translation the subroutine with specified cldSubCode will be marked as Translated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -838,7 +869,47 @@ the subroutine has already been translated previously, so translation will be ca
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">cldSubCode</span></td>
-        <td></td>
+        <td><p>Subcode of the CLD subroutine to translate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="SprutTechnology_SCPostprocessor_ICLDSubList_Translate_" data-uid="SprutTechnology.SCPostprocessor.ICLDSubList.Translate*"></a>
+  <h4 id="SprutTechnology_SCPostprocessor_ICLDSubList_Translate_System_Int32_System_Boolean_" data-uid="SprutTechnology.SCPostprocessor.ICLDSubList.Translate(System.Int32,System.Boolean)">Translate(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>This method can be called by the postprocessor developer to start translation of commands
+inside the subroutine with the given cldSubCode. Usually you should do it inside OnCallNCSub, OnStartProject,
+OnFinishProject or OnExtCycle handlers. This method does not take into account the fact whether
+the subroutine has already been translated previously, so translation will be called anyway.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Translate(int cldSubCode, bool markTranslated)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cldSubCode</span></td>
+        <td><p>Subcode of the CLD subroutine to translate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">markTranslated</span></td>
+        <td><p>With this parameter, you must explicitly indicate whether the subroutine
+should be marked as Translated.</p>
+</td>
       </tr>
     </tbody>
   </table>

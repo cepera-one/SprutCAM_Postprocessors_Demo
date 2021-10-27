@@ -4,6 +4,669 @@ references:
 - uid: main_page
   name: Documentation for the postprocessing subsystem of SprutCAM.
   href: index.html
+- uid: SprutTechnology.GeWatchDNClient
+  name: SprutTechnology.GeWatchDNClient
+  href: api/SprutTechnology.GeWatchDNClient.html
+  commentId: N:SprutTechnology.GeWatchDNClient
+  fullName: SprutTechnology.GeWatchDNClient
+  nameWithType: SprutTechnology.GeWatchDNClient
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch
+  name: STGeWatch
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html
+  commentId: T:SprutTechnology.GeWatchDNClient.STGeWatch
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch
+  nameWithType: STGeWatch
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.#ctor
+  name: STGeWatch()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch__ctor
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.#ctor
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.STGeWatch()
+  nameWithType: STGeWatch.STGeWatch()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.#ctor*
+  name: STGeWatch
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch__ctor_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.#ctor
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.STGeWatch
+  nameWithType: STGeWatch.STGeWatch
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.AddTriangleVertex(System.Double,System.Double,System.Double)
+  name: AddTriangleVertex(Double, Double, Double)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_AddTriangleVertex_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.AddTriangleVertex(System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.AddTriangleVertex(System.Double, System.Double, System.Double)
+  nameWithType: STGeWatch.AddTriangleVertex(Double, Double, Double)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.AddTriangleVertex*
+  name: AddTriangleVertex
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_AddTriangleVertex_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.AddTriangleVertex
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.AddTriangleVertex
+  nameWithType: STGeWatch.AddTriangleVertex
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Arc(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)
+  name: Arc(Double, Double, Double, Double, Double, Double, Double, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Arc_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Arc(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Arc(System.Double, System.Double, System.Double, System.Double, System.Double, System.Double, System.Double, System.String)
+  nameWithType: STGeWatch.Arc(Double, Double, Double, Double, Double, Double, Double, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Arc*
+  name: Arc
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Arc_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.Arc
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Arc
+  nameWithType: STGeWatch.Arc
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo(System.Double,System.Double,System.Double,System.Double,System.Double)
+  name: ArcTo(Double, Double, Double, Double, Double)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_ArcTo_System_Double_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo(System.Double,System.Double,System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo(System.Double, System.Double, System.Double, System.Double, System.Double)
+  nameWithType: STGeWatch.ArcTo(Double, Double, Double, Double, Double)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo*
+  name: ArcTo
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_ArcTo_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo
+  nameWithType: STGeWatch.ArcTo
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo3d(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  name: ArcTo3d(T3DPoint, T3DPoint)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_ArcTo3d_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo3d(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo3d(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: STGeWatch.ArcTo3d(T3DPoint, T3DPoint)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo3d(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.Double)
+  name: ArcTo3d(T3DPoint, T3DPoint, T3DPoint, Double)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_ArcTo3d_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_System_Double_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo3d(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.Double)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo3d(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint, System.Double)
+  nameWithType: STGeWatch.ArcTo3d(T3DPoint, T3DPoint, T3DPoint, Double)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo3d*
+  name: ArcTo3d
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_ArcTo3d_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo3d
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.ArcTo3d
+  nameWithType: STGeWatch.ArcTo3d
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Arrow(System.Double,System.Double,System.Double,System.Double,System.String)
+  name: Arrow(Double, Double, Double, Double, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Arrow_System_Double_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Arrow(System.Double,System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Arrow(System.Double, System.Double, System.Double, System.Double, System.String)
+  nameWithType: STGeWatch.Arrow(Double, Double, Double, Double, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Arrow*
+  name: Arrow
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Arrow_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.Arrow
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Arrow
+  nameWithType: STGeWatch.Arrow
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Arrow3d(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.String)
+  name: Arrow3d(T3DPoint, T3DPoint, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Arrow3d_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Arrow3d(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Arrow3d(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint, System.String)
+  nameWithType: STGeWatch.Arrow3d(T3DPoint, T3DPoint, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Arrow3d(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)
+  name: Arrow3d(Double, Double, Double, Double, Double, Double, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Arrow3d_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Arrow3d(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Arrow3d(System.Double, System.Double, System.Double, System.Double, System.Double, System.Double, System.String)
+  nameWithType: STGeWatch.Arrow3d(Double, Double, Double, Double, Double, Double, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Arrow3d*
+  name: Arrow3d
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Arrow3d_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.Arrow3d
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Arrow3d
+  nameWithType: STGeWatch.Arrow3d
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Box(System.Double,System.Double,System.Double,System.Double,System.String)
+  name: Box(Double, Double, Double, Double, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Box_System_Double_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Box(System.Double,System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Box(System.Double, System.Double, System.Double, System.Double, System.String)
+  nameWithType: STGeWatch.Box(Double, Double, Double, Double, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Box*
+  name: Box
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Box_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.Box
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Box
+  nameWithType: STGeWatch.Box
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Circle(System.Double,System.Double,System.Double,System.String)
+  name: Circle(Double, Double, Double, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Circle_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Circle(System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Circle(System.Double, System.Double, System.Double, System.String)
+  nameWithType: STGeWatch.Circle(Double, Double, Double, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Circle*
+  name: Circle
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Circle_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.Circle
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Circle
+  nameWithType: STGeWatch.Circle
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Clear
+  name: Clear()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Clear
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Clear
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Clear()
+  nameWithType: STGeWatch.Clear()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Clear*
+  name: Clear
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Clear_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.Clear
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Clear
+  nameWithType: STGeWatch.Clear
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.ClearImmediate
+  name: ClearImmediate()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_ClearImmediate
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.ClearImmediate
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.ClearImmediate()
+  nameWithType: STGeWatch.ClearImmediate()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.ClearImmediate*
+  name: ClearImmediate
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_ClearImmediate_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.ClearImmediate
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.ClearImmediate
+  nameWithType: STGeWatch.ClearImmediate
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.CloseObject
+  name: CloseObject()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_CloseObject
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.CloseObject
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.CloseObject()
+  nameWithType: STGeWatch.CloseObject()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.CloseObject*
+  name: CloseObject
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_CloseObject_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.CloseObject
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.CloseObject
+  nameWithType: STGeWatch.CloseObject
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.CloseTriangles
+  name: CloseTriangles()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_CloseTriangles
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.CloseTriangles
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.CloseTriangles()
+  nameWithType: STGeWatch.CloseTriangles()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.CloseTriangles*
+  name: CloseTriangles
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_CloseTriangles_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.CloseTriangles
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.CloseTriangles
+  nameWithType: STGeWatch.CloseTriangles
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.CoordSys(SprutTechnology.VecMatrLib.T3DMatrix,System.Double,System.String)
+  name: CoordSys(T3DMatrix, Double, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_CoordSys_SprutTechnology_VecMatrLib_T3DMatrix_System_Double_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.CoordSys(SprutTechnology.VecMatrLib.T3DMatrix,System.Double,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.CoordSys(SprutTechnology.VecMatrLib.T3DMatrix, System.Double, System.String)
+  nameWithType: STGeWatch.CoordSys(T3DMatrix, Double, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.CoordSys(SprutTechnology.VecMatrLib.T3DMatrix,System.String)
+  name: CoordSys(T3DMatrix, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_CoordSys_SprutTechnology_VecMatrLib_T3DMatrix_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.CoordSys(SprutTechnology.VecMatrLib.T3DMatrix,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.CoordSys(SprutTechnology.VecMatrLib.T3DMatrix, System.String)
+  nameWithType: STGeWatch.CoordSys(T3DMatrix, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.CoordSys*
+  name: CoordSys
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_CoordSys_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.CoordSys
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.CoordSys
+  nameWithType: STGeWatch.CoordSys
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Cube(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  name: Cube(Double, Double, Double, Double, Double, Double)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Cube_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Cube(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Cube(System.Double, System.Double, System.Double, System.Double, System.Double, System.Double)
+  nameWithType: STGeWatch.Cube(Double, Double, Double, Double, Double, Double)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Cube*
+  name: Cube
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Cube_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.Cube
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Cube
+  nameWithType: STGeWatch.Cube
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.CutTo(System.Double,System.Double)
+  name: CutTo(Double, Double)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_CutTo_System_Double_System_Double_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.CutTo(System.Double,System.Double)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.CutTo(System.Double, System.Double)
+  nameWithType: STGeWatch.CutTo(Double, Double)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.CutTo*
+  name: CutTo
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_CutTo_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.CutTo
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.CutTo
+  nameWithType: STGeWatch.CutTo
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.CutTo3d(SprutTechnology.VecMatrLib.T3DPoint)
+  name: CutTo3d(T3DPoint)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_CutTo3d_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.CutTo3d(SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.CutTo3d(SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: STGeWatch.CutTo3d(T3DPoint)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.CutTo3d(System.Double,System.Double,System.Double)
+  name: CutTo3d(Double, Double, Double)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_CutTo3d_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.CutTo3d(System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.CutTo3d(System.Double, System.Double, System.Double)
+  nameWithType: STGeWatch.CutTo3d(Double, Double, Double)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.CutTo3d*
+  name: CutTo3d
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_CutTo3d_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.CutTo3d
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.CutTo3d
+  nameWithType: STGeWatch.CutTo3d
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Dispose
+  name: Dispose()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Dispose
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Dispose
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Dispose()
+  nameWithType: STGeWatch.Dispose()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Dispose*
+  name: Dispose
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Dispose_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.Dispose
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Dispose
+  nameWithType: STGeWatch.Dispose
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Finalize
+  name: Finalize()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Finalize
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Finalize
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Finalize()
+  nameWithType: STGeWatch.Finalize()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Finalize*
+  name: Finalize
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Finalize_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.Finalize
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Finalize
+  nameWithType: STGeWatch.Finalize
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.GetFlag(System.String)
+  name: GetFlag(String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_GetFlag_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.GetFlag(System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.GetFlag(System.String)
+  nameWithType: STGeWatch.GetFlag(String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.GetFlag*
+  name: GetFlag
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_GetFlag_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.GetFlag
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.GetFlag
+  nameWithType: STGeWatch.GetFlag
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.glBegin(System.Int32)
+  name: glBegin(Int32)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_glBegin_System_Int32_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.glBegin(System.Int32)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.glBegin(System.Int32)
+  nameWithType: STGeWatch.glBegin(Int32)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.glBegin*
+  name: glBegin
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_glBegin_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.glBegin
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.glBegin
+  nameWithType: STGeWatch.glBegin
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.glEnd
+  name: glEnd()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_glEnd
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.glEnd
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.glEnd()
+  nameWithType: STGeWatch.glEnd()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.glEnd*
+  name: glEnd
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_glEnd_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.glEnd
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.glEnd
+  nameWithType: STGeWatch.glEnd
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.glNormal(SprutTechnology.VecMatrLib.T3DPoint)
+  name: glNormal(T3DPoint)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_glNormal_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.glNormal(SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.glNormal(SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: STGeWatch.glNormal(T3DPoint)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.glNormal*
+  name: glNormal
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_glNormal_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.glNormal
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.glNormal
+  nameWithType: STGeWatch.glNormal
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.glVertex(SprutTechnology.VecMatrLib.T3DPoint)
+  name: glVertex(T3DPoint)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_glVertex_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.glVertex(SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.glVertex(SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: STGeWatch.glVertex(T3DPoint)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.glVertex*
+  name: glVertex
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_glVertex_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.glVertex
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.glVertex
+  nameWithType: STGeWatch.glVertex
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.IsGeWatchRunning
+  name: IsGeWatchRunning()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_IsGeWatchRunning
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.IsGeWatchRunning
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.IsGeWatchRunning()
+  nameWithType: STGeWatch.IsGeWatchRunning()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.IsGeWatchRunning*
+  name: IsGeWatchRunning
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_IsGeWatchRunning_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.IsGeWatchRunning
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.IsGeWatchRunning
+  nameWithType: STGeWatch.IsGeWatchRunning
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Line(System.Double,System.Double,System.Double,System.Double,System.String)
+  name: Line(Double, Double, Double, Double, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Line_System_Double_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Line(System.Double,System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Line(System.Double, System.Double, System.Double, System.Double, System.String)
+  nameWithType: STGeWatch.Line(Double, Double, Double, Double, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Line*
+  name: Line
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Line_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.Line
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Line
+  nameWithType: STGeWatch.Line
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.LineColor(System.Int32)
+  name: LineColor(Int32)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_LineColor_System_Int32_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.LineColor(System.Int32)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.LineColor(System.Int32)
+  nameWithType: STGeWatch.LineColor(Int32)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.LineColor*
+  name: LineColor
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_LineColor_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.LineColor
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.LineColor
+  nameWithType: STGeWatch.LineColor
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.LineWidth(System.Int32)
+  name: LineWidth(Int32)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_LineWidth_System_Int32_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.LineWidth(System.Int32)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.LineWidth(System.Int32)
+  nameWithType: STGeWatch.LineWidth(Int32)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.LineWidth*
+  name: LineWidth
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_LineWidth_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.LineWidth
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.LineWidth
+  nameWithType: STGeWatch.LineWidth
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.OpenObject(System.String)
+  name: OpenObject(String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_OpenObject_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.OpenObject(System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.OpenObject(System.String)
+  nameWithType: STGeWatch.OpenObject(String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.OpenObject(System.String,System.Boolean)
+  name: OpenObject(String, Boolean)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_OpenObject_System_String_System_Boolean_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.OpenObject(System.String,System.Boolean)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.OpenObject(System.String, System.Boolean)
+  nameWithType: STGeWatch.OpenObject(String, Boolean)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.OpenObject*
+  name: OpenObject
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_OpenObject_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.OpenObject
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.OpenObject
+  nameWithType: STGeWatch.OpenObject
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Point(System.Double,System.Double,System.String)
+  name: Point(Double, Double, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Point_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Point(System.Double,System.Double,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Point(System.Double, System.Double, System.String)
+  nameWithType: STGeWatch.Point(Double, Double, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Point*
+  name: Point
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Point_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.Point
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Point
+  nameWithType: STGeWatch.Point
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Point3d(SprutTechnology.VecMatrLib.T3DPoint,System.String)
+  name: Point3d(T3DPoint, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Point3d_SprutTechnology_VecMatrLib_T3DPoint_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Point3d(SprutTechnology.VecMatrLib.T3DPoint,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Point3d(SprutTechnology.VecMatrLib.T3DPoint, System.String)
+  nameWithType: STGeWatch.Point3d(T3DPoint, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Point3d(System.Double,System.Double,System.Double,System.String)
+  name: Point3d(Double, Double, Double, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Point3d_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.Point3d(System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Point3d(System.Double, System.Double, System.Double, System.String)
+  nameWithType: STGeWatch.Point3d(Double, Double, Double, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.Point3d*
+  name: Point3d
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_Point3d_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.Point3d
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.Point3d
+  nameWithType: STGeWatch.Point3d
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.SetFormat(System.Int32,System.Int32)
+  name: SetFormat(Int32, Int32)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_SetFormat_System_Int32_System_Int32_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.SetFormat(System.Int32,System.Int32)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.SetFormat(System.Int32, System.Int32)
+  nameWithType: STGeWatch.SetFormat(Int32, Int32)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.SetFormat*
+  name: SetFormat
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_SetFormat_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.SetFormat
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.SetFormat
+  nameWithType: STGeWatch.SetFormat
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.SetObjectLCS(SprutTechnology.VecMatrLib.T3DMatrix)
+  name: SetObjectLCS(T3DMatrix)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_SetObjectLCS_SprutTechnology_VecMatrLib_T3DMatrix_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.SetObjectLCS(SprutTechnology.VecMatrLib.T3DMatrix)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.SetObjectLCS(SprutTechnology.VecMatrLib.T3DMatrix)
+  nameWithType: STGeWatch.SetObjectLCS(T3DMatrix)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.SetObjectLCS*
+  name: SetObjectLCS
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_SetObjectLCS_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.SetObjectLCS
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.SetObjectLCS
+  nameWithType: STGeWatch.SetObjectLCS
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.SetProperty(System.String,System.Double)
+  name: SetProperty(String, Double)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_SetProperty_System_String_System_Double_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.SetProperty(System.String,System.Double)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.SetProperty(System.String, System.Double)
+  nameWithType: STGeWatch.SetProperty(String, Double)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.SetProperty*
+  name: SetProperty
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_SetProperty_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.SetProperty
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.SetProperty
+  nameWithType: STGeWatch.SetProperty
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.SetVertexNormal(System.Double,System.Double,System.Double)
+  name: SetVertexNormal(Double, Double, Double)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_SetVertexNormal_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.SetVertexNormal(System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.SetVertexNormal(System.Double, System.Double, System.Double)
+  nameWithType: STGeWatch.SetVertexNormal(Double, Double, Double)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.SetVertexNormal*
+  name: SetVertexNormal
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_SetVertexNormal_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.SetVertexNormal
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.SetVertexNormal
+  nameWithType: STGeWatch.SetVertexNormal
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve(System.Double,System.Double,System.String)
+  name: StartCurve(Double, Double, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_StartCurve_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve(System.Double,System.Double,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve(System.Double, System.Double, System.String)
+  nameWithType: STGeWatch.StartCurve(Double, Double, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve*
+  name: StartCurve
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_StartCurve_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve
+  nameWithType: STGeWatch.StartCurve
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve3d(SprutTechnology.VecMatrLib.T3DPoint)
+  name: StartCurve3d(T3DPoint)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_StartCurve3d_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve3d(SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve3d(SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: STGeWatch.StartCurve3d(T3DPoint)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve3d(SprutTechnology.VecMatrLib.T3DPoint,System.String)
+  name: StartCurve3d(T3DPoint, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_StartCurve3d_SprutTechnology_VecMatrLib_T3DPoint_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve3d(SprutTechnology.VecMatrLib.T3DPoint,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve3d(SprutTechnology.VecMatrLib.T3DPoint, System.String)
+  nameWithType: STGeWatch.StartCurve3d(T3DPoint, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve3d(System.Double,System.Double,System.Double,System.String)
+  name: StartCurve3d(Double, Double, Double, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_StartCurve3d_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve3d(System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve3d(System.Double, System.Double, System.Double, System.String)
+  nameWithType: STGeWatch.StartCurve3d(Double, Double, Double, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve3d*
+  name: StartCurve3d
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_StartCurve3d_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve3d
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.StartCurve3d
+  nameWithType: STGeWatch.StartCurve3d
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.StartTriangles
+  name: StartTriangles()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_StartTriangles
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.StartTriangles
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.StartTriangles()
+  nameWithType: STGeWatch.StartTriangles()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.StartTriangles*
+  name: StartTriangles
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_StartTriangles_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.StartTriangles
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.StartTriangles
+  nameWithType: STGeWatch.StartTriangles
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.StopCurve(System.Boolean)
+  name: StopCurve(Boolean)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_StopCurve_System_Boolean_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.StopCurve(System.Boolean)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.StopCurve(System.Boolean)
+  nameWithType: STGeWatch.StopCurve(Boolean)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.StopCurve*
+  name: StopCurve
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_StopCurve_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.StopCurve
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.StopCurve
+  nameWithType: STGeWatch.StopCurve
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.StopCurve3d(System.Boolean)
+  name: StopCurve3d(Boolean)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_StopCurve3d_System_Boolean_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatch.StopCurve3d(System.Boolean)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.StopCurve3d(System.Boolean)
+  nameWithType: STGeWatch.StopCurve3d(Boolean)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatch.StopCurve3d*
+  name: StopCurve3d
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatch.html#SprutTechnology_GeWatchDNClient_STGeWatch_StopCurve3d_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatch.StopCurve3d
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatch.StopCurve3d
+  nameWithType: STGeWatch.StopCurve3d
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient
+  name: STGeWatchClient
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html
+  commentId: T:SprutTechnology.GeWatchDNClient.STGeWatchClient
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient
+  nameWithType: STGeWatchClient
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient.Free
+  name: Free()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html#SprutTechnology_GeWatchDNClient_STGeWatchClient_Free
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatchClient.Free
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient.Free()
+  nameWithType: STGeWatchClient.Free()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient.Free*
+  name: Free
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html#SprutTechnology_GeWatchDNClient_STGeWatchClient_Free_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatchClient.Free
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient.Free
+  nameWithType: STGeWatchClient.Free
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient.Initialize
+  name: Initialize()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html#SprutTechnology_GeWatchDNClient_STGeWatchClient_Initialize
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatchClient.Initialize
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient.Initialize()
+  nameWithType: STGeWatchClient.Initialize()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient.Initialize*
+  name: Initialize
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html#SprutTechnology_GeWatchDNClient_STGeWatchClient_Initialize_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatchClient.Initialize
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient.Initialize
+  nameWithType: STGeWatchClient.Initialize
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient.IsRunning
+  name: IsRunning()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html#SprutTechnology_GeWatchDNClient_STGeWatchClient_IsRunning
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatchClient.IsRunning
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient.IsRunning()
+  nameWithType: STGeWatchClient.IsRunning()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient.IsRunning*
+  name: IsRunning
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html#SprutTechnology_GeWatchDNClient_STGeWatchClient_IsRunning_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatchClient.IsRunning
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient.IsRunning
+  nameWithType: STGeWatchClient.IsRunning
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient.Run
+  name: Run()
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html#SprutTechnology_GeWatchDNClient_STGeWatchClient_Run
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatchClient.Run
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient.Run()
+  nameWithType: STGeWatchClient.Run()
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient.Run(System.String)
+  name: Run(String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html#SprutTechnology_GeWatchDNClient_STGeWatchClient_Run_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatchClient.Run(System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient.Run(System.String)
+  nameWithType: STGeWatchClient.Run(String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient.Run*
+  name: Run
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html#SprutTechnology_GeWatchDNClient_STGeWatchClient_Run_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatchClient.Run
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient.Run
+  nameWithType: STGeWatchClient.Run
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient.Watch(SprutTechnology.VecMatrLib.ISTGeWatchable)
+  name: Watch(ISTGeWatchable)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html#SprutTechnology_GeWatchDNClient_STGeWatchClient_Watch_SprutTechnology_VecMatrLib_ISTGeWatchable_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatchClient.Watch(SprutTechnology.VecMatrLib.ISTGeWatchable)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient.Watch(SprutTechnology.VecMatrLib.ISTGeWatchable)
+  nameWithType: STGeWatchClient.Watch(ISTGeWatchable)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient.Watch(SprutTechnology.VecMatrLib.ISTGeWatchable,System.String)
+  name: Watch(ISTGeWatchable, String)
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html#SprutTechnology_GeWatchDNClient_STGeWatchClient_Watch_SprutTechnology_VecMatrLib_ISTGeWatchable_System_String_
+  commentId: M:SprutTechnology.GeWatchDNClient.STGeWatchClient.Watch(SprutTechnology.VecMatrLib.ISTGeWatchable,System.String)
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient.Watch(SprutTechnology.VecMatrLib.ISTGeWatchable, System.String)
+  nameWithType: STGeWatchClient.Watch(ISTGeWatchable, String)
+- uid: SprutTechnology.GeWatchDNClient.STGeWatchClient.Watch*
+  name: Watch
+  href: api/SprutTechnology.GeWatchDNClient.STGeWatchClient.html#SprutTechnology_GeWatchDNClient_STGeWatchClient_Watch_
+  commentId: Overload:SprutTechnology.GeWatchDNClient.STGeWatchClient.Watch
+  isSpec: "True"
+  fullName: SprutTechnology.GeWatchDNClient.STGeWatchClient.Watch
+  nameWithType: STGeWatchClient.Watch
 - uid: SprutTechnology.SCPostprocessor
   name: SprutTechnology.SCPostprocessor
   href: api/SprutTechnology.SCPostprocessor.html
@@ -3154,6 +3817,19 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.SCPostprocessor.ICLDCommand.Next
   nameWithType: ICLDCommand.Next
+- uid: SprutTechnology.SCPostprocessor.ICLDCommand.NextMotion
+  name: NextMotion
+  href: api/SprutTechnology.SCPostprocessor.ICLDCommand.html#SprutTechnology_SCPostprocessor_ICLDCommand_NextMotion
+  commentId: P:SprutTechnology.SCPostprocessor.ICLDCommand.NextMotion
+  fullName: SprutTechnology.SCPostprocessor.ICLDCommand.NextMotion
+  nameWithType: ICLDCommand.NextMotion
+- uid: SprutTechnology.SCPostprocessor.ICLDCommand.NextMotion*
+  name: NextMotion
+  href: api/SprutTechnology.SCPostprocessor.ICLDCommand.html#SprutTechnology_SCPostprocessor_ICLDCommand_NextMotion_
+  commentId: Overload:SprutTechnology.SCPostprocessor.ICLDCommand.NextMotion
+  isSpec: "True"
+  fullName: SprutTechnology.SCPostprocessor.ICLDCommand.NextMotion
+  nameWithType: ICLDCommand.NextMotion
 - uid: SprutTechnology.SCPostprocessor.ICLDCommand.Prev
   name: Prev
   href: api/SprutTechnology.SCPostprocessor.ICLDCommand.html#SprutTechnology_SCPostprocessor_ICLDCommand_Prev
@@ -3167,6 +3843,19 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.SCPostprocessor.ICLDCommand.Prev
   nameWithType: ICLDCommand.Prev
+- uid: SprutTechnology.SCPostprocessor.ICLDCommand.PrevMotion
+  name: PrevMotion
+  href: api/SprutTechnology.SCPostprocessor.ICLDCommand.html#SprutTechnology_SCPostprocessor_ICLDCommand_PrevMotion
+  commentId: P:SprutTechnology.SCPostprocessor.ICLDCommand.PrevMotion
+  fullName: SprutTechnology.SCPostprocessor.ICLDCommand.PrevMotion
+  nameWithType: ICLDCommand.PrevMotion
+- uid: SprutTechnology.SCPostprocessor.ICLDCommand.PrevMotion*
+  name: PrevMotion
+  href: api/SprutTechnology.SCPostprocessor.ICLDCommand.html#SprutTechnology_SCPostprocessor_ICLDCommand_PrevMotion_
+  commentId: Overload:SprutTechnology.SCPostprocessor.ICLDCommand.PrevMotion
+  isSpec: "True"
+  fullName: SprutTechnology.SCPostprocessor.ICLDCommand.PrevMotion
+  nameWithType: ICLDCommand.PrevMotion
 - uid: SprutTechnology.SCPostprocessor.ICLDCommand.TechOperation
   name: TechOperation
   href: api/SprutTechnology.SCPostprocessor.ICLDCommand.html#SprutTechnology_SCPostprocessor_ICLDCommand_TechOperation
@@ -6545,6 +7234,12 @@ references:
   commentId: M:SprutTechnology.SCPostprocessor.ICLDSub.Translate
   fullName: SprutTechnology.SCPostprocessor.ICLDSub.Translate()
   nameWithType: ICLDSub.Translate()
+- uid: SprutTechnology.SCPostprocessor.ICLDSub.Translate(System.Boolean)
+  name: Translate(Boolean)
+  href: api/SprutTechnology.SCPostprocessor.ICLDSub.html#SprutTechnology_SCPostprocessor_ICLDSub_Translate_System_Boolean_
+  commentId: M:SprutTechnology.SCPostprocessor.ICLDSub.Translate(System.Boolean)
+  fullName: SprutTechnology.SCPostprocessor.ICLDSub.Translate(System.Boolean)
+  nameWithType: ICLDSub.Translate(Boolean)
 - uid: SprutTechnology.SCPostprocessor.ICLDSub.Translate*
   name: Translate
   href: api/SprutTechnology.SCPostprocessor.ICLDSub.html#SprutTechnology_SCPostprocessor_ICLDSub_Translate_
@@ -6638,6 +7333,12 @@ references:
   commentId: M:SprutTechnology.SCPostprocessor.ICLDSubList.Translate(System.Int32)
   fullName: SprutTechnology.SCPostprocessor.ICLDSubList.Translate(System.Int32)
   nameWithType: ICLDSubList.Translate(Int32)
+- uid: SprutTechnology.SCPostprocessor.ICLDSubList.Translate(System.Int32,System.Boolean)
+  name: Translate(Int32, Boolean)
+  href: api/SprutTechnology.SCPostprocessor.ICLDSubList.html#SprutTechnology_SCPostprocessor_ICLDSubList_Translate_System_Int32_System_Boolean_
+  commentId: M:SprutTechnology.SCPostprocessor.ICLDSubList.Translate(System.Int32,System.Boolean)
+  fullName: SprutTechnology.SCPostprocessor.ICLDSubList.Translate(System.Int32, System.Boolean)
+  nameWithType: ICLDSubList.Translate(Int32, Boolean)
 - uid: SprutTechnology.SCPostprocessor.ICLDSubList.Translate*
   name: Translate
   href: api/SprutTechnology.SCPostprocessor.ICLDSubList.html#SprutTechnology_SCPostprocessor_ICLDSubList_Translate_
@@ -14004,6 +14705,12 @@ references:
   commentId: F:SprutTechnology.STDefLib.STDef.DoublePi
   fullName: SprutTechnology.STDefLib.STDef.DoublePi
   nameWithType: STDef.DoublePi
+- uid: SprutTechnology.STDefLib.STDef.HalfPi
+  name: HalfPi
+  href: api/SprutTechnology.STDefLib.STDef.html#SprutTechnology_STDefLib_STDef_HalfPi
+  commentId: F:SprutTechnology.STDefLib.STDef.HalfPi
+  fullName: SprutTechnology.STDefLib.STDef.HalfPi
+  nameWithType: STDef.HalfPi
 - uid: SprutTechnology.STDefLib.STDef.IsEqD(System.Double,System.Double,System.Double)
   name: IsEqD(Double, Double, Double)
   href: api/SprutTechnology.STDefLib.STDef.html#SprutTechnology_STDefLib_STDef_IsEqD_System_Double_System_Double_System_Double_
@@ -14017,6 +14724,58 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.STDefLib.STDef.IsEqD
   nameWithType: STDef.IsEqD
+- uid: SprutTechnology.STDefLib.STDef.IsGeD(System.Double,System.Double,System.Double)
+  name: IsGeD(Double, Double, Double)
+  href: api/SprutTechnology.STDefLib.STDef.html#SprutTechnology_STDefLib_STDef_IsGeD_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.STDefLib.STDef.IsGeD(System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.STDefLib.STDef.IsGeD(System.Double, System.Double, System.Double)
+  nameWithType: STDef.IsGeD(Double, Double, Double)
+- uid: SprutTechnology.STDefLib.STDef.IsGeD*
+  name: IsGeD
+  href: api/SprutTechnology.STDefLib.STDef.html#SprutTechnology_STDefLib_STDef_IsGeD_
+  commentId: Overload:SprutTechnology.STDefLib.STDef.IsGeD
+  isSpec: "True"
+  fullName: SprutTechnology.STDefLib.STDef.IsGeD
+  nameWithType: STDef.IsGeD
+- uid: SprutTechnology.STDefLib.STDef.IsGtD(System.Double,System.Double,System.Double)
+  name: IsGtD(Double, Double, Double)
+  href: api/SprutTechnology.STDefLib.STDef.html#SprutTechnology_STDefLib_STDef_IsGtD_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.STDefLib.STDef.IsGtD(System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.STDefLib.STDef.IsGtD(System.Double, System.Double, System.Double)
+  nameWithType: STDef.IsGtD(Double, Double, Double)
+- uid: SprutTechnology.STDefLib.STDef.IsGtD*
+  name: IsGtD
+  href: api/SprutTechnology.STDefLib.STDef.html#SprutTechnology_STDefLib_STDef_IsGtD_
+  commentId: Overload:SprutTechnology.STDefLib.STDef.IsGtD
+  isSpec: "True"
+  fullName: SprutTechnology.STDefLib.STDef.IsGtD
+  nameWithType: STDef.IsGtD
+- uid: SprutTechnology.STDefLib.STDef.IsLeD(System.Double,System.Double,System.Double)
+  name: IsLeD(Double, Double, Double)
+  href: api/SprutTechnology.STDefLib.STDef.html#SprutTechnology_STDefLib_STDef_IsLeD_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.STDefLib.STDef.IsLeD(System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.STDefLib.STDef.IsLeD(System.Double, System.Double, System.Double)
+  nameWithType: STDef.IsLeD(Double, Double, Double)
+- uid: SprutTechnology.STDefLib.STDef.IsLeD*
+  name: IsLeD
+  href: api/SprutTechnology.STDefLib.STDef.html#SprutTechnology_STDefLib_STDef_IsLeD_
+  commentId: Overload:SprutTechnology.STDefLib.STDef.IsLeD
+  isSpec: "True"
+  fullName: SprutTechnology.STDefLib.STDef.IsLeD
+  nameWithType: STDef.IsLeD
+- uid: SprutTechnology.STDefLib.STDef.IsLtD(System.Double,System.Double,System.Double)
+  name: IsLtD(Double, Double, Double)
+  href: api/SprutTechnology.STDefLib.STDef.html#SprutTechnology_STDefLib_STDef_IsLtD_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.STDefLib.STDef.IsLtD(System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.STDefLib.STDef.IsLtD(System.Double, System.Double, System.Double)
+  nameWithType: STDef.IsLtD(Double, Double, Double)
+- uid: SprutTechnology.STDefLib.STDef.IsLtD*
+  name: IsLtD
+  href: api/SprutTechnology.STDefLib.STDef.html#SprutTechnology_STDefLib_STDef_IsLtD_
+  commentId: Overload:SprutTechnology.STDefLib.STDef.IsLtD
+  isSpec: "True"
+  fullName: SprutTechnology.STDefLib.STDef.IsLtD
+  nameWithType: STDef.IsLtD
 - uid: SprutTechnology.STDefLib.STDef.IsZeroD(System.Double,System.Double)
   name: IsZeroD(Double, Double)
   href: api/SprutTechnology.STDefLib.STDef.html#SprutTechnology_STDefLib_STDef_IsZeroD_System_Double_System_Double_
@@ -14336,6 +15095,683 @@ references:
   commentId: N:SprutTechnology.VecMatrLib
   fullName: SprutTechnology.VecMatrLib
   nameWithType: SprutTechnology.VecMatrLib
+- uid: SprutTechnology.VecMatrLib.EVecMatrLibError
+  name: EVecMatrLibError
+  href: api/SprutTechnology.VecMatrLib.EVecMatrLibError.html
+  commentId: T:SprutTechnology.VecMatrLib.EVecMatrLibError
+  fullName: SprutTechnology.VecMatrLib.EVecMatrLibError
+  nameWithType: EVecMatrLibError
+- uid: SprutTechnology.VecMatrLib.EVecMatrLibError.#ctor(System.String)
+  name: EVecMatrLibError(String)
+  href: api/SprutTechnology.VecMatrLib.EVecMatrLibError.html#SprutTechnology_VecMatrLib_EVecMatrLibError__ctor_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.EVecMatrLibError.#ctor(System.String)
+  fullName: SprutTechnology.VecMatrLib.EVecMatrLibError.EVecMatrLibError(System.String)
+  nameWithType: EVecMatrLibError.EVecMatrLibError(String)
+- uid: SprutTechnology.VecMatrLib.EVecMatrLibError.#ctor*
+  name: EVecMatrLibError
+  href: api/SprutTechnology.VecMatrLib.EVecMatrLibError.html#SprutTechnology_VecMatrLib_EVecMatrLibError__ctor_
+  commentId: Overload:SprutTechnology.VecMatrLib.EVecMatrLibError.#ctor
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.EVecMatrLibError.EVecMatrLibError
+  nameWithType: EVecMatrLibError.EVecMatrLibError
+- uid: SprutTechnology.VecMatrLib.GWConsts
+  name: GWConsts
+  href: api/SprutTechnology.VecMatrLib.GWConsts.html
+  commentId: T:SprutTechnology.VecMatrLib.GWConsts
+  fullName: SprutTechnology.VecMatrLib.GWConsts
+  nameWithType: GWConsts
+- uid: SprutTechnology.VecMatrLib.GWConsts.clBlue
+  name: clBlue
+  href: api/SprutTechnology.VecMatrLib.GWConsts.html#SprutTechnology_VecMatrLib_GWConsts_clBlue
+  commentId: F:SprutTechnology.VecMatrLib.GWConsts.clBlue
+  fullName: SprutTechnology.VecMatrLib.GWConsts.clBlue
+  nameWithType: GWConsts.clBlue
+- uid: SprutTechnology.VecMatrLib.GWConsts.clGreen
+  name: clGreen
+  href: api/SprutTechnology.VecMatrLib.GWConsts.html#SprutTechnology_VecMatrLib_GWConsts_clGreen
+  commentId: F:SprutTechnology.VecMatrLib.GWConsts.clGreen
+  fullName: SprutTechnology.VecMatrLib.GWConsts.clGreen
+  nameWithType: GWConsts.clGreen
+- uid: SprutTechnology.VecMatrLib.GWConsts.clRed
+  name: clRed
+  href: api/SprutTechnology.VecMatrLib.GWConsts.html#SprutTechnology_VecMatrLib_GWConsts_clRed
+  commentId: F:SprutTechnology.VecMatrLib.GWConsts.clRed
+  fullName: SprutTechnology.VecMatrLib.GWConsts.clRed
+  nameWithType: GWConsts.clRed
+- uid: SprutTechnology.VecMatrLib.GWConsts.gfFillColor
+  name: gfFillColor
+  href: api/SprutTechnology.VecMatrLib.GWConsts.html#SprutTechnology_VecMatrLib_GWConsts_gfFillColor
+  commentId: F:SprutTechnology.VecMatrLib.GWConsts.gfFillColor
+  fullName: SprutTechnology.VecMatrLib.GWConsts.gfFillColor
+  nameWithType: GWConsts.gfFillColor
+- uid: SprutTechnology.VecMatrLib.GWConsts.gfLineColor
+  name: gfLineColor
+  href: api/SprutTechnology.VecMatrLib.GWConsts.html#SprutTechnology_VecMatrLib_GWConsts_gfLineColor
+  commentId: F:SprutTechnology.VecMatrLib.GWConsts.gfLineColor
+  fullName: SprutTechnology.VecMatrLib.GWConsts.gfLineColor
+  nameWithType: GWConsts.gfLineColor
+- uid: SprutTechnology.VecMatrLib.GWConsts.gfLineWidth
+  name: gfLineWidth
+  href: api/SprutTechnology.VecMatrLib.GWConsts.html#SprutTechnology_VecMatrLib_GWConsts_gfLineWidth
+  commentId: F:SprutTechnology.VecMatrLib.GWConsts.gfLineWidth
+  fullName: SprutTechnology.VecMatrLib.GWConsts.gfLineWidth
+  nameWithType: GWConsts.gfLineWidth
+- uid: SprutTechnology.VecMatrLib.GWConsts.gfPointColor
+  name: gfPointColor
+  href: api/SprutTechnology.VecMatrLib.GWConsts.html#SprutTechnology_VecMatrLib_GWConsts_gfPointColor
+  commentId: F:SprutTechnology.VecMatrLib.GWConsts.gfPointColor
+  fullName: SprutTechnology.VecMatrLib.GWConsts.gfPointColor
+  nameWithType: GWConsts.gfPointColor
+- uid: SprutTechnology.VecMatrLib.GWConsts.gfPointShape
+  name: gfPointShape
+  href: api/SprutTechnology.VecMatrLib.GWConsts.html#SprutTechnology_VecMatrLib_GWConsts_gfPointShape
+  commentId: F:SprutTechnology.VecMatrLib.GWConsts.gfPointShape
+  fullName: SprutTechnology.VecMatrLib.GWConsts.gfPointShape
+  nameWithType: GWConsts.gfPointShape
+- uid: SprutTechnology.VecMatrLib.GWConsts.gfPointSize
+  name: gfPointSize
+  href: api/SprutTechnology.VecMatrLib.GWConsts.html#SprutTechnology_VecMatrLib_GWConsts_gfPointSize
+  commentId: F:SprutTechnology.VecMatrLib.GWConsts.gfPointSize
+  fullName: SprutTechnology.VecMatrLib.GWConsts.gfPointSize
+  nameWithType: GWConsts.gfPointSize
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch
+  name: ISTGeWatch
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html
+  commentId: T:SprutTechnology.VecMatrLib.ISTGeWatch
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch
+  nameWithType: ISTGeWatch
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.AddTriangleVertex(System.Double,System.Double,System.Double)
+  name: AddTriangleVertex(Double, Double, Double)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_AddTriangleVertex_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.AddTriangleVertex(System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.AddTriangleVertex(System.Double, System.Double, System.Double)
+  nameWithType: ISTGeWatch.AddTriangleVertex(Double, Double, Double)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.AddTriangleVertex*
+  name: AddTriangleVertex
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_AddTriangleVertex_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.AddTriangleVertex
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.AddTriangleVertex
+  nameWithType: ISTGeWatch.AddTriangleVertex
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Arc(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)
+  name: Arc(Double, Double, Double, Double, Double, Double, Double, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Arc_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.Arc(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Arc(System.Double, System.Double, System.Double, System.Double, System.Double, System.Double, System.Double, System.String)
+  nameWithType: ISTGeWatch.Arc(Double, Double, Double, Double, Double, Double, Double, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Arc*
+  name: Arc
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Arc_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.Arc
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Arc
+  nameWithType: ISTGeWatch.Arc
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo(System.Double,System.Double,System.Double,System.Double,System.Double)
+  name: ArcTo(Double, Double, Double, Double, Double)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_ArcTo_System_Double_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo(System.Double,System.Double,System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo(System.Double, System.Double, System.Double, System.Double, System.Double)
+  nameWithType: ISTGeWatch.ArcTo(Double, Double, Double, Double, Double)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo*
+  name: ArcTo
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_ArcTo_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo
+  nameWithType: ISTGeWatch.ArcTo
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo3d(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  name: ArcTo3d(T3DPoint, T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_ArcTo3d_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo3d(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo3d(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: ISTGeWatch.ArcTo3d(T3DPoint, T3DPoint)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo3d(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.Double)
+  name: ArcTo3d(T3DPoint, T3DPoint, T3DPoint, Double)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_ArcTo3d_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo3d(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.Double)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo3d(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint, System.Double)
+  nameWithType: ISTGeWatch.ArcTo3d(T3DPoint, T3DPoint, T3DPoint, Double)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo3d*
+  name: ArcTo3d
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_ArcTo3d_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo3d
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.ArcTo3d
+  nameWithType: ISTGeWatch.ArcTo3d
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Arrow(System.Double,System.Double,System.Double,System.Double,System.String)
+  name: Arrow(Double, Double, Double, Double, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Arrow_System_Double_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.Arrow(System.Double,System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Arrow(System.Double, System.Double, System.Double, System.Double, System.String)
+  nameWithType: ISTGeWatch.Arrow(Double, Double, Double, Double, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Arrow*
+  name: Arrow
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Arrow_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.Arrow
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Arrow
+  nameWithType: ISTGeWatch.Arrow
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Arrow3d(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.String)
+  name: Arrow3d(T3DPoint, T3DPoint, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Arrow3d_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.Arrow3d(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Arrow3d(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint, System.String)
+  nameWithType: ISTGeWatch.Arrow3d(T3DPoint, T3DPoint, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Arrow3d(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)
+  name: Arrow3d(Double, Double, Double, Double, Double, Double, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Arrow3d_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.Arrow3d(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Arrow3d(System.Double, System.Double, System.Double, System.Double, System.Double, System.Double, System.String)
+  nameWithType: ISTGeWatch.Arrow3d(Double, Double, Double, Double, Double, Double, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Arrow3d*
+  name: Arrow3d
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Arrow3d_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.Arrow3d
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Arrow3d
+  nameWithType: ISTGeWatch.Arrow3d
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Box(System.Double,System.Double,System.Double,System.Double,System.String)
+  name: Box(Double, Double, Double, Double, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Box_System_Double_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.Box(System.Double,System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Box(System.Double, System.Double, System.Double, System.Double, System.String)
+  nameWithType: ISTGeWatch.Box(Double, Double, Double, Double, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Box*
+  name: Box
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Box_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.Box
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Box
+  nameWithType: ISTGeWatch.Box
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Circle(System.Double,System.Double,System.Double,System.String)
+  name: Circle(Double, Double, Double, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Circle_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.Circle(System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Circle(System.Double, System.Double, System.Double, System.String)
+  nameWithType: ISTGeWatch.Circle(Double, Double, Double, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Circle*
+  name: Circle
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Circle_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.Circle
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Circle
+  nameWithType: ISTGeWatch.Circle
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Clear
+  name: Clear()
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Clear
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.Clear
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Clear()
+  nameWithType: ISTGeWatch.Clear()
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Clear*
+  name: Clear
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Clear_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.Clear
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Clear
+  nameWithType: ISTGeWatch.Clear
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.ClearImmediate
+  name: ClearImmediate()
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_ClearImmediate
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.ClearImmediate
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.ClearImmediate()
+  nameWithType: ISTGeWatch.ClearImmediate()
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.ClearImmediate*
+  name: ClearImmediate
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_ClearImmediate_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.ClearImmediate
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.ClearImmediate
+  nameWithType: ISTGeWatch.ClearImmediate
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.CloseObject
+  name: CloseObject()
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_CloseObject
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.CloseObject
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.CloseObject()
+  nameWithType: ISTGeWatch.CloseObject()
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.CloseObject*
+  name: CloseObject
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_CloseObject_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.CloseObject
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.CloseObject
+  nameWithType: ISTGeWatch.CloseObject
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.CloseTriangles
+  name: CloseTriangles()
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_CloseTriangles
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.CloseTriangles
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.CloseTriangles()
+  nameWithType: ISTGeWatch.CloseTriangles()
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.CloseTriangles*
+  name: CloseTriangles
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_CloseTriangles_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.CloseTriangles
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.CloseTriangles
+  nameWithType: ISTGeWatch.CloseTriangles
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.CoordSys(SprutTechnology.VecMatrLib.T3DMatrix,System.Double,System.String)
+  name: CoordSys(T3DMatrix, Double, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_CoordSys_SprutTechnology_VecMatrLib_T3DMatrix_System_Double_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.CoordSys(SprutTechnology.VecMatrLib.T3DMatrix,System.Double,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.CoordSys(SprutTechnology.VecMatrLib.T3DMatrix, System.Double, System.String)
+  nameWithType: ISTGeWatch.CoordSys(T3DMatrix, Double, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.CoordSys(SprutTechnology.VecMatrLib.T3DMatrix,System.String)
+  name: CoordSys(T3DMatrix, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_CoordSys_SprutTechnology_VecMatrLib_T3DMatrix_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.CoordSys(SprutTechnology.VecMatrLib.T3DMatrix,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.CoordSys(SprutTechnology.VecMatrLib.T3DMatrix, System.String)
+  nameWithType: ISTGeWatch.CoordSys(T3DMatrix, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.CoordSys*
+  name: CoordSys
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_CoordSys_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.CoordSys
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.CoordSys
+  nameWithType: ISTGeWatch.CoordSys
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Cube(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  name: Cube(Double, Double, Double, Double, Double, Double)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Cube_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.Cube(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Cube(System.Double, System.Double, System.Double, System.Double, System.Double, System.Double)
+  nameWithType: ISTGeWatch.Cube(Double, Double, Double, Double, Double, Double)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Cube*
+  name: Cube
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Cube_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.Cube
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Cube
+  nameWithType: ISTGeWatch.Cube
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.CutTo(System.Double,System.Double)
+  name: CutTo(Double, Double)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_CutTo_System_Double_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.CutTo(System.Double,System.Double)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.CutTo(System.Double, System.Double)
+  nameWithType: ISTGeWatch.CutTo(Double, Double)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.CutTo*
+  name: CutTo
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_CutTo_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.CutTo
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.CutTo
+  nameWithType: ISTGeWatch.CutTo
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.CutTo3d(SprutTechnology.VecMatrLib.T3DPoint)
+  name: CutTo3d(T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_CutTo3d_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.CutTo3d(SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.CutTo3d(SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: ISTGeWatch.CutTo3d(T3DPoint)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.CutTo3d(System.Double,System.Double,System.Double)
+  name: CutTo3d(Double, Double, Double)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_CutTo3d_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.CutTo3d(System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.CutTo3d(System.Double, System.Double, System.Double)
+  nameWithType: ISTGeWatch.CutTo3d(Double, Double, Double)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.CutTo3d*
+  name: CutTo3d
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_CutTo3d_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.CutTo3d
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.CutTo3d
+  nameWithType: ISTGeWatch.CutTo3d
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.GetFlag(System.String)
+  name: GetFlag(String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_GetFlag_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.GetFlag(System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.GetFlag(System.String)
+  nameWithType: ISTGeWatch.GetFlag(String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.GetFlag*
+  name: GetFlag
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_GetFlag_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.GetFlag
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.GetFlag
+  nameWithType: ISTGeWatch.GetFlag
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.glBegin(System.Int32)
+  name: glBegin(Int32)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_glBegin_System_Int32_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.glBegin(System.Int32)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.glBegin(System.Int32)
+  nameWithType: ISTGeWatch.glBegin(Int32)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.glBegin*
+  name: glBegin
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_glBegin_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.glBegin
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.glBegin
+  nameWithType: ISTGeWatch.glBegin
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.glEnd
+  name: glEnd()
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_glEnd
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.glEnd
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.glEnd()
+  nameWithType: ISTGeWatch.glEnd()
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.glEnd*
+  name: glEnd
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_glEnd_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.glEnd
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.glEnd
+  nameWithType: ISTGeWatch.glEnd
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.glNormal(SprutTechnology.VecMatrLib.T3DPoint)
+  name: glNormal(T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_glNormal_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.glNormal(SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.glNormal(SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: ISTGeWatch.glNormal(T3DPoint)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.glNormal*
+  name: glNormal
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_glNormal_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.glNormal
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.glNormal
+  nameWithType: ISTGeWatch.glNormal
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.glVertex(SprutTechnology.VecMatrLib.T3DPoint)
+  name: glVertex(T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_glVertex_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.glVertex(SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.glVertex(SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: ISTGeWatch.glVertex(T3DPoint)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.glVertex*
+  name: glVertex
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_glVertex_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.glVertex
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.glVertex
+  nameWithType: ISTGeWatch.glVertex
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Line(System.Double,System.Double,System.Double,System.Double,System.String)
+  name: Line(Double, Double, Double, Double, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Line_System_Double_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.Line(System.Double,System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Line(System.Double, System.Double, System.Double, System.Double, System.String)
+  nameWithType: ISTGeWatch.Line(Double, Double, Double, Double, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Line*
+  name: Line
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Line_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.Line
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Line
+  nameWithType: ISTGeWatch.Line
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.LineColor(System.Int32)
+  name: LineColor(Int32)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_LineColor_System_Int32_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.LineColor(System.Int32)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.LineColor(System.Int32)
+  nameWithType: ISTGeWatch.LineColor(Int32)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.LineColor*
+  name: LineColor
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_LineColor_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.LineColor
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.LineColor
+  nameWithType: ISTGeWatch.LineColor
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.LineWidth(System.Int32)
+  name: LineWidth(Int32)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_LineWidth_System_Int32_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.LineWidth(System.Int32)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.LineWidth(System.Int32)
+  nameWithType: ISTGeWatch.LineWidth(Int32)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.LineWidth*
+  name: LineWidth
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_LineWidth_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.LineWidth
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.LineWidth
+  nameWithType: ISTGeWatch.LineWidth
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.OpenObject(System.String)
+  name: OpenObject(String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_OpenObject_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.OpenObject(System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.OpenObject(System.String)
+  nameWithType: ISTGeWatch.OpenObject(String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.OpenObject(System.String,System.Boolean)
+  name: OpenObject(String, Boolean)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_OpenObject_System_String_System_Boolean_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.OpenObject(System.String,System.Boolean)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.OpenObject(System.String, System.Boolean)
+  nameWithType: ISTGeWatch.OpenObject(String, Boolean)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.OpenObject*
+  name: OpenObject
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_OpenObject_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.OpenObject
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.OpenObject
+  nameWithType: ISTGeWatch.OpenObject
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Point(System.Double,System.Double,System.String)
+  name: Point(Double, Double, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Point_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.Point(System.Double,System.Double,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Point(System.Double, System.Double, System.String)
+  nameWithType: ISTGeWatch.Point(Double, Double, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Point*
+  name: Point
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Point_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.Point
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Point
+  nameWithType: ISTGeWatch.Point
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Point3d(SprutTechnology.VecMatrLib.T3DPoint,System.String)
+  name: Point3d(T3DPoint, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Point3d_SprutTechnology_VecMatrLib_T3DPoint_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.Point3d(SprutTechnology.VecMatrLib.T3DPoint,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Point3d(SprutTechnology.VecMatrLib.T3DPoint, System.String)
+  nameWithType: ISTGeWatch.Point3d(T3DPoint, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Point3d(System.Double,System.Double,System.Double,System.String)
+  name: Point3d(Double, Double, Double, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Point3d_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.Point3d(System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Point3d(System.Double, System.Double, System.Double, System.String)
+  nameWithType: ISTGeWatch.Point3d(Double, Double, Double, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.Point3d*
+  name: Point3d
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_Point3d_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.Point3d
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.Point3d
+  nameWithType: ISTGeWatch.Point3d
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.SetFormat(System.Int32,System.Int32)
+  name: SetFormat(Int32, Int32)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_SetFormat_System_Int32_System_Int32_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.SetFormat(System.Int32,System.Int32)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.SetFormat(System.Int32, System.Int32)
+  nameWithType: ISTGeWatch.SetFormat(Int32, Int32)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.SetFormat*
+  name: SetFormat
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_SetFormat_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.SetFormat
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.SetFormat
+  nameWithType: ISTGeWatch.SetFormat
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.SetObjectLCS(SprutTechnology.VecMatrLib.T3DMatrix)
+  name: SetObjectLCS(T3DMatrix)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_SetObjectLCS_SprutTechnology_VecMatrLib_T3DMatrix_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.SetObjectLCS(SprutTechnology.VecMatrLib.T3DMatrix)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.SetObjectLCS(SprutTechnology.VecMatrLib.T3DMatrix)
+  nameWithType: ISTGeWatch.SetObjectLCS(T3DMatrix)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.SetObjectLCS*
+  name: SetObjectLCS
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_SetObjectLCS_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.SetObjectLCS
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.SetObjectLCS
+  nameWithType: ISTGeWatch.SetObjectLCS
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.SetProperty(System.String,System.Double)
+  name: SetProperty(String, Double)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_SetProperty_System_String_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.SetProperty(System.String,System.Double)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.SetProperty(System.String, System.Double)
+  nameWithType: ISTGeWatch.SetProperty(String, Double)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.SetProperty*
+  name: SetProperty
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_SetProperty_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.SetProperty
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.SetProperty
+  nameWithType: ISTGeWatch.SetProperty
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.SetVertexNormal(System.Double,System.Double,System.Double)
+  name: SetVertexNormal(Double, Double, Double)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_SetVertexNormal_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.SetVertexNormal(System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.SetVertexNormal(System.Double, System.Double, System.Double)
+  nameWithType: ISTGeWatch.SetVertexNormal(Double, Double, Double)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.SetVertexNormal*
+  name: SetVertexNormal
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_SetVertexNormal_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.SetVertexNormal
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.SetVertexNormal
+  nameWithType: ISTGeWatch.SetVertexNormal
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve(System.Double,System.Double,System.String)
+  name: StartCurve(Double, Double, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_StartCurve_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve(System.Double,System.Double,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve(System.Double, System.Double, System.String)
+  nameWithType: ISTGeWatch.StartCurve(Double, Double, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve*
+  name: StartCurve
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_StartCurve_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve
+  nameWithType: ISTGeWatch.StartCurve
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve3d(SprutTechnology.VecMatrLib.T3DPoint)
+  name: StartCurve3d(T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_StartCurve3d_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve3d(SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve3d(SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: ISTGeWatch.StartCurve3d(T3DPoint)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve3d(SprutTechnology.VecMatrLib.T3DPoint,System.String)
+  name: StartCurve3d(T3DPoint, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_StartCurve3d_SprutTechnology_VecMatrLib_T3DPoint_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve3d(SprutTechnology.VecMatrLib.T3DPoint,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve3d(SprutTechnology.VecMatrLib.T3DPoint, System.String)
+  nameWithType: ISTGeWatch.StartCurve3d(T3DPoint, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve3d(System.Double,System.Double,System.Double,System.String)
+  name: StartCurve3d(Double, Double, Double, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_StartCurve3d_System_Double_System_Double_System_Double_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve3d(System.Double,System.Double,System.Double,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve3d(System.Double, System.Double, System.Double, System.String)
+  nameWithType: ISTGeWatch.StartCurve3d(Double, Double, Double, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve3d*
+  name: StartCurve3d
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_StartCurve3d_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve3d
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.StartCurve3d
+  nameWithType: ISTGeWatch.StartCurve3d
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.StartTriangles
+  name: StartTriangles()
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_StartTriangles
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.StartTriangles
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.StartTriangles()
+  nameWithType: ISTGeWatch.StartTriangles()
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.StartTriangles*
+  name: StartTriangles
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_StartTriangles_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.StartTriangles
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.StartTriangles
+  nameWithType: ISTGeWatch.StartTriangles
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.StopCurve(System.Boolean)
+  name: StopCurve(Boolean)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_StopCurve_System_Boolean_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.StopCurve(System.Boolean)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.StopCurve(System.Boolean)
+  nameWithType: ISTGeWatch.StopCurve(Boolean)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.StopCurve*
+  name: StopCurve
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_StopCurve_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.StopCurve
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.StopCurve
+  nameWithType: ISTGeWatch.StopCurve
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.StopCurve3d(System.Boolean)
+  name: StopCurve3d(Boolean)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_StopCurve3d_System_Boolean_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatch.StopCurve3d(System.Boolean)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.StopCurve3d(System.Boolean)
+  nameWithType: ISTGeWatch.StopCurve3d(Boolean)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatch.StopCurve3d*
+  name: StopCurve3d
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatch.html#SprutTechnology_VecMatrLib_ISTGeWatch_StopCurve3d_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatch.StopCurve3d
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatch.StopCurve3d
+  nameWithType: ISTGeWatch.StopCurve3d
+- uid: SprutTechnology.VecMatrLib.ISTGeWatchable
+  name: ISTGeWatchable
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatchable.html
+  commentId: T:SprutTechnology.VecMatrLib.ISTGeWatchable
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatchable
+  nameWithType: ISTGeWatchable
+- uid: SprutTechnology.VecMatrLib.ISTGeWatchable.SaveToWatch(SprutTechnology.VecMatrLib.ISTGeWatch)
+  name: SaveToWatch(ISTGeWatch)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatchable.html#SprutTechnology_VecMatrLib_ISTGeWatchable_SaveToWatch_SprutTechnology_VecMatrLib_ISTGeWatch_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatchable.SaveToWatch(SprutTechnology.VecMatrLib.ISTGeWatch)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatchable.SaveToWatch(SprutTechnology.VecMatrLib.ISTGeWatch)
+  nameWithType: ISTGeWatchable.SaveToWatch(ISTGeWatch)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatchable.SaveToWatch*
+  name: SaveToWatch
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatchable.html#SprutTechnology_VecMatrLib_ISTGeWatchable_SaveToWatch_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatchable.SaveToWatch
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatchable.SaveToWatch
+  nameWithType: ISTGeWatchable.SaveToWatch
+- uid: SprutTechnology.VecMatrLib.ISTGeWatchClient
+  name: ISTGeWatchClient
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatchClient.html
+  commentId: T:SprutTechnology.VecMatrLib.ISTGeWatchClient
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatchClient
+  nameWithType: ISTGeWatchClient
+- uid: SprutTechnology.VecMatrLib.ISTGeWatchClient.IsRunning
+  name: IsRunning()
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatchClient.html#SprutTechnology_VecMatrLib_ISTGeWatchClient_IsRunning
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatchClient.IsRunning
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatchClient.IsRunning()
+  nameWithType: ISTGeWatchClient.IsRunning()
+- uid: SprutTechnology.VecMatrLib.ISTGeWatchClient.IsRunning*
+  name: IsRunning
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatchClient.html#SprutTechnology_VecMatrLib_ISTGeWatchClient_IsRunning_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatchClient.IsRunning
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatchClient.IsRunning
+  nameWithType: ISTGeWatchClient.IsRunning
+- uid: SprutTechnology.VecMatrLib.ISTGeWatchClient.Run
+  name: Run()
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatchClient.html#SprutTechnology_VecMatrLib_ISTGeWatchClient_Run
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatchClient.Run
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatchClient.Run()
+  nameWithType: ISTGeWatchClient.Run()
+- uid: SprutTechnology.VecMatrLib.ISTGeWatchClient.Run(System.String)
+  name: Run(String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatchClient.html#SprutTechnology_VecMatrLib_ISTGeWatchClient_Run_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatchClient.Run(System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatchClient.Run(System.String)
+  nameWithType: ISTGeWatchClient.Run(String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatchClient.Run*
+  name: Run
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatchClient.html#SprutTechnology_VecMatrLib_ISTGeWatchClient_Run_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatchClient.Run
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatchClient.Run
+  nameWithType: ISTGeWatchClient.Run
+- uid: SprutTechnology.VecMatrLib.ISTGeWatchClient.Watch(SprutTechnology.VecMatrLib.ISTGeWatchable)
+  name: Watch(ISTGeWatchable)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatchClient.html#SprutTechnology_VecMatrLib_ISTGeWatchClient_Watch_SprutTechnology_VecMatrLib_ISTGeWatchable_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatchClient.Watch(SprutTechnology.VecMatrLib.ISTGeWatchable)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatchClient.Watch(SprutTechnology.VecMatrLib.ISTGeWatchable)
+  nameWithType: ISTGeWatchClient.Watch(ISTGeWatchable)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatchClient.Watch(SprutTechnology.VecMatrLib.ISTGeWatchable,System.String)
+  name: Watch(ISTGeWatchable, String)
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatchClient.html#SprutTechnology_VecMatrLib_ISTGeWatchClient_Watch_SprutTechnology_VecMatrLib_ISTGeWatchable_System_String_
+  commentId: M:SprutTechnology.VecMatrLib.ISTGeWatchClient.Watch(SprutTechnology.VecMatrLib.ISTGeWatchable,System.String)
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatchClient.Watch(SprutTechnology.VecMatrLib.ISTGeWatchable, System.String)
+  nameWithType: ISTGeWatchClient.Watch(ISTGeWatchable, String)
+- uid: SprutTechnology.VecMatrLib.ISTGeWatchClient.Watch*
+  name: Watch
+  href: api/SprutTechnology.VecMatrLib.ISTGeWatchClient.html#SprutTechnology_VecMatrLib_ISTGeWatchClient_Watch_
+  commentId: Overload:SprutTechnology.VecMatrLib.ISTGeWatchClient.Watch
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.ISTGeWatchClient.Watch
+  nameWithType: ISTGeWatchClient.Watch
 - uid: SprutTechnology.VecMatrLib.T2DPoint
   name: T2DPoint
   href: api/SprutTechnology.VecMatrLib.T2DPoint.html
@@ -14425,6 +15861,19 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.T2DPoint.GetHashCode
   nameWithType: T2DPoint.GetHashCode
+- uid: SprutTechnology.VecMatrLib.T2DPoint.GetLength(SprutTechnology.VecMatrLib.T2DPoint)
+  name: GetLength(T2DPoint)
+  href: api/SprutTechnology.VecMatrLib.T2DPoint.html#SprutTechnology_VecMatrLib_T2DPoint_GetLength_SprutTechnology_VecMatrLib_T2DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.T2DPoint.GetLength(SprutTechnology.VecMatrLib.T2DPoint)
+  fullName: SprutTechnology.VecMatrLib.T2DPoint.GetLength(SprutTechnology.VecMatrLib.T2DPoint)
+  nameWithType: T2DPoint.GetLength(T2DPoint)
+- uid: SprutTechnology.VecMatrLib.T2DPoint.GetLength*
+  name: GetLength
+  href: api/SprutTechnology.VecMatrLib.T2DPoint.html#SprutTechnology_VecMatrLib_T2DPoint_GetLength_
+  commentId: Overload:SprutTechnology.VecMatrLib.T2DPoint.GetLength
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.T2DPoint.GetLength
+  nameWithType: T2DPoint.GetLength
 - uid: SprutTechnology.VecMatrLib.T2DPoint.Item(System.Int32)
   name: Item[Int32]
   href: api/SprutTechnology.VecMatrLib.T2DPoint.html#SprutTechnology_VecMatrLib_T2DPoint_Item_System_Int32_
@@ -14973,6 +16422,12 @@ references:
   commentId: M:SprutTechnology.VecMatrLib.T3DMatrix.#ctor(SprutTechnology.VecMatrLib.T3DPoint)
   fullName: SprutTechnology.VecMatrLib.T3DMatrix.T3DMatrix(SprutTechnology.VecMatrLib.T3DPoint)
   nameWithType: T3DMatrix.T3DMatrix(T3DPoint)
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.#ctor(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  name: T3DMatrix(T3DPoint, T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix__ctor_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.T3DMatrix.#ctor(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.T3DMatrix(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: T3DMatrix.T3DMatrix(T3DPoint, T3DPoint)
 - uid: SprutTechnology.VecMatrLib.T3DMatrix.#ctor(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
   name: T3DMatrix(T3DPoint, T3DPoint, T3DPoint)
   href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix__ctor_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_
@@ -14991,6 +16446,12 @@ references:
   commentId: M:SprutTechnology.VecMatrLib.T3DMatrix.#ctor(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.Double,System.Double,System.Double,System.Double)
   fullName: SprutTechnology.VecMatrLib.T3DMatrix.T3DMatrix(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint, System.Double, System.Double, System.Double, System.Double)
   nameWithType: T3DMatrix.T3DMatrix(T3DPoint, T3DPoint, T3DPoint, T3DPoint, Double, Double, Double, Double)
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.#ctor(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.Double)
+  name: T3DMatrix(T3DPoint, T3DPoint, Double)
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix__ctor_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.T3DMatrix.#ctor(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.Double)
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.T3DMatrix(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint, System.Double)
+  nameWithType: T3DMatrix.T3DMatrix(T3DPoint, T3DPoint, Double)
 - uid: SprutTechnology.VecMatrLib.T3DMatrix.#ctor*
   name: T3DMatrix
   href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix__ctor_
@@ -15022,6 +16483,19 @@ references:
   commentId: F:SprutTechnology.VecMatrLib.T3DMatrix.D
   fullName: SprutTechnology.VecMatrLib.T3DMatrix.D
   nameWithType: T3DMatrix.D
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.FromAxisAngle(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  name: FromAxisAngle(T3DPoint, T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_FromAxisAngle_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.T3DMatrix.FromAxisAngle(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.FromAxisAngle(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: T3DMatrix.FromAxisAngle(T3DPoint, T3DPoint)
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.FromAxisAngle*
+  name: FromAxisAngle
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_FromAxisAngle_
+  commentId: Overload:SprutTechnology.VecMatrLib.T3DMatrix.FromAxisAngle
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.FromAxisAngle
+  nameWithType: T3DMatrix.FromAxisAngle
 - uid: SprutTechnology.VecMatrLib.T3DMatrix.GetLocalMatrix(SprutTechnology.VecMatrLib.T3DMatrix)
   name: GetLocalMatrix(T3DMatrix)
   href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_GetLocalMatrix_SprutTechnology_VecMatrLib_T3DMatrix_
@@ -15061,6 +16535,19 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.T3DMatrix.GetLocalVector
   nameWithType: T3DMatrix.GetLocalVector
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.GetOrt(System.Int32)
+  name: GetOrt(Int32)
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_GetOrt_System_Int32_
+  commentId: M:SprutTechnology.VecMatrLib.T3DMatrix.GetOrt(System.Int32)
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.GetOrt(System.Int32)
+  nameWithType: T3DMatrix.GetOrt(Int32)
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.GetOrt*
+  name: GetOrt
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_GetOrt_
+  commentId: Overload:SprutTechnology.VecMatrLib.T3DMatrix.GetOrt
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.GetOrt
+  nameWithType: T3DMatrix.GetOrt
 - uid: SprutTechnology.VecMatrLib.T3DMatrix.InverseMatrix
   name: InverseMatrix()
   href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_InverseMatrix
@@ -15090,6 +16577,38 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.T3DMatrix.Item
   nameWithType: T3DMatrix.Item
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.MakeRotMatrix(System.Double,SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  name: MakeRotMatrix(Double, T3DPoint, T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_MakeRotMatrix_System_Double_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.T3DMatrix.MakeRotMatrix(System.Double,SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.MakeRotMatrix(System.Double, SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: T3DMatrix.MakeRotMatrix(Double, T3DPoint, T3DPoint)
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.MakeRotMatrix(System.Double,System.Int32,SprutTechnology.VecMatrLib.T3DPoint)
+  name: MakeRotMatrix(Double, Int32, T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_MakeRotMatrix_System_Double_System_Int32_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.T3DMatrix.MakeRotMatrix(System.Double,System.Int32,SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.MakeRotMatrix(System.Double, System.Int32, SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: T3DMatrix.MakeRotMatrix(Double, Int32, T3DPoint)
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.MakeRotMatrix*
+  name: MakeRotMatrix
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_MakeRotMatrix_
+  commentId: Overload:SprutTechnology.VecMatrLib.T3DMatrix.MakeRotMatrix
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.MakeRotMatrix
+  nameWithType: T3DMatrix.MakeRotMatrix
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.MakeShiftMatrix(SprutTechnology.VecMatrLib.T3DPoint)
+  name: MakeShiftMatrix(T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_MakeShiftMatrix_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.T3DMatrix.MakeShiftMatrix(SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.MakeShiftMatrix(SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: T3DMatrix.MakeShiftMatrix(T3DPoint)
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.MakeShiftMatrix*
+  name: MakeShiftMatrix
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_MakeShiftMatrix_
+  commentId: Overload:SprutTechnology.VecMatrLib.T3DMatrix.MakeShiftMatrix
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.MakeShiftMatrix
+  nameWithType: T3DMatrix.MakeShiftMatrix
 - uid: SprutTechnology.VecMatrLib.T3DMatrix.op_Multiply(SprutTechnology.VecMatrLib.T3DMatrix,SprutTechnology.VecMatrLib.T3DMatrix)
   name: Multiply(T3DMatrix, T3DMatrix)
   href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_op_Multiply_SprutTechnology_VecMatrLib_T3DMatrix_SprutTechnology_VecMatrLib_T3DMatrix_
@@ -15122,6 +16641,35 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.T3DMatrix.Refine
   nameWithType: T3DMatrix.Refine
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.SLerp(SprutTechnology.VecMatrLib.T3DMatrix,SprutTechnology.VecMatrLib.T3DMatrix,System.Double)
+  name: SLerp(T3DMatrix, T3DMatrix, Double)
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_SLerp_SprutTechnology_VecMatrLib_T3DMatrix_SprutTechnology_VecMatrLib_T3DMatrix_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.T3DMatrix.SLerp(SprutTechnology.VecMatrLib.T3DMatrix,SprutTechnology.VecMatrLib.T3DMatrix,System.Double)
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.SLerp(SprutTechnology.VecMatrLib.T3DMatrix, SprutTechnology.VecMatrLib.T3DMatrix, System.Double)
+  nameWithType: T3DMatrix.SLerp(T3DMatrix, T3DMatrix, Double)
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.SLerp*
+  name: SLerp
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_SLerp_
+  commentId: Overload:SprutTechnology.VecMatrLib.T3DMatrix.SLerp
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.SLerp
+  nameWithType: T3DMatrix.SLerp
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.ToAxisAngle(SprutTechnology.VecMatrLib.T3DPoint@,SprutTechnology.VecMatrLib.T3DPoint@,System.Double@)
+  name: ToAxisAngle(out T3DPoint, out T3DPoint, out Double)
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_ToAxisAngle_SprutTechnology_VecMatrLib_T3DPoint__SprutTechnology_VecMatrLib_T3DPoint__System_Double__
+  commentId: M:SprutTechnology.VecMatrLib.T3DMatrix.ToAxisAngle(SprutTechnology.VecMatrLib.T3DPoint@,SprutTechnology.VecMatrLib.T3DPoint@,System.Double@)
+  name.vb: ToAxisAngle(ByRef T3DPoint, ByRef T3DPoint, ByRef Double)
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.ToAxisAngle(out SprutTechnology.VecMatrLib.T3DPoint, out SprutTechnology.VecMatrLib.T3DPoint, out System.Double)
+  fullName.vb: SprutTechnology.VecMatrLib.T3DMatrix.ToAxisAngle(ByRef SprutTechnology.VecMatrLib.T3DPoint, ByRef SprutTechnology.VecMatrLib.T3DPoint, ByRef System.Double)
+  nameWithType: T3DMatrix.ToAxisAngle(out T3DPoint, out T3DPoint, out Double)
+  nameWithType.vb: T3DMatrix.ToAxisAngle(ByRef T3DPoint, ByRef T3DPoint, ByRef Double)
+- uid: SprutTechnology.VecMatrLib.T3DMatrix.ToAxisAngle*
+  name: ToAxisAngle
+  href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_ToAxisAngle_
+  commentId: Overload:SprutTechnology.VecMatrLib.T3DMatrix.ToAxisAngle
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.T3DMatrix.ToAxisAngle
+  nameWithType: T3DMatrix.ToAxisAngle
 - uid: SprutTechnology.VecMatrLib.T3DMatrix.ToString
   name: ToString()
   href: api/SprutTechnology.VecMatrLib.T3DMatrix.html#SprutTechnology_VecMatrLib_T3DMatrix_ToString
@@ -15222,6 +16770,12 @@ references:
   commentId: M:SprutTechnology.VecMatrLib.T3DPoint.#ctor(System.Double,System.Double,System.Double)
   fullName: SprutTechnology.VecMatrLib.T3DPoint.T3DPoint(System.Double, System.Double, System.Double)
   nameWithType: T3DPoint.T3DPoint(Double, Double, Double)
+- uid: SprutTechnology.VecMatrLib.T3DPoint.#ctor(System.Int32,System.Int32,System.Int32,System.Double,System.Double,System.Double)
+  name: T3DPoint(Int32, Int32, Int32, Double, Double, Double)
+  href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint__ctor_System_Int32_System_Int32_System_Int32_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.T3DPoint.#ctor(System.Int32,System.Int32,System.Int32,System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.VecMatrLib.T3DPoint.T3DPoint(System.Int32, System.Int32, System.Int32, System.Double, System.Double, System.Double)
+  nameWithType: T3DPoint.T3DPoint(Int32, Int32, Int32, Double, Double, Double)
 - uid: SprutTechnology.VecMatrLib.T3DPoint.#ctor*
   name: T3DPoint
   href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint__ctor_
@@ -15299,6 +16853,35 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.T3DPoint.GetHashCode
   nameWithType: T3DPoint.GetHashCode
+- uid: SprutTechnology.VecMatrLib.T3DPoint.GetLength(SprutTechnology.VecMatrLib.T3DPoint)
+  name: GetLength(T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint_GetLength_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.T3DPoint.GetLength(SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.T3DPoint.GetLength(SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: T3DPoint.GetLength(T3DPoint)
+- uid: SprutTechnology.VecMatrLib.T3DPoint.GetLength*
+  name: GetLength
+  href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint_GetLength_
+  commentId: Overload:SprutTechnology.VecMatrLib.T3DPoint.GetLength
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.T3DPoint.GetLength
+  nameWithType: T3DPoint.GetLength
+- uid: SprutTechnology.VecMatrLib.T3DPoint.GetStdProjectionPlane(SprutTechnology.VecMatrLib.T3DPoint,System.Int32@,System.Int32@)
+  name: GetStdProjectionPlane(T3DPoint, out Int32, out Int32)
+  href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint_GetStdProjectionPlane_SprutTechnology_VecMatrLib_T3DPoint_System_Int32__System_Int32__
+  commentId: M:SprutTechnology.VecMatrLib.T3DPoint.GetStdProjectionPlane(SprutTechnology.VecMatrLib.T3DPoint,System.Int32@,System.Int32@)
+  name.vb: GetStdProjectionPlane(T3DPoint, ByRef Int32, ByRef Int32)
+  fullName: SprutTechnology.VecMatrLib.T3DPoint.GetStdProjectionPlane(SprutTechnology.VecMatrLib.T3DPoint, out System.Int32, out System.Int32)
+  fullName.vb: SprutTechnology.VecMatrLib.T3DPoint.GetStdProjectionPlane(SprutTechnology.VecMatrLib.T3DPoint, ByRef System.Int32, ByRef System.Int32)
+  nameWithType: T3DPoint.GetStdProjectionPlane(T3DPoint, out Int32, out Int32)
+  nameWithType.vb: T3DPoint.GetStdProjectionPlane(T3DPoint, ByRef Int32, ByRef Int32)
+- uid: SprutTechnology.VecMatrLib.T3DPoint.GetStdProjectionPlane*
+  name: GetStdProjectionPlane
+  href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint_GetStdProjectionPlane_
+  commentId: Overload:SprutTechnology.VecMatrLib.T3DPoint.GetStdProjectionPlane
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.T3DPoint.GetStdProjectionPlane
+  nameWithType: T3DPoint.GetStdProjectionPlane
 - uid: SprutTechnology.VecMatrLib.T3DPoint.Item(System.Int32)
   name: Item[Int32]
   href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint_Item_System_Int32_
@@ -15515,6 +17098,19 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.T3DPoint.Refine
   nameWithType: T3DPoint.Refine
+- uid: SprutTechnology.VecMatrLib.T3DPoint.SLerpNormal(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.Double)
+  name: SLerpNormal(T3DPoint, T3DPoint, Double)
+  href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint_SLerpNormal_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.T3DPoint.SLerpNormal(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,System.Double)
+  fullName: SprutTechnology.VecMatrLib.T3DPoint.SLerpNormal(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint, System.Double)
+  nameWithType: T3DPoint.SLerpNormal(T3DPoint, T3DPoint, Double)
+- uid: SprutTechnology.VecMatrLib.T3DPoint.SLerpNormal*
+  name: SLerpNormal
+  href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint_SLerpNormal_
+  commentId: Overload:SprutTechnology.VecMatrLib.T3DPoint.SLerpNormal
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.T3DPoint.SLerpNormal
+  nameWithType: T3DPoint.SLerpNormal
 - uid: SprutTechnology.VecMatrLib.T3DPoint.ToString
   name: ToString()
   href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint_ToString
@@ -15528,6 +17124,31 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.T3DPoint.ToString
   nameWithType: T3DPoint.ToString
+- uid: SprutTechnology.VecMatrLib.T3DPoint.TryNorm(SprutTechnology.VecMatrLib.T3DPoint@)
+  name: TryNorm(ref T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint_TryNorm_SprutTechnology_VecMatrLib_T3DPoint__
+  commentId: M:SprutTechnology.VecMatrLib.T3DPoint.TryNorm(SprutTechnology.VecMatrLib.T3DPoint@)
+  name.vb: TryNorm(ByRef T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.T3DPoint.TryNorm(ref SprutTechnology.VecMatrLib.T3DPoint)
+  fullName.vb: SprutTechnology.VecMatrLib.T3DPoint.TryNorm(ByRef SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: T3DPoint.TryNorm(ref T3DPoint)
+  nameWithType.vb: T3DPoint.TryNorm(ByRef T3DPoint)
+- uid: SprutTechnology.VecMatrLib.T3DPoint.TryNorm(SprutTechnology.VecMatrLib.T3DPoint@,System.Double)
+  name: TryNorm(ref T3DPoint, Double)
+  href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint_TryNorm_SprutTechnology_VecMatrLib_T3DPoint__System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.T3DPoint.TryNorm(SprutTechnology.VecMatrLib.T3DPoint@,System.Double)
+  name.vb: TryNorm(ByRef T3DPoint, Double)
+  fullName: SprutTechnology.VecMatrLib.T3DPoint.TryNorm(ref SprutTechnology.VecMatrLib.T3DPoint, System.Double)
+  fullName.vb: SprutTechnology.VecMatrLib.T3DPoint.TryNorm(ByRef SprutTechnology.VecMatrLib.T3DPoint, System.Double)
+  nameWithType: T3DPoint.TryNorm(ref T3DPoint, Double)
+  nameWithType.vb: T3DPoint.TryNorm(ByRef T3DPoint, Double)
+- uid: SprutTechnology.VecMatrLib.T3DPoint.TryNorm*
+  name: TryNorm
+  href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint_TryNorm_
+  commentId: Overload:SprutTechnology.VecMatrLib.T3DPoint.TryNorm
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.T3DPoint.TryNorm
+  nameWithType: T3DPoint.TryNorm
 - uid: SprutTechnology.VecMatrLib.T3DPoint.Unit
   name: Unit
   href: api/SprutTechnology.VecMatrLib.T3DPoint.html#SprutTechnology_VecMatrLib_T3DPoint_Unit
@@ -15736,6 +17357,19 @@ references:
   commentId: F:SprutTechnology.VecMatrLib.TComplexRotationConvention.Convention
   fullName: SprutTechnology.VecMatrLib.TComplexRotationConvention.Convention
   nameWithType: TComplexRotationConvention.Convention
+- uid: SprutTechnology.VecMatrLib.TComplexRotationConvention.IsAngular
+  name: IsAngular
+  href: api/SprutTechnology.VecMatrLib.TComplexRotationConvention.html#SprutTechnology_VecMatrLib_TComplexRotationConvention_IsAngular
+  commentId: P:SprutTechnology.VecMatrLib.TComplexRotationConvention.IsAngular
+  fullName: SprutTechnology.VecMatrLib.TComplexRotationConvention.IsAngular
+  nameWithType: TComplexRotationConvention.IsAngular
+- uid: SprutTechnology.VecMatrLib.TComplexRotationConvention.IsAngular*
+  name: IsAngular
+  href: api/SprutTechnology.VecMatrLib.TComplexRotationConvention.html#SprutTechnology_VecMatrLib_TComplexRotationConvention_IsAngular_
+  commentId: Overload:SprutTechnology.VecMatrLib.TComplexRotationConvention.IsAngular
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TComplexRotationConvention.IsAngular
+  nameWithType: TComplexRotationConvention.IsAngular
 - uid: SprutTechnology.VecMatrLib.TComplexRotationConvention.MovableAxes
   name: MovableAxes
   href: api/SprutTechnology.VecMatrLib.TComplexRotationConvention.html#SprutTechnology_VecMatrLib_TComplexRotationConvention_MovableAxes
@@ -15793,12 +17427,49 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.TLocation.P
   nameWithType: TLocation.P
+- uid: SprutTechnology.VecMatrLib.TLocation.ToString
+  name: ToString()
+  href: api/SprutTechnology.VecMatrLib.TLocation.html#SprutTechnology_VecMatrLib_TLocation_ToString
+  commentId: M:SprutTechnology.VecMatrLib.TLocation.ToString
+  fullName: SprutTechnology.VecMatrLib.TLocation.ToString()
+  nameWithType: TLocation.ToString()
+- uid: SprutTechnology.VecMatrLib.TLocation.ToString*
+  name: ToString
+  href: api/SprutTechnology.VecMatrLib.TLocation.html#SprutTechnology_VecMatrLib_TLocation_ToString_
+  commentId: Overload:SprutTechnology.VecMatrLib.TLocation.ToString
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TLocation.ToString
+  nameWithType: TLocation.ToString
 - uid: SprutTechnology.VecMatrLib.TQuaternion
   name: TQuaternion
   href: api/SprutTechnology.VecMatrLib.TQuaternion.html
   commentId: T:SprutTechnology.VecMatrLib.TQuaternion
   fullName: SprutTechnology.VecMatrLib.TQuaternion
   nameWithType: TQuaternion
+- uid: SprutTechnology.VecMatrLib.TQuaternion.#ctor(SprutTechnology.VecMatrLib.T3DMatrix)
+  name: TQuaternion(T3DMatrix)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion__ctor_SprutTechnology_VecMatrLib_T3DMatrix_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.#ctor(SprutTechnology.VecMatrLib.T3DMatrix)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.TQuaternion(SprutTechnology.VecMatrLib.T3DMatrix)
+  nameWithType: TQuaternion.TQuaternion(T3DMatrix)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.#ctor(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  name: TQuaternion(T3DPoint, T3DPoint, T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion__ctor_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.#ctor(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.TQuaternion(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: TQuaternion.TQuaternion(T3DPoint, T3DPoint, T3DPoint)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.#ctor(SprutTechnology.VecMatrLib.T3DPoint,System.Double)
+  name: TQuaternion(T3DPoint, Double)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion__ctor_SprutTechnology_VecMatrLib_T3DPoint_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.#ctor(SprutTechnology.VecMatrLib.T3DPoint,System.Double)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.TQuaternion(SprutTechnology.VecMatrLib.T3DPoint, System.Double)
+  nameWithType: TQuaternion.TQuaternion(T3DPoint, Double)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.#ctor(System.Double,System.Double,System.Double)
+  name: TQuaternion(Double, Double, Double)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion__ctor_System_Double_System_Double_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.#ctor(System.Double,System.Double,System.Double)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.TQuaternion(System.Double, System.Double, System.Double)
+  nameWithType: TQuaternion.TQuaternion(Double, Double, Double)
 - uid: SprutTechnology.VecMatrLib.TQuaternion.#ctor(System.Double,System.Double,System.Double,System.Double)
   name: TQuaternion(Double, Double, Double, Double)
   href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion__ctor_System_Double_System_Double_System_Double_System_Double_
@@ -15812,6 +17483,177 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.TQuaternion.TQuaternion
   nameWithType: TQuaternion.TQuaternion
+- uid: SprutTechnology.VecMatrLib.TQuaternion.Lerp(SprutTechnology.VecMatrLib.TQuaternion,SprutTechnology.VecMatrLib.TQuaternion,System.Double)
+  name: Lerp(TQuaternion, TQuaternion, Double)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_Lerp_SprutTechnology_VecMatrLib_TQuaternion_SprutTechnology_VecMatrLib_TQuaternion_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.Lerp(SprutTechnology.VecMatrLib.TQuaternion,SprutTechnology.VecMatrLib.TQuaternion,System.Double)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.Lerp(SprutTechnology.VecMatrLib.TQuaternion, SprutTechnology.VecMatrLib.TQuaternion, System.Double)
+  nameWithType: TQuaternion.Lerp(TQuaternion, TQuaternion, Double)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.Lerp*
+  name: Lerp
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_Lerp_
+  commentId: Overload:SprutTechnology.VecMatrLib.TQuaternion.Lerp
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.Lerp
+  nameWithType: TQuaternion.Lerp
+- uid: SprutTechnology.VecMatrLib.TQuaternion.Norm(SprutTechnology.VecMatrLib.TQuaternion)
+  name: Norm(TQuaternion)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_Norm_SprutTechnology_VecMatrLib_TQuaternion_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.Norm(SprutTechnology.VecMatrLib.TQuaternion)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.Norm(SprutTechnology.VecMatrLib.TQuaternion)
+  nameWithType: TQuaternion.Norm(TQuaternion)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.Norm*
+  name: Norm
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_Norm_
+  commentId: Overload:SprutTechnology.VecMatrLib.TQuaternion.Norm
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.Norm
+  nameWithType: TQuaternion.Norm
+- uid: SprutTechnology.VecMatrLib.TQuaternion.op_Addition(SprutTechnology.VecMatrLib.TQuaternion,SprutTechnology.VecMatrLib.TQuaternion)
+  name: Addition(TQuaternion, TQuaternion)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_op_Addition_SprutTechnology_VecMatrLib_TQuaternion_SprutTechnology_VecMatrLib_TQuaternion_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.op_Addition(SprutTechnology.VecMatrLib.TQuaternion,SprutTechnology.VecMatrLib.TQuaternion)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.Addition(SprutTechnology.VecMatrLib.TQuaternion, SprutTechnology.VecMatrLib.TQuaternion)
+  nameWithType: TQuaternion.Addition(TQuaternion, TQuaternion)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.op_Addition*
+  name: Addition
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_op_Addition_
+  commentId: Overload:SprutTechnology.VecMatrLib.TQuaternion.op_Addition
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.Addition
+  nameWithType: TQuaternion.Addition
+- uid: SprutTechnology.VecMatrLib.TQuaternion.op_Multiply(System.Double,SprutTechnology.VecMatrLib.TQuaternion)
+  name: Multiply(Double, TQuaternion)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_op_Multiply_System_Double_SprutTechnology_VecMatrLib_TQuaternion_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.op_Multiply(System.Double,SprutTechnology.VecMatrLib.TQuaternion)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.Multiply(System.Double, SprutTechnology.VecMatrLib.TQuaternion)
+  nameWithType: TQuaternion.Multiply(Double, TQuaternion)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.op_Multiply*
+  name: Multiply
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_op_Multiply_
+  commentId: Overload:SprutTechnology.VecMatrLib.TQuaternion.op_Multiply
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.Multiply
+  nameWithType: TQuaternion.Multiply
+- uid: SprutTechnology.VecMatrLib.TQuaternion.op_Subtraction(SprutTechnology.VecMatrLib.TQuaternion,SprutTechnology.VecMatrLib.TQuaternion)
+  name: Subtraction(TQuaternion, TQuaternion)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_op_Subtraction_SprutTechnology_VecMatrLib_TQuaternion_SprutTechnology_VecMatrLib_TQuaternion_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.op_Subtraction(SprutTechnology.VecMatrLib.TQuaternion,SprutTechnology.VecMatrLib.TQuaternion)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.Subtraction(SprutTechnology.VecMatrLib.TQuaternion, SprutTechnology.VecMatrLib.TQuaternion)
+  nameWithType: TQuaternion.Subtraction(TQuaternion, TQuaternion)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.op_Subtraction*
+  name: Subtraction
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_op_Subtraction_
+  commentId: Overload:SprutTechnology.VecMatrLib.TQuaternion.op_Subtraction
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.Subtraction
+  nameWithType: TQuaternion.Subtraction
+- uid: SprutTechnology.VecMatrLib.TQuaternion.q_mul_q(SprutTechnology.VecMatrLib.TQuaternion,SprutTechnology.VecMatrLib.TQuaternion)
+  name: q_mul_q(TQuaternion, TQuaternion)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_q_mul_q_SprutTechnology_VecMatrLib_TQuaternion_SprutTechnology_VecMatrLib_TQuaternion_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.q_mul_q(SprutTechnology.VecMatrLib.TQuaternion,SprutTechnology.VecMatrLib.TQuaternion)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.q_mul_q(SprutTechnology.VecMatrLib.TQuaternion, SprutTechnology.VecMatrLib.TQuaternion)
+  nameWithType: TQuaternion.q_mul_q(TQuaternion, TQuaternion)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.q_mul_q*
+  name: q_mul_q
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_q_mul_q_
+  commentId: Overload:SprutTechnology.VecMatrLib.TQuaternion.q_mul_q
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.q_mul_q
+  nameWithType: TQuaternion.q_mul_q
+- uid: SprutTechnology.VecMatrLib.TQuaternion.q_x_q(SprutTechnology.VecMatrLib.TQuaternion,SprutTechnology.VecMatrLib.TQuaternion)
+  name: q_x_q(TQuaternion, TQuaternion)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_q_x_q_SprutTechnology_VecMatrLib_TQuaternion_SprutTechnology_VecMatrLib_TQuaternion_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.q_x_q(SprutTechnology.VecMatrLib.TQuaternion,SprutTechnology.VecMatrLib.TQuaternion)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.q_x_q(SprutTechnology.VecMatrLib.TQuaternion, SprutTechnology.VecMatrLib.TQuaternion)
+  nameWithType: TQuaternion.q_x_q(TQuaternion, TQuaternion)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.q_x_q*
+  name: q_x_q
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_q_x_q_
+  commentId: Overload:SprutTechnology.VecMatrLib.TQuaternion.q_x_q
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.q_x_q
+  nameWithType: TQuaternion.q_x_q
+- uid: SprutTechnology.VecMatrLib.TQuaternion.SLerp(SprutTechnology.VecMatrLib.TQuaternion,SprutTechnology.VecMatrLib.TQuaternion,System.Double)
+  name: SLerp(TQuaternion, TQuaternion, Double)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_SLerp_SprutTechnology_VecMatrLib_TQuaternion_SprutTechnology_VecMatrLib_TQuaternion_System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.SLerp(SprutTechnology.VecMatrLib.TQuaternion,SprutTechnology.VecMatrLib.TQuaternion,System.Double)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.SLerp(SprutTechnology.VecMatrLib.TQuaternion, SprutTechnology.VecMatrLib.TQuaternion, System.Double)
+  nameWithType: TQuaternion.SLerp(TQuaternion, TQuaternion, Double)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.SLerp*
+  name: SLerp
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_SLerp_
+  commentId: Overload:SprutTechnology.VecMatrLib.TQuaternion.SLerp
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.SLerp
+  nameWithType: TQuaternion.SLerp
+- uid: SprutTechnology.VecMatrLib.TQuaternion.ToMatrix
+  name: ToMatrix()
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_ToMatrix
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.ToMatrix
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.ToMatrix()
+  nameWithType: TQuaternion.ToMatrix()
+- uid: SprutTechnology.VecMatrLib.TQuaternion.ToMatrix(SprutTechnology.VecMatrLib.T3DPoint)
+  name: ToMatrix(T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_ToMatrix_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.ToMatrix(SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.ToMatrix(SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: TQuaternion.ToMatrix(T3DPoint)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.ToMatrix*
+  name: ToMatrix
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_ToMatrix_
+  commentId: Overload:SprutTechnology.VecMatrLib.TQuaternion.ToMatrix
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.ToMatrix
+  nameWithType: TQuaternion.ToMatrix
+- uid: SprutTechnology.VecMatrLib.TQuaternion.ToString
+  name: ToString()
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_ToString
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.ToString
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.ToString()
+  nameWithType: TQuaternion.ToString()
+- uid: SprutTechnology.VecMatrLib.TQuaternion.ToString*
+  name: ToString
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_ToString_
+  commentId: Overload:SprutTechnology.VecMatrLib.TQuaternion.ToString
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.ToString
+  nameWithType: TQuaternion.ToString
+- uid: SprutTechnology.VecMatrLib.TQuaternion.ToVector
+  name: ToVector()
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_ToVector
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.ToVector
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.ToVector()
+  nameWithType: TQuaternion.ToVector()
+- uid: SprutTechnology.VecMatrLib.TQuaternion.ToVector*
+  name: ToVector
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_ToVector_
+  commentId: Overload:SprutTechnology.VecMatrLib.TQuaternion.ToVector
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.ToVector
+  nameWithType: TQuaternion.ToVector
+- uid: SprutTechnology.VecMatrLib.TQuaternion.TryNorm(SprutTechnology.VecMatrLib.TQuaternion@,System.Double)
+  name: TryNorm(ref TQuaternion, Double)
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_TryNorm_SprutTechnology_VecMatrLib_TQuaternion__System_Double_
+  commentId: M:SprutTechnology.VecMatrLib.TQuaternion.TryNorm(SprutTechnology.VecMatrLib.TQuaternion@,System.Double)
+  name.vb: TryNorm(ByRef TQuaternion, Double)
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.TryNorm(ref SprutTechnology.VecMatrLib.TQuaternion, System.Double)
+  fullName.vb: SprutTechnology.VecMatrLib.TQuaternion.TryNorm(ByRef SprutTechnology.VecMatrLib.TQuaternion, System.Double)
+  nameWithType: TQuaternion.TryNorm(ref TQuaternion, Double)
+  nameWithType.vb: TQuaternion.TryNorm(ByRef TQuaternion, Double)
+- uid: SprutTechnology.VecMatrLib.TQuaternion.TryNorm*
+  name: TryNorm
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_TryNorm_
+  commentId: Overload:SprutTechnology.VecMatrLib.TQuaternion.TryNorm
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.TryNorm
+  nameWithType: TQuaternion.TryNorm
+- uid: SprutTechnology.VecMatrLib.TQuaternion.Unit
+  name: Unit
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_Unit
+  commentId: F:SprutTechnology.VecMatrLib.TQuaternion.Unit
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.Unit
+  nameWithType: TQuaternion.Unit
 - uid: SprutTechnology.VecMatrLib.TQuaternion.W
   name: W
   href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_W
@@ -15864,6 +17706,12 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.TQuaternion.Z
   nameWithType: TQuaternion.Z
+- uid: SprutTechnology.VecMatrLib.TQuaternion.Zero
+  name: Zero
+  href: api/SprutTechnology.VecMatrLib.TQuaternion.html#SprutTechnology_VecMatrLib_TQuaternion_Zero
+  commentId: F:SprutTechnology.VecMatrLib.TQuaternion.Zero
+  fullName: SprutTechnology.VecMatrLib.TQuaternion.Zero
+  nameWithType: TQuaternion.Zero
 - uid: SprutTechnology.VecMatrLib.TRotation
   name: TRotation
   href: api/SprutTechnology.VecMatrLib.TRotation.html
@@ -15935,6 +17783,19 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.TRotation.D
   nameWithType: TRotation.D
+- uid: SprutTechnology.VecMatrLib.TRotation.ToString
+  name: ToString()
+  href: api/SprutTechnology.VecMatrLib.TRotation.html#SprutTechnology_VecMatrLib_TRotation_ToString
+  commentId: M:SprutTechnology.VecMatrLib.TRotation.ToString
+  fullName: SprutTechnology.VecMatrLib.TRotation.ToString()
+  nameWithType: TRotation.ToString()
+- uid: SprutTechnology.VecMatrLib.TRotation.ToString*
+  name: ToString
+  href: api/SprutTechnology.VecMatrLib.TRotation.html#SprutTechnology_VecMatrLib_TRotation_ToString_
+  commentId: Overload:SprutTechnology.VecMatrLib.TRotation.ToString
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TRotation.ToString
+  nameWithType: TRotation.ToString
 - uid: SprutTechnology.VecMatrLib.TRotationConvention
   name: TRotationConvention
   href: api/SprutTechnology.VecMatrLib.TRotationConvention.html
@@ -16055,6 +17916,51 @@ references:
   commentId: F:SprutTechnology.VecMatrLib.TRotationConvention.ZYZ
   fullName: SprutTechnology.VecMatrLib.TRotationConvention.ZYZ
   nameWithType: TRotationConvention.ZYZ
+- uid: SprutTechnology.VecMatrLib.TRotationsConverter
+  name: TRotationsConverter
+  href: api/SprutTechnology.VecMatrLib.TRotationsConverter.html
+  commentId: T:SprutTechnology.VecMatrLib.TRotationsConverter
+  fullName: SprutTechnology.VecMatrLib.TRotationsConverter
+  nameWithType: TRotationsConverter
+- uid: SprutTechnology.VecMatrLib.TRotationsConverter.ConvertLocation(SprutTechnology.VecMatrLib.TLocation,SprutTechnology.VecMatrLib.TComplexRotationConvention,SprutTechnology.VecMatrLib.TComplexRotationConvention)
+  name: ConvertLocation(TLocation, TComplexRotationConvention, TComplexRotationConvention)
+  href: api/SprutTechnology.VecMatrLib.TRotationsConverter.html#SprutTechnology_VecMatrLib_TRotationsConverter_ConvertLocation_SprutTechnology_VecMatrLib_TLocation_SprutTechnology_VecMatrLib_TComplexRotationConvention_SprutTechnology_VecMatrLib_TComplexRotationConvention_
+  commentId: M:SprutTechnology.VecMatrLib.TRotationsConverter.ConvertLocation(SprutTechnology.VecMatrLib.TLocation,SprutTechnology.VecMatrLib.TComplexRotationConvention,SprutTechnology.VecMatrLib.TComplexRotationConvention)
+  fullName: SprutTechnology.VecMatrLib.TRotationsConverter.ConvertLocation(SprutTechnology.VecMatrLib.TLocation, SprutTechnology.VecMatrLib.TComplexRotationConvention, SprutTechnology.VecMatrLib.TComplexRotationConvention)
+  nameWithType: TRotationsConverter.ConvertLocation(TLocation, TComplexRotationConvention, TComplexRotationConvention)
+- uid: SprutTechnology.VecMatrLib.TRotationsConverter.ConvertLocation*
+  name: ConvertLocation
+  href: api/SprutTechnology.VecMatrLib.TRotationsConverter.html#SprutTechnology_VecMatrLib_TRotationsConverter_ConvertLocation_
+  commentId: Overload:SprutTechnology.VecMatrLib.TRotationsConverter.ConvertLocation
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TRotationsConverter.ConvertLocation
+  nameWithType: TRotationsConverter.ConvertLocation
+- uid: SprutTechnology.VecMatrLib.TRotationsConverter.LocationToMatrix(SprutTechnology.VecMatrLib.TLocation,SprutTechnology.VecMatrLib.TComplexRotationConvention)
+  name: LocationToMatrix(TLocation, TComplexRotationConvention)
+  href: api/SprutTechnology.VecMatrLib.TRotationsConverter.html#SprutTechnology_VecMatrLib_TRotationsConverter_LocationToMatrix_SprutTechnology_VecMatrLib_TLocation_SprutTechnology_VecMatrLib_TComplexRotationConvention_
+  commentId: M:SprutTechnology.VecMatrLib.TRotationsConverter.LocationToMatrix(SprutTechnology.VecMatrLib.TLocation,SprutTechnology.VecMatrLib.TComplexRotationConvention)
+  fullName: SprutTechnology.VecMatrLib.TRotationsConverter.LocationToMatrix(SprutTechnology.VecMatrLib.TLocation, SprutTechnology.VecMatrLib.TComplexRotationConvention)
+  nameWithType: TRotationsConverter.LocationToMatrix(TLocation, TComplexRotationConvention)
+- uid: SprutTechnology.VecMatrLib.TRotationsConverter.LocationToMatrix*
+  name: LocationToMatrix
+  href: api/SprutTechnology.VecMatrLib.TRotationsConverter.html#SprutTechnology_VecMatrLib_TRotationsConverter_LocationToMatrix_
+  commentId: Overload:SprutTechnology.VecMatrLib.TRotationsConverter.LocationToMatrix
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TRotationsConverter.LocationToMatrix
+  nameWithType: TRotationsConverter.LocationToMatrix
+- uid: SprutTechnology.VecMatrLib.TRotationsConverter.MatrixToLocation(SprutTechnology.VecMatrLib.T3DMatrix,SprutTechnology.VecMatrLib.TComplexRotationConvention)
+  name: MatrixToLocation(T3DMatrix, TComplexRotationConvention)
+  href: api/SprutTechnology.VecMatrLib.TRotationsConverter.html#SprutTechnology_VecMatrLib_TRotationsConverter_MatrixToLocation_SprutTechnology_VecMatrLib_T3DMatrix_SprutTechnology_VecMatrLib_TComplexRotationConvention_
+  commentId: M:SprutTechnology.VecMatrLib.TRotationsConverter.MatrixToLocation(SprutTechnology.VecMatrLib.T3DMatrix,SprutTechnology.VecMatrLib.TComplexRotationConvention)
+  fullName: SprutTechnology.VecMatrLib.TRotationsConverter.MatrixToLocation(SprutTechnology.VecMatrLib.T3DMatrix, SprutTechnology.VecMatrLib.TComplexRotationConvention)
+  nameWithType: TRotationsConverter.MatrixToLocation(T3DMatrix, TComplexRotationConvention)
+- uid: SprutTechnology.VecMatrLib.TRotationsConverter.MatrixToLocation*
+  name: MatrixToLocation
+  href: api/SprutTechnology.VecMatrLib.TRotationsConverter.html#SprutTechnology_VecMatrLib_TRotationsConverter_MatrixToLocation_
+  commentId: Overload:SprutTechnology.VecMatrLib.TRotationsConverter.MatrixToLocation
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.TRotationsConverter.MatrixToLocation
+  nameWithType: TRotationsConverter.MatrixToLocation
 - uid: SprutTechnology.VecMatrLib.VML
   name: VML
   href: api/SprutTechnology.VecMatrLib.VML.html
@@ -16100,6 +18006,35 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.VML.CalcVecsAngle
   nameWithType: VML.CalcVecsAngle
+- uid: SprutTechnology.VecMatrLib.VML.CalcVectorAngles(SprutTechnology.VecMatrLib.T3DPoint,System.Int32,System.Int32,System.Double@,System.Double@)
+  name: CalcVectorAngles(T3DPoint, Int32, Int32, out Double, out Double)
+  href: api/SprutTechnology.VecMatrLib.VML.html#SprutTechnology_VecMatrLib_VML_CalcVectorAngles_SprutTechnology_VecMatrLib_T3DPoint_System_Int32_System_Int32_System_Double__System_Double__
+  commentId: M:SprutTechnology.VecMatrLib.VML.CalcVectorAngles(SprutTechnology.VecMatrLib.T3DPoint,System.Int32,System.Int32,System.Double@,System.Double@)
+  name.vb: CalcVectorAngles(T3DPoint, Int32, Int32, ByRef Double, ByRef Double)
+  fullName: SprutTechnology.VecMatrLib.VML.CalcVectorAngles(SprutTechnology.VecMatrLib.T3DPoint, System.Int32, System.Int32, out System.Double, out System.Double)
+  fullName.vb: SprutTechnology.VecMatrLib.VML.CalcVectorAngles(SprutTechnology.VecMatrLib.T3DPoint, System.Int32, System.Int32, ByRef System.Double, ByRef System.Double)
+  nameWithType: VML.CalcVectorAngles(T3DPoint, Int32, Int32, out Double, out Double)
+  nameWithType.vb: VML.CalcVectorAngles(T3DPoint, Int32, Int32, ByRef Double, ByRef Double)
+- uid: SprutTechnology.VecMatrLib.VML.CalcVectorAngles*
+  name: CalcVectorAngles
+  href: api/SprutTechnology.VecMatrLib.VML.html#SprutTechnology_VecMatrLib_VML_CalcVectorAngles_
+  commentId: Overload:SprutTechnology.VecMatrLib.VML.CalcVectorAngles
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.VML.CalcVectorAngles
+  nameWithType: VML.CalcVectorAngles
+- uid: SprutTechnology.VecMatrLib.VML.GeWatch
+  name: GeWatch
+  href: api/SprutTechnology.VecMatrLib.VML.html#SprutTechnology_VecMatrLib_VML_GeWatch
+  commentId: P:SprutTechnology.VecMatrLib.VML.GeWatch
+  fullName: SprutTechnology.VecMatrLib.VML.GeWatch
+  nameWithType: VML.GeWatch
+- uid: SprutTechnology.VecMatrLib.VML.GeWatch*
+  name: GeWatch
+  href: api/SprutTechnology.VecMatrLib.VML.html#SprutTechnology_VecMatrLib_VML_GeWatch_
+  commentId: Overload:SprutTechnology.VecMatrLib.VML.GeWatch
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.VML.GeWatch
+  nameWithType: VML.GeWatch
 - uid: SprutTechnology.VecMatrLib.VML.p2d(System.Double,System.Double)
   name: p2d(Double, Double)
   href: api/SprutTechnology.VecMatrLib.VML.html#SprutTechnology_VecMatrLib_VML_p2d_System_Double_System_Double_
@@ -16184,3 +18119,16 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.VML.ProjectPointPlane
   nameWithType: VML.ProjectPointPlane
+- uid: SprutTechnology.VecMatrLib.VML.ProjectVectorOnPlane(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  name: ProjectVectorOnPlane(T3DPoint, T3DPoint)
+  href: api/SprutTechnology.VecMatrLib.VML.html#SprutTechnology_VecMatrLib_VML_ProjectVectorOnPlane_SprutTechnology_VecMatrLib_T3DPoint_SprutTechnology_VecMatrLib_T3DPoint_
+  commentId: M:SprutTechnology.VecMatrLib.VML.ProjectVectorOnPlane(SprutTechnology.VecMatrLib.T3DPoint,SprutTechnology.VecMatrLib.T3DPoint)
+  fullName: SprutTechnology.VecMatrLib.VML.ProjectVectorOnPlane(SprutTechnology.VecMatrLib.T3DPoint, SprutTechnology.VecMatrLib.T3DPoint)
+  nameWithType: VML.ProjectVectorOnPlane(T3DPoint, T3DPoint)
+- uid: SprutTechnology.VecMatrLib.VML.ProjectVectorOnPlane*
+  name: ProjectVectorOnPlane
+  href: api/SprutTechnology.VecMatrLib.VML.html#SprutTechnology_VecMatrLib_VML_ProjectVectorOnPlane_
+  commentId: Overload:SprutTechnology.VecMatrLib.VML.ProjectVectorOnPlane
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.VML.ProjectVectorOnPlane
+  nameWithType: VML.ProjectVectorOnPlane

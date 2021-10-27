@@ -83,6 +83,18 @@
                   <ul class="nav level1">
                     <li class="">
                       <span class="expand-stub"></span>
+                      <a href="SprutTechnology.GeWatchDNClient.html" title="SprutTechnology.GeWatchDNClient" class="">SprutTechnology.GeWatchDNClient</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SprutTechnology.GeWatchDNClient.STGeWatch.html" title="STGeWatch" class="">STGeWatch</a>
+                          </li>
+                          <li class="">
+                            <a href="SprutTechnology.GeWatchDNClient.STGeWatchClient.html" title="STGeWatchClient" class="">STGeWatchClient</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
                       <a href="SprutTechnology.SCPostprocessor.html" title="SprutTechnology.SCPostprocessor" class="">SprutTechnology.SCPostprocessor</a>
                         
                         <ul class="nav level2">
@@ -576,6 +588,21 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="SprutTechnology.VecMatrLib.EVecMatrLibError.html" title="EVecMatrLibError" class="">EVecMatrLibError</a>
+                          </li>
+                          <li class="">
+                            <a href="SprutTechnology.VecMatrLib.GWConsts.html" title="GWConsts" class="">GWConsts</a>
+                          </li>
+                          <li class="">
+                            <a href="SprutTechnology.VecMatrLib.ISTGeWatch.html" title="ISTGeWatch" class="">ISTGeWatch</a>
+                          </li>
+                          <li class="">
+                            <a href="SprutTechnology.VecMatrLib.ISTGeWatchable.html" title="ISTGeWatchable" class="">ISTGeWatchable</a>
+                          </li>
+                          <li class="">
+                            <a href="SprutTechnology.VecMatrLib.ISTGeWatchClient.html" title="ISTGeWatchClient" class="">ISTGeWatchClient</a>
+                          </li>
+                          <li class="">
                             <a href="SprutTechnology.VecMatrLib.T2DPoint.html" title="T2DPoint" class="">T2DPoint</a>
                           </li>
                           <li class="">
@@ -607,6 +634,9 @@
                           </li>
                           <li class="">
                             <a href="SprutTechnology.VecMatrLib.TRotationConvention.html" title="TRotationConvention" class="">TRotationConvention</a>
+                          </li>
+                          <li class="">
+                            <a href="SprutTechnology.VecMatrLib.TRotationsConverter.html" title="TRotationsConverter" class="">TRotationsConverter</a>
                           </li>
                           <li class="">
                             <a href="SprutTechnology.VecMatrLib.VML.html" title="VML" class="">VML</a>
@@ -885,13 +915,46 @@ For example, you can write here the resulting subroutine number or a line number
   <h4 id="SprutTechnology_SCPostprocessor_ICLDSub_Translate" data-uid="SprutTechnology.SCPostprocessor.ICLDSub.Translate">Translate()</h4>
   <div class="markdown level1 summary"><p>This method can be called by the postprocessor developer to start translation of commands
 inside this subroutine. Usually you should do it inside OnCallNCSub, OnStartProject,
-OnFinishProject or OnExtCycle handlers.</p>
+OnFinishProject or OnExtCycle handlers.
+After translation the subroutine will be marked as Translated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void Translate()</code></pre>
   </div>
+  
+  
+  <a id="SprutTechnology_SCPostprocessor_ICLDSub_Translate_" data-uid="SprutTechnology.SCPostprocessor.ICLDSub.Translate*"></a>
+  <h4 id="SprutTechnology_SCPostprocessor_ICLDSub_Translate_System_Boolean_" data-uid="SprutTechnology.SCPostprocessor.ICLDSub.Translate(System.Boolean)">Translate(Boolean)</h4>
+  <div class="markdown level1 summary"><p>This method can be called by the postprocessor developer to start translation of commands
+inside this subroutine. Usually you should do it inside OnCallNCSub, OnStartProject,
+OnFinishProject or OnExtCycle handlers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Translate(bool markTranslated)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">markTranslated</span></td>
+        <td><p>With this parameter, you must explicitly indicate whether the subroutine
+should be marked as Translated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
