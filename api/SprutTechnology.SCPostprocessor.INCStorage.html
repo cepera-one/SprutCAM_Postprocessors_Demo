@@ -654,7 +654,11 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_INCStorage" data-uid="SprutTechnology.SCPostprocessor.INCStorage" class="text-break">Interface INCStorage
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The auxiliary object that contains the output files data and additional implements two important things:</p>
+<ul><li></li><li></li></ul>
+Usually you don&apos;t need to use this object by yourself directly.
+It is used internally by classes as <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> and <a class="xref" href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html">TBinaryNCFile</a>.
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SprutTechnology.SCPostprocessor.html">SprutTechnology.SCPostprocessor</a></h6>
   <h6><strong>Assembly</strong>: SCPostprocessor.dll</h6>
@@ -668,7 +672,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorage_ID_" data-uid="SprutTechnology.SCPostprocessor.INCStorage.ID*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorage_ID" data-uid="SprutTechnology.SCPostprocessor.INCStorage.ID">ID</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Unique numerical identifier of the storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -693,7 +698,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorage_NCFile_" data-uid="SprutTechnology.SCPostprocessor.INCStorage.NCFile*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorage_NCFile" data-uid="SprutTechnology.SCPostprocessor.INCStorage.NCFile">NCFile</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Link to an output file of type <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html">TNCFile</a> that corresponds to this storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -718,7 +724,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorage_StorageEnd_" data-uid="SprutTechnology.SCPostprocessor.INCStorage.StorageEnd*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorage_StorageEnd" data-uid="SprutTechnology.SCPostprocessor.INCStorage.StorageEnd">StorageEnd</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The special kind of <a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a> that always points to the end of this storage (NCFile).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -743,7 +750,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorage_StorageStart_" data-uid="SprutTechnology.SCPostprocessor.INCStorage.StorageStart*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorage_StorageStart" data-uid="SprutTechnology.SCPostprocessor.INCStorage.StorageStart">StorageStart</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The special kind of <a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a> that always points to the start of this storage (NCFile).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -768,7 +776,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorage_StorageType_" data-uid="SprutTechnology.SCPostprocessor.INCStorage.StorageType*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorage_StorageType" data-uid="SprutTechnology.SCPostprocessor.INCStorage.StorageType">StorageType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The type of storage: binary or text.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -795,7 +804,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorage_AddLabel_" data-uid="SprutTechnology.SCPostprocessor.INCStorage.AddLabel*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorage_AddLabel_SprutTechnology_SCPostprocessor_INCLabel_System_Int32_" data-uid="SprutTechnology.SCPostprocessor.INCStorage.AddLabel(SprutTechnology.SCPostprocessor.INCLabel,System.Int32)">AddLabel(INCLabel, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new label of type <a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a> that offsets from another label, passed as a parameter,
+to specified count of bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -814,12 +825,14 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>The label relative to which the new label should be created.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">byteOffset</span></td>
-        <td></td>
+        <td><p>The count of bytes the new label should offset from the specified label.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -834,7 +847,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
-        <td></td>
+        <td><p>Returns the new label.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -842,7 +856,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorage_Flush_" data-uid="SprutTechnology.SCPostprocessor.INCStorage.Flush*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorage_Flush" data-uid="SprutTechnology.SCPostprocessor.INCStorage.Flush">Flush()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the cashed in memory data to a temporary file on a hard drive.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -852,7 +867,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorage_RemoveLabel_" data-uid="SprutTechnology.SCPostprocessor.INCStorage.RemoveLabel*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorage_RemoveLabel_SprutTechnology_SCPostprocessor_INCLabel_" data-uid="SprutTechnology.SCPostprocessor.INCStorage.RemoveLabel(SprutTechnology.SCPostprocessor.INCLabel)">RemoveLabel(INCLabel)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes the specified label from the storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -879,7 +895,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorage_SaveToFile_" data-uid="SprutTechnology.SCPostprocessor.INCStorage.SaveToFile*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorage_SaveToFile_System_String_System_Text_Encoding_" data-uid="SprutTechnology.SCPostprocessor.INCStorage.SaveToFile(System.String,System.Text.Encoding)">SaveToFile(String, Encoding)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes content of this storage to an external file with the specified name. For a textual storage you should
+also specify desired chars encoding. If there is no encoding specified for textual storage then data will
+be written using UTF16 encoding without preamble (byte order mark).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -898,12 +917,17 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">FileName</span></td>
-        <td></td>
+        <td><p>The name of the file to which you want to write the data of this storage.
+If the directory of new file does not exist then it will be created. If a file with the name already
+exists then it will be overwritten.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
-        <td></td>
+        <td><p>Desired encoding for the output file. You should specify null for binary storage.
+If the encoding for textual storage doesn't specified (null) then UTF16 encoding without preamble will be used.</p>
+</td>
       </tr>
     </tbody>
   </table>

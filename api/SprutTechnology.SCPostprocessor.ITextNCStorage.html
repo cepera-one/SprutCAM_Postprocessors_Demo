@@ -654,7 +654,11 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_ITextNCStorage" data-uid="SprutTechnology.SCPostprocessor.ITextNCStorage" class="text-break">Interface ITextNCStorage
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The auxiliary object that contains the output text files data and additional implements two important things:</p>
+<ul><li></li><li></li></ul>
+Usually you don&apos;t need to use this object by yourself directly.
+It is used internally by the <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> class.
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -698,7 +702,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_ITextNCStorage_AppendString_" data-uid="SprutTechnology.SCPostprocessor.ITextNCStorage.AppendString*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_ITextNCStorage_AppendString_System_String_" data-uid="SprutTechnology.SCPostprocessor.ITextNCStorage.AppendString(System.String)">AppendString(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds the specified string to the end fo this storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -717,7 +722,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">s</span></td>
-        <td></td>
+        <td><p>The string to write.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -725,7 +731,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_ITextNCStorage_CutString_" data-uid="SprutTechnology.SCPostprocessor.ITextNCStorage.CutString*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_ITextNCStorage_CutString_SprutTechnology_SCPostprocessor_INCLabel_System_Int32_" data-uid="SprutTechnology.SCPostprocessor.ITextNCStorage.CutString(SprutTechnology.SCPostprocessor.INCLabel,System.Int32)">CutString(INCLabel, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cuts from this storage the specified count of chars starting from the position defined by the pos label.
+The data located after the specified number of chars will be shifted closer to the pos position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -744,12 +752,14 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">pos</span></td>
-        <td></td>
+        <td><p>The position from which the cutting should start.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">charCount</span></td>
-        <td></td>
+        <td><p>The count of chars to cut.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -764,7 +774,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Returns an cutted string.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -772,7 +783,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_ITextNCStorage_PasteString_" data-uid="SprutTechnology.SCPostprocessor.ITextNCStorage.PasteString*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_ITextNCStorage_PasteString_SprutTechnology_SCPostprocessor_INCLabel_System_String_" data-uid="SprutTechnology.SCPostprocessor.ITextNCStorage.PasteString(SprutTechnology.SCPostprocessor.INCLabel,System.String)">PasteString(INCLabel, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds the specified string to this storage starting from the position defined by the pos label.
+Chars, located after the specified position, if such exist, will be shifted further (there will not be
+overwritten).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -791,12 +805,14 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">pos</span></td>
-        <td></td>
+        <td><p>The position to which the data should be written.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">s</span></td>
-        <td></td>
+        <td><p>The string to write.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -804,7 +820,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_ITextNCStorage_ReadLine_" data-uid="SprutTechnology.SCPostprocessor.ITextNCStorage.ReadLine*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_ITextNCStorage_ReadLine_SprutTechnology_SCPostprocessor_INCLabel_" data-uid="SprutTechnology.SCPostprocessor.ITextNCStorage.ReadLine(SprutTechnology.SCPostprocessor.INCLabel)">ReadLine(INCLabel)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads from this storage the chars starting from the position defined by the pos label upto the end of line.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -823,7 +840,8 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">pos</span></td>
-        <td></td>
+        <td><p>The position from which the reading should start.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -838,7 +856,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Returns a read string.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -846,7 +865,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_ITextNCStorage_ReadString_" data-uid="SprutTechnology.SCPostprocessor.ITextNCStorage.ReadString*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_ITextNCStorage_ReadString_SprutTechnology_SCPostprocessor_INCLabel_System_Int32_" data-uid="SprutTechnology.SCPostprocessor.ITextNCStorage.ReadString(SprutTechnology.SCPostprocessor.INCLabel,System.Int32)">ReadString(INCLabel, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads from this storage the specified count of chars starting from the position defined by the pos label.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -865,12 +885,14 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">pos</span></td>
-        <td></td>
+        <td><p>The position from which the reading should start.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">charCount</span></td>
-        <td></td>
+        <td><p>The count of chars to read.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -885,7 +907,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Returns a read string.</p>
+</td>
       </tr>
     </tbody>
   </table>

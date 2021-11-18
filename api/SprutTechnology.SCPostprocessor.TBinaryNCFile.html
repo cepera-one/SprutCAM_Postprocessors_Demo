@@ -654,7 +654,11 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_TBinaryNCFile" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile" class="text-break">Class TBinaryNCFile
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Some class to use for writing binary files. It automatically synchronizes with the postprocessing
+system and, when debugging via CLDViewer, allows you to see how the contents of the file change
+right during the writing process. It also implements the functionality of insertion to an arbitrary
+location in the file (at the beginning or middle, and not just at the end).</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -710,7 +714,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_TBinaryNCFile__ctor_" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TBinaryNCFile__ctor" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.#ctor">TBinaryNCFile()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of TBinaryNCFile and assigns <code>TNCFilesManager.Singletone.DefaultNCFilesOwner</code> as an
+<a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_Owner">Owner</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -720,7 +726,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TBinaryNCFile__ctor_" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TBinaryNCFile__ctor_SprutTechnology_SCPostprocessor_INCFileOwner_" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.#ctor(SprutTechnology.SCPostprocessor.INCFileOwner)">TBinaryNCFile(INCFileOwner)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of TBinaryNCFile object and assigns specified object as an <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_Owner">Owner</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -739,7 +746,8 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCFileOwner.html">INCFileOwner</a></td>
         <td><span class="parametername">Owner</span></td>
-        <td></td>
+        <td><p>The object that is the owner of the output file formed by the postprocessor. Usually the owner is a postprocessor itself.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -749,7 +757,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_TBinaryNCFile_Description_" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.Description*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TBinaryNCFile_Description" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.Description">Description</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Short textual description of the file's content to be shown for the user in SprutCAM's window
+instead of hexadecimal representation of its bytes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -774,7 +784,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TBinaryNCFile_OutputFileName_" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.OutputFileName*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TBinaryNCFile_OutputFileName" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.OutputFileName">OutputFileName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The file name with a full path where this output file should be saved at the finish.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -803,7 +814,12 @@
   
   <a id="SprutTechnology_SCPostprocessor_TBinaryNCFile_SaveToFile_" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.SaveToFile*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TBinaryNCFile_SaveToFile_System_String_" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.SaveToFile(System.String)">SaveToFile(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This method is called by the system automatically at the most final stage of the postprocessor's work.
+Here the content of the file should be written from a temporary storage (in memory or temporary file)
+to the destination file specified in the <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_OutputFileName">OutputFileName</a> property.</p>
+<p>After this saving the <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnFinalizeNCFiles_SprutTechnology_SCPostprocessor_TNCFilesManager_">OnFinalizeNCFiles(TNCFilesManager)</a> handler of 
+the postprocessor is called where you can implement some additional actions on the output files.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -822,7 +838,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">fileName</span></td>
-        <td></td>
+        <td><p>The destination file path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -832,7 +849,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TBinaryNCFile_Write_" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.Write*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TBinaryNCFile_Write_System_Byte___" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.Write(System.Byte[])">Write(Byte[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes specified array of bytes to the end of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -851,7 +869,8 @@
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">b</span></td>
-        <td></td>
+        <td><p>The array of bytes to write.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -859,7 +878,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TBinaryNCFile_Write_" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.Write*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TBinaryNCFile_Write_System_Byte___System_Int64_System_Int32_" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.Write(System.Byte[],System.Int64,System.Int32)">Write(Byte[], Int64, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes only the subrange of the specified array of bytes to the end of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -878,17 +898,20 @@
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">b</span></td>
-        <td></td>
+        <td><p>The array of bytes to write.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>Offset of the first writing byte of the b array.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
-        <td></td>
+        <td><p>The count of bytes to write.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -896,7 +919,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TBinaryNCFile_Write_" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.Write*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TBinaryNCFile_Write_System_ReadOnlySpan_System_Byte__" data-uid="SprutTechnology.SCPostprocessor.TBinaryNCFile.Write(System.ReadOnlySpan{System.Byte})">Write(ReadOnlySpan&lt;Byte&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the specified buffer of bytes <span class="xref">System.ReadOnlySpan&lt;T&gt;</span> to the end of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -915,7 +939,8 @@
       <tr>
         <td><span class="xref">System.ReadOnlySpan</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
         <td><span class="parametername">buffer</span></td>
-        <td></td>
+        <td><p>The span of bytes to write.</p>
+</td>
       </tr>
     </tbody>
   </table>

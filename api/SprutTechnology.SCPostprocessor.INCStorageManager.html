@@ -654,7 +654,10 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_INCStorageManager" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager" class="text-break">Interface INCStorageManager
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Auxiliary object that helps to create new <a class="xref" href="SprutTechnology.SCPostprocessor.INCStorage.html">INCStorage</a> instances and maintains the list of output files.
+Usually you don't need to use it directly. It is used internally by the classes <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a>,
+<a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> and <a class="xref" href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html">TBinaryNCFile</a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SprutTechnology.SCPostprocessor.html">SprutTechnology.SCPostprocessor</a></h6>
   <h6><strong>Assembly</strong>: SCPostprocessor.dll</h6>
@@ -668,7 +671,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorageManager_AddExternalBinaryFile_" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.AddExternalBinaryFile*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorageManager_AddExternalBinaryFile_System_String_System_String_" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.AddExternalBinaryFile(System.String,System.String)">AddExternalBinaryFile(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds some binary external file to the list of output files.
+Usually you don't need to call it directly. Use the methods of <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a> instead.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -687,12 +692,17 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">outputFileName</span></td>
-        <td></td>
+        <td><p>Full path to the external file name to add.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">fileDescription</span></td>
-        <td></td>
+        <td><p>The new value for the Description property.
+Description is a some textual information about the output file that will be displayed
+instead of the content of the file on the output files panel of SprutCAM (and CLData viewer).
+It is more actual for a binary output files instead of displaying hexadecimal representation of its bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -707,7 +717,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Returns the unique numerical identifier of this file in the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -715,7 +726,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorageManager_AddExternalFile_" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.AddExternalFile*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorageManager_AddExternalFile_System_String_" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.AddExternalFile(System.String)">AddExternalFile(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds some textual external file to the list of output files.
+Usually you don't need to call it directly. Use the methods of <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a> instead.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -734,7 +747,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">outputFileName</span></td>
-        <td></td>
+        <td><p>Full path to the external file name to add.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -749,7 +763,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Returns the unique numerical identifier of this file in the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -757,7 +772,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorageManager_CreateNewBinaryStorage_" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.CreateNewBinaryStorage*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorageManager_CreateNewBinaryStorage" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.CreateNewBinaryStorage">CreateNewBinaryStorage()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="SprutTechnology.SCPostprocessor.IBinaryNCStorage.html">IBinaryNCStorage</a> instance. It is called automatically when you create a new
+<a class="xref" href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html">TBinaryNCFile</a> object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -774,7 +791,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.IBinaryNCStorage.html">IBinaryNCStorage</a></td>
-        <td></td>
+        <td><p>Returns newly created instance of <a class="xref" href="SprutTechnology.SCPostprocessor.IBinaryNCStorage.html">IBinaryNCStorage</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -782,7 +800,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorageManager_CreateNewTextStorage_" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.CreateNewTextStorage*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorageManager_CreateNewTextStorage" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.CreateNewTextStorage">CreateNewTextStorage()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="SprutTechnology.SCPostprocessor.ITextNCStorage.html">ITextNCStorage</a> instance. It is called automatically when you create a new
+<a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -799,7 +819,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ITextNCStorage.html">ITextNCStorage</a></td>
-        <td></td>
+        <td><p>Returns newly created instance of <a class="xref" href="SprutTechnology.SCPostprocessor.ITextNCStorage.html">ITextNCStorage</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -807,7 +828,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorageManager_MakeUniqueFileName_" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.MakeUniqueFileName*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorageManager_MakeUniqueFileName" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.MakeUniqueFileName">MakeUniqueFileName()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Makes a new unique file name for a temporary files inside the temp folder of the application.
+It is used internally by the classes <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a> and inheritors of <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html">TNCFile</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -824,7 +847,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Returns a new file name.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -832,7 +856,12 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorageManager_SetNCFileDescription_" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.SetNCFileDescription*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorageManager_SetNCFileDescription_System_Int32_System_String_" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.SetNCFileDescription(System.Int32,System.String)">SetNCFileDescription(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the new value of the Description property for the file with specified id in the list.
+Description is a some textual information about the output file that will be displayed
+instead of the content of the file on the output files panel of SprutCAM (and CLData viewer).
+It is more actual for a binary output files instead of displaying hexadecimal representation of its bytes.</p>
+<p>Usually you don&apos;t need to call it directly. Use the methods of <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a> instead.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -851,12 +880,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The unique identifier of the file you want to update in the list.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">fileDescription</span></td>
-        <td></td>
+        <td><p>The new value for the Description property.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -864,7 +895,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCStorageManager_SetNCFileOutputName_" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.SetNCFileOutputName*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCStorageManager_SetNCFileOutputName_System_Int32_System_String_" data-uid="SprutTechnology.SCPostprocessor.INCStorageManager.SetNCFileOutputName(System.Int32,System.String)">SetNCFileOutputName(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the new value of the output file name for the file with specified id in the list.
+Usually you don't need to call it directly. Use the methods of <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a> instead.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -883,12 +916,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The unique identifier of the file you want to update in the list.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">outputFileName</span></td>
-        <td></td>
+        <td><p>The new value for the output file name property.</p>
+</td>
       </tr>
     </tbody>
   </table>

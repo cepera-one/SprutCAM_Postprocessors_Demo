@@ -654,7 +654,14 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile" class="text-break">Class TSimpleTextNCFile
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Simplest implementation of the output file. It is just wrapper around <span class="xref">System.IO.StreamWriter</span> that inherits <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html">TNCFile</a> to be possible
+to manage it using <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a>. It has no any integration with the CLData Viewer so you will not see in live time any changes of
+this file in the CLData viewer. It will be shown there after the finish of whole postprocessing only. Use it only if you have some problems with
+<a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a>.</p>
+<p>To use TSimpleTextNCFile class just create an instance of it and use <a class="xref" href="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html#SprutTechnology_SCPostprocessor_TSimpleTextNCFile_WriteLine_System_String_">WriteLine(String)</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html#SprutTechnology_SCPostprocessor_TSimpleTextNCFile_Write_System_String_">Write(String)</a> methods 
+to append some text to the file.</p>
+<p>Also you can set the desired encoding <a class="xref" href="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html#SprutTechnology_SCPostprocessor_TSimpleTextNCFile_TextEncoding">TextEncoding</a> of the output file.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -711,7 +718,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile__ctor_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile__ctor" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.#ctor">TSimpleTextNCFile()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of TSimpleTextNCFile object and assigns <code>TNCFilesManager.Singletone.DefaultNCFilesOwner</code> as an
+<a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_Owner">Owner</a>.
+It assigns UTF-8 without BOM as a desired encoding of the output file (<a class="xref" href="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html#SprutTechnology_SCPostprocessor_TSimpleTextNCFile_TextEncoding">TextEncoding</a>).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -721,7 +731,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile__ctor_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile__ctor_SprutTechnology_SCPostprocessor_INCFileOwner_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.#ctor(SprutTechnology.SCPostprocessor.INCFileOwner)">TSimpleTextNCFile(INCFileOwner)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of TSimpleTextNCFile object and assigns specified object as an <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_Owner">Owner</a>.
+It assigns <code>new UTF8Encoding(false)</code> (UTF-8 without BOM) as a desired encoding of the output file (<a class="xref" href="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html#SprutTechnology_SCPostprocessor_TSimpleTextNCFile_TextEncoding">TextEncoding</a>).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -740,7 +752,8 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCFileOwner.html">INCFileOwner</a></td>
         <td><span class="parametername">Owner</span></td>
-        <td></td>
+        <td><p>The object that is the owner of the output file formed by the postprocessor. Usually the owner is a postprocessor itself.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -748,7 +761,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile__ctor_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile__ctor_SprutTechnology_SCPostprocessor_INCFileOwner_System_Text_Encoding_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.#ctor(SprutTechnology.SCPostprocessor.INCFileOwner,System.Text.Encoding)">TSimpleTextNCFile(INCFileOwner, Encoding)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of TSimpleTextNCFile object and assigns specified object as an <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_Owner">Owner</a>.
+It expects the encoding of the output text file as an input parameter.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -767,12 +782,15 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCFileOwner.html">INCFileOwner</a></td>
         <td><span class="parametername">Owner</span></td>
-        <td></td>
+        <td><p>The object that is the owner of the output file formed by the postprocessor. Usually the owner is a postprocessor itself.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
-        <td></td>
+        <td><p>Desired output file encoding. If it is null then default encoding of the <span class="xref">System.IO.StreamWriter</span> class
+will be used (UTF8 without BOM, <a class="xref" href="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html#SprutTechnology_SCPostprocessor_TSimpleTextNCFile_TextEncoding">TextEncoding</a>).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -780,7 +798,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile__ctor_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile__ctor_System_Text_Encoding_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.#ctor(System.Text.Encoding)">TSimpleTextNCFile(Encoding)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of TSimpleTextNCFile object and assigns <code>TNCFilesManager.Singletone.DefaultNCFilesOwner</code> as an
+<a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_Owner">Owner</a>. It expects the encoding of the output text file as an input parameter (<a class="xref" href="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html#SprutTechnology_SCPostprocessor_TSimpleTextNCFile_TextEncoding">TextEncoding</a>).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -799,7 +819,9 @@
       <tr>
         <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
-        <td></td>
+        <td><p>Desired output file encoding. If it is null then default encoding of the <span class="xref">System.IO.StreamWriter</span> class
+will be used (UTF-8 without BOM).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -809,7 +831,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_OutputFileName_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.OutputFileName*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_OutputFileName" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.OutputFileName">OutputFileName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The file name with a full path where this output file should be saved at the finish.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -836,7 +859,11 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_TextEncoding_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.TextEncoding*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_TextEncoding" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.TextEncoding">TextEncoding</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Desired encoding of the output file. For example, you can use one of the following variants.</p>
+<ul><li><code>Encoding.GetEncoding(&quot;windows-1251&quot;)</code> - with specifying any standard textual name of the encoding.</li><li><code>Encoding.UTF8</code> - UTF-8 with BOM (byte order mark bytes at the start of a file)</li><li><code>Encoding.Unicode</code> - UTF-16 using the little endian byte order.</li><li><code>Encoding.BigEndianUnicode</code> - UTF-16 using the big endian byte order.</li><li><code>Encoding.Default</code> - The default encoding for this .NET implementation.</li><li><code>new UTF8Encoding(false)</code> - UTF-8 without BOM will be used.</li><li><code>null</code> - UTF-8 without BOM will be used.</li></ul>
+<p>You can assign TextEncoding not only at the initialization of new instance of TSimpleTextNCFile but at any time of postprocessing. 
+It will be applied at the finish of whole postprocessing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -863,7 +890,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_Finalize_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.Finalize*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_Finalize" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.Finalize">Finalize()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Finalizes TSimpleTextNCFile instance and disposes system resources.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -873,7 +901,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_Flush_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.Flush*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_Flush" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.Flush">Flush()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>It should write the buffered in memory data for the output file to a hard drive (to a temporary files,
+not to the final destination). Usually you don't need to call it manually, the postprocessing system
+calls it as needed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -885,7 +916,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_Output_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.Output*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_Output_System_String_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.Output(System.String)">Output(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the specified string with the line break (will be added automatically) to the end of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -904,7 +936,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">s</span></td>
-        <td></td>
+        <td><p>The string you want to write.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -912,7 +945,12 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_SaveToFile_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.SaveToFile*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_SaveToFile_System_String_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.SaveToFile(System.String)">SaveToFile(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This method is called by the system automatically at the most final stage of the postprocessor's work.
+Here the content of the file should be written from a temporary storage (in memory or temporary file)
+to the destination file specified in the <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_OutputFileName">OutputFileName</a> property.</p>
+<p>After this saving the <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnFinalizeNCFiles_SprutTechnology_SCPostprocessor_TNCFilesManager_">OnFinalizeNCFiles(TNCFilesManager)</a> handler of 
+the postprocessor is called where you can implement some additional actions on the output files.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -931,7 +969,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">fileName</span></td>
-        <td></td>
+        <td><p>The destination file path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -941,7 +980,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_Write_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.Write*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_Write_System_String_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.Write(System.String)">Write(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the specified string to the end of the file. No line break is added.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -960,7 +1000,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">s</span></td>
-        <td></td>
+        <td><p>The string you want to write.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -968,7 +1009,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_Write_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.Write*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_Write_System_String_SprutTechnology_SCPostprocessor_INCLabel_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.Write(System.String,SprutTechnology.SCPostprocessor.INCLabel)">Write(String, INCLabel)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Attention! This feature doesn't supported by the TSimpleTextNCFile class. It will throw
+the <a class="xref" href="SprutTechnology.SCPostprocessor.EPostprocessorException.html">EPostprocessorException</a> exception.</p>
+<p>To be possible to use random position file writing with <a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a> use <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> instead.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -996,11 +1040,27 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SprutTechnology.SCPostprocessor.EPostprocessorException.html">EPostprocessorException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_WriteLine_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.WriteLine*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_WriteLine" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.WriteLine">WriteLine()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the line break to the end of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1010,7 +1070,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_WriteLine_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.WriteLine*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_WriteLine_System_String_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.WriteLine(System.String)">WriteLine(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the specified string with the line break (will be added automatically) to the end of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1029,7 +1090,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">s</span></td>
-        <td></td>
+        <td><p>The string you want to write.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1037,7 +1099,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_WriteLine_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.WriteLine*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TSimpleTextNCFile_WriteLine_System_String_SprutTechnology_SCPostprocessor_INCLabel_" data-uid="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.WriteLine(System.String,SprutTechnology.SCPostprocessor.INCLabel)">WriteLine(String, INCLabel)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Attention! This feature doesn't supported by the TSimpleTextNCFile class. It will throw
+the <a class="xref" href="SprutTechnology.SCPostprocessor.EPostprocessorException.html">EPostprocessorException</a> exception.</p>
+<p>To be possible to use random position file writing with <a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a> use <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> instead.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1061,6 +1126,21 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SprutTechnology.SCPostprocessor.EPostprocessorException.html">EPostprocessorException</a></td>
         <td></td>
       </tr>
     </tbody>

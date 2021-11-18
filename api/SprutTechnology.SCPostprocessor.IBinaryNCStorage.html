@@ -654,7 +654,11 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_IBinaryNCStorage" data-uid="SprutTechnology.SCPostprocessor.IBinaryNCStorage" class="text-break">Interface IBinaryNCStorage
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The auxiliary object that contains the output binary files data and additional implements two important things:</p>
+<ul><li></li><li></li></ul>
+Usually you don&apos;t need to use this object by yourself directly.
+It is used internally by the <a class="xref" href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html">TBinaryNCFile</a> class.
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -698,7 +702,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_IBinaryNCStorage_AppendBytes_" data-uid="SprutTechnology.SCPostprocessor.IBinaryNCStorage.AppendBytes*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_IBinaryNCStorage_AppendBytes_System_Byte___" data-uid="SprutTechnology.SCPostprocessor.IBinaryNCStorage.AppendBytes(System.Byte[])">AppendBytes(Byte[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds the specified array of bytes to the end fo this storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -717,7 +722,8 @@
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">b</span></td>
-        <td></td>
+        <td><p>The array of bytes to write.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -725,7 +731,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_IBinaryNCStorage_CutBytes_" data-uid="SprutTechnology.SCPostprocessor.IBinaryNCStorage.CutBytes*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_IBinaryNCStorage_CutBytes_SprutTechnology_SCPostprocessor_INCLabel_System_Int32_" data-uid="SprutTechnology.SCPostprocessor.IBinaryNCStorage.CutBytes(SprutTechnology.SCPostprocessor.INCLabel,System.Int32)">CutBytes(INCLabel, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cuts from this storage the specified count of bytes starting from the position defined by the pos label.
+The data located after the specified number of bytes will be shifted closer to the pos position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -744,12 +752,14 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">pos</span></td>
-        <td></td>
+        <td><p>The position from which the cutting should start.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">byteCount</span></td>
-        <td></td>
+        <td><p>The count of bytes to cut.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -764,7 +774,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
-        <td></td>
+        <td><p>Returns an array of cutted bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -772,7 +783,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_IBinaryNCStorage_PasteBytes_" data-uid="SprutTechnology.SCPostprocessor.IBinaryNCStorage.PasteBytes*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_IBinaryNCStorage_PasteBytes_SprutTechnology_SCPostprocessor_INCLabel_System_Byte___" data-uid="SprutTechnology.SCPostprocessor.IBinaryNCStorage.PasteBytes(SprutTechnology.SCPostprocessor.INCLabel,System.Byte[])">PasteBytes(INCLabel, Byte[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds the specified array of bytes to this storage starting from the position defined by the pos label.
+Bytes, located after the specified position, if such exist, will be shifted further (there will not be
+overwritten).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -791,12 +805,14 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">pos</span></td>
-        <td></td>
+        <td><p>The position to which the data should be written.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">b</span></td>
-        <td></td>
+        <td><p>The array of bytes to write.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -804,7 +820,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_IBinaryNCStorage_ReadBytes_" data-uid="SprutTechnology.SCPostprocessor.IBinaryNCStorage.ReadBytes*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_IBinaryNCStorage_ReadBytes_SprutTechnology_SCPostprocessor_INCLabel_System_Int32_" data-uid="SprutTechnology.SCPostprocessor.IBinaryNCStorage.ReadBytes(SprutTechnology.SCPostprocessor.INCLabel,System.Int32)">ReadBytes(INCLabel, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads from this storage the specified count of bytes starting from the position defined by the pos label.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -823,12 +840,14 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">pos</span></td>
-        <td></td>
+        <td><p>The position from which the reading should start.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">byteCount</span></td>
-        <td></td>
+        <td><p>The count of bytes to read.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -843,7 +862,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
-        <td></td>
+        <td><p>Returns an array of read bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>

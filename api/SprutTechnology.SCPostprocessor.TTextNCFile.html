@@ -658,6 +658,13 @@
 system and, when debugging via CLDViewer, allows you to see how the contents of the file change
 right during the writing process. It also implements the functionality of writing to an arbitrary
 location in the file (at the beginning or middle, and not just at the end).</p>
+<p>Also you can set the desired encoding <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_TextEncoding">TextEncoding</a> of the output file.</p>
+<p>To use TTextNCFile class just create an instance of it and use <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_WriteLine_System_String_">WriteLine(String)</a> or 
+<a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_Write_System_String_">Write(String)</a> methods to append some text to the file.</p>
+<p>In addition, you can create a new class that inherits from this class. This will allow you 
+to declare your members within the class associated with the given output file, for example, 
+the number of the NC program, a set of registers (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) for formatting and filtering the output, 
+methods for writing specific information, etc.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -715,7 +722,10 @@ location in the file (at the beginning or middle, and not just at the end).</p>
   
   <a id="SprutTechnology_SCPostprocessor_TTextNCFile__ctor_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TTextNCFile__ctor" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.#ctor">TTextNCFile()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of TTextNCFile object and assigns <code>TNCFilesManager.Singletone.DefaultNCFilesOwner</code> as an
+<a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_Owner">Owner</a>.
+It assigns UTF-8 without BOM as a desired encoding of the output file (<a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_TextEncoding">TextEncoding</a>).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -725,7 +735,9 @@ location in the file (at the beginning or middle, and not just at the end).</p>
   
   <a id="SprutTechnology_SCPostprocessor_TTextNCFile__ctor_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TTextNCFile__ctor_SprutTechnology_SCPostprocessor_INCFileOwner_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.#ctor(SprutTechnology.SCPostprocessor.INCFileOwner)">TTextNCFile(INCFileOwner)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of TTextNCFile object and assigns specified object as an <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_Owner">Owner</a>.
+It assigns <code>new UTF8Encoding(false)</code> (UTF-8 without BOM) as a desired encoding of the output file (<a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_TextEncoding">TextEncoding</a>).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -744,7 +756,8 @@ location in the file (at the beginning or middle, and not just at the end).</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCFileOwner.html">INCFileOwner</a></td>
         <td><span class="parametername">Owner</span></td>
-        <td></td>
+        <td><p>The object that is the owner of the output file formed by the postprocessor. Usually the owner is a postprocessor itself.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -752,7 +765,9 @@ location in the file (at the beginning or middle, and not just at the end).</p>
   
   <a id="SprutTechnology_SCPostprocessor_TTextNCFile__ctor_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TTextNCFile__ctor_SprutTechnology_SCPostprocessor_INCFileOwner_System_Text_Encoding_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.#ctor(SprutTechnology.SCPostprocessor.INCFileOwner,System.Text.Encoding)">TTextNCFile(INCFileOwner, Encoding)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of TTextNCFile object and assigns specified object as an <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_Owner">Owner</a>.
+It expects the encoding of the output text file as an input parameter.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -771,12 +786,14 @@ location in the file (at the beginning or middle, and not just at the end).</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCFileOwner.html">INCFileOwner</a></td>
         <td><span class="parametername">Owner</span></td>
-        <td></td>
+        <td><p>The object that is the owner of the output file formed by the postprocessor. Usually the owner is a postprocessor itself.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
-        <td></td>
+        <td><p>Desired output file encoding. If it is null then default encoding UTF8 without BOM will be used (<a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_TextEncoding">TextEncoding</a>).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -784,7 +801,9 @@ location in the file (at the beginning or middle, and not just at the end).</p>
   
   <a id="SprutTechnology_SCPostprocessor_TTextNCFile__ctor_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TTextNCFile__ctor_System_Text_Encoding_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.#ctor(System.Text.Encoding)">TTextNCFile(Encoding)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of TTextNCFile object and assigns <code>TNCFilesManager.Singletone.DefaultNCFilesOwner</code> as an
+<a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_Owner">Owner</a>. It expects the encoding of the output text file as an input parameter (<a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_TextEncoding">TextEncoding</a>).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -803,7 +822,9 @@ location in the file (at the beginning or middle, and not just at the end).</p>
       <tr>
         <td><span class="xref">System.Text.Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
-        <td></td>
+        <td><p>Desired output file encoding. If it is null then default encoding UTF-8 without BOM
+will be used.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -841,7 +862,8 @@ by default. If DefaultLabel is &quot;null&quot; then data will be written to the
   
   <a id="SprutTechnology_SCPostprocessor_TTextNCFile_FileEnd_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.FileEnd*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TTextNCFile_FileEnd" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.FileEnd">FileEnd</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The label that always points to the end position of this file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -866,7 +888,8 @@ by default. If DefaultLabel is &quot;null&quot; then data will be written to the
   
   <a id="SprutTechnology_SCPostprocessor_TTextNCFile_FileStart_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.FileStart*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TTextNCFile_FileStart" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.FileStart">FileStart</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The label that always points to the start position of this file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -891,7 +914,8 @@ by default. If DefaultLabel is &quot;null&quot; then data will be written to the
   
   <a id="SprutTechnology_SCPostprocessor_TTextNCFile_OutputFileName_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.OutputFileName*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TTextNCFile_OutputFileName" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.OutputFileName">OutputFileName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The file name with a full path where this output file should be saved at the finish.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -918,7 +942,10 @@ by default. If DefaultLabel is &quot;null&quot; then data will be written to the
   
   <a id="SprutTechnology_SCPostprocessor_TTextNCFile_TextEncoding_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.TextEncoding*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TTextNCFile_TextEncoding" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.TextEncoding">TextEncoding</h4>
-  <div class="markdown level1 summary"><p>Allows you to specify the encoding for the output file. By default, UTF-8 encoding is used.</p>
+  <div class="markdown level1 summary"><p>Desired encoding of the output file. For example, you can use one of the following variants.</p>
+<ul><li><code>Encoding.GetEncoding(&quot;windows-1251&quot;)</code> - with specifying any standard textual name of the encoding.</li><li><code>Encoding.UTF8</code> - UTF-8 with BOM (byte order mark bytes at the start of a file)</li><li><code>Encoding.Unicode</code> - UTF-16 using the little endian byte order.</li><li><code>Encoding.BigEndianUnicode</code> - UTF-16 using the big endian byte order.</li><li><code>Encoding.Default</code> - The default encoding for this .NET implementation.</li><li><code>new UTF8Encoding(false)</code> - UTF-8 without BOM will be used.</li><li><code>null</code> - UTF-8 without BOM will be used.</li></ul>
+<p>You can assign TextEncoding not only at the initialization of new instance of TTextNCFile but at any time of postprocessing. 
+It will be applied at the finish of whole postprocessing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1026,7 +1053,10 @@ is not &quot;null&quot; then the new label will point to the same position with 
   
   <a id="SprutTechnology_SCPostprocessor_TTextNCFile_Flush_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.Flush*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TTextNCFile_Flush" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.Flush">Flush()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>It should write the buffered in memory data for the output file to a hard drive (to a temporary files,
+not to the final destination). Usually you don't need to call it manually, the postprocessing system
+calls it as needed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1106,7 +1136,12 @@ the text will be written to the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TTextNCFile_SaveToFile_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.SaveToFile*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TTextNCFile_SaveToFile_System_String_" data-uid="SprutTechnology.SCPostprocessor.TTextNCFile.SaveToFile(System.String)">SaveToFile(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This method is called by the system automatically at the most final stage of the postprocessor's work.
+Here the content of the file should be written from a temporary storage (in memory or temporary file)
+to the destination file specified in the <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_OutputFileName">OutputFileName</a> property.</p>
+<p>After this saving the <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnFinalizeNCFiles_SprutTechnology_SCPostprocessor_TNCFilesManager_">OnFinalizeNCFiles(TNCFilesManager)</a> handler of 
+the postprocessor is called where you can implement some additional actions on the output files.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1125,7 +1160,8 @@ the text will be written to the end of the file.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">fileName</span></td>
-        <td></td>
+        <td><p>The destination file path.</p>
+</td>
       </tr>
     </tbody>
   </table>

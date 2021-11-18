@@ -654,7 +654,8 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_NamedPropIterator" data-uid="SprutTechnology.SCPostprocessor.NamedPropIterator" class="text-break">Class NamedPropIterator
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Static class, implementing the search for parameters for complex names that may include points and brackets.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -697,7 +698,13 @@
   
   <a id="SprutTechnology_SCPostprocessor_NamedPropIterator_FindNode_" data-uid="SprutTechnology.SCPostprocessor.NamedPropIterator.FindNode*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NamedPropIterator_FindNode_System_String_SprutTechnology_SCPostprocessor_INamedProperty_" data-uid="SprutTechnology.SCPostprocessor.NamedPropIterator.FindNode(System.String,SprutTechnology.SCPostprocessor.INamedProperty)">FindNode(String, INamedProperty)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Searches inside a Root node, a property with the specified name <code>Name</code>. Names can be complex consisting of
+brackets and points. Points and brackets separate the names of child elements of different levels.
+For example: <code>NamedPropIterator.FindNode(&quot;Project.Operations&quot;, cldProject)</code>.</p>
+<p>The case of characters does not matter. </p> 
+Usually you don&apos;t need to call this method manually. The system calls it automatically when you ask 
+some child parameter by name from an object that implements <a class="xref" href="SprutTechnology.SCPostprocessor.INamedProperty.html">INamedProperty</a> interface.
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -716,12 +723,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Name</span></td>
-        <td></td>
+        <td><p>The name of parameter you want to find. Can be complex, containing points and brackets.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INamedProperty.html">INamedProperty</a></td>
         <td><span class="parametername">Root</span></td>
-        <td></td>
+        <td><p>Object among whose child parameters you want to look for the property.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -736,7 +745,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INamedProperty.html">INamedProperty</a></td>
-        <td></td>
+        <td><p>If the searching finished successfully it returns the link to the found property.
+If the searching fails it returns <code>null</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -698,7 +698,8 @@ methods to search, sort, and manipulate lists.</p>
       <section><p>Auxiliary object that implements enumerator for the multimotion's axes list and allows to use foreach syntax.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.NamedPropIterator.html">NamedPropIterator</a></h4>
-      <section></section>
+      <section><p>Static class, implementing the search for parameters for complex names that may include points and brackets.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a></h4>
       <section></section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator.html">NCBlockWordsEnumerator</a></h4>
@@ -734,9 +735,18 @@ If both of these values are the same, then re-output the value can be skipped au
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html">SCPostprocessorSettingsAttribute</a></h4>
       <section></section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html">TBinaryNCFile</a></h4>
-      <section></section>
+      <section><p>Some class to use for writing binary files. It automatically synchronizes with the postprocessing
+system and, when debugging via CLDViewer, allows you to see how the contents of the file change
+right during the writing process. It also implements the functionality of insertion to an arbitrary
+location in the file (at the beginning or middle, and not just at the end).</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TExternalNCFile.html">TExternalNCFile</a></h4>
-      <section></section>
+      <section><p>The external file is a file that was formed or obtained by a postprocessor in some special way,
+for example, through an external third-party program, and added to the list of postprocessor output files
+already in the finished form.</p>
+<p>It is just a wrapper that allows to have properties of <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html">TNCFile</a> class for some third-party files and 
+hold them inside the common list of output files in <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a>.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TextNCWord.html">TextNCWord</a></h4>
       <section><p>
 &quot;TextNCWord&quot;, or in other words &quot;Register&quot;, is an object that helps you quickly and conveniently convert  
@@ -749,10 +759,10 @@ re-output the value can be skipped automatically.
 </p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html">TNCFile</a></h4>
-      <section><p>Abstract class ancestor for all types of output files.</p>
+      <section><p>Abstract class ancestor for all types of output files formed by postprocessor.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a></h4>
-      <section><p>A special class that contains a list of output files.</p>
+      <section><p>A special class that contains a list of output files formed by postprocessor.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html">TPostprocessor</a></h4>
       <section><p>
@@ -776,12 +786,26 @@ the corresponding method with your own inside your inherited class.
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.Transliterator.html">Transliterator</a></h4>
       <section></section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html">TSimpleTextNCFile</a></h4>
-      <section></section>
+      <section><p>Simplest implementation of the output file. It is just wrapper around <span class="xref">System.IO.StreamWriter</span> that inherits <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html">TNCFile</a> to be possible
+to manage it using <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a>. It has no any integration with the CLData Viewer so you will not see in live time any changes of
+this file in the CLData viewer. It will be shown there after the finish of whole postprocessing only. Use it only if you have some problems with
+<a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a>.</p>
+<p>To use TSimpleTextNCFile class just create an instance of it and use <a class="xref" href="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html#SprutTechnology_SCPostprocessor_TSimpleTextNCFile_WriteLine_System_String_">WriteLine(String)</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html#SprutTechnology_SCPostprocessor_TSimpleTextNCFile_Write_System_String_">Write(String)</a> methods 
+to append some text to the file.</p>
+<p>Also you can set the desired encoding <a class="xref" href="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html#SprutTechnology_SCPostprocessor_TSimpleTextNCFile_TextEncoding">TextEncoding</a> of the output file.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a></h4>
       <section><p>The main class to use for writing text files. It automatically synchronizes with the postprocessing
 system and, when debugging via CLDViewer, allows you to see how the contents of the file change
 right during the writing process. It also implements the functionality of writing to an arbitrary
 location in the file (at the beginning or middle, and not just at the end).</p>
+<p>Also you can set the desired encoding <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_TextEncoding">TextEncoding</a> of the output file.</p>
+<p>To use TTextNCFile class just create an instance of it and use <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_WriteLine_System_String_">WriteLine(String)</a> or 
+<a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_Write_System_String_">Write(String)</a> methods to append some text to the file.</p>
+<p>In addition, you can create a new class that inherits from this class. This will allow you 
+to declare your members within the class associated with the given output file, for example, 
+the number of the NC program, a set of registers (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) for formatting and filtering the output, 
+methods for writing specific information, etc.</p>
 </section>
     <h3 id="structs">Structs
   </h3>
@@ -825,7 +849,11 @@ Depend on a convention of type TInpRotationConvention (outside of this structure
 unique name using a convenient syntax with square brackets <code>Arr[&quot;NestedPropName&quot;]</code>.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.IBinaryNCStorage.html">IBinaryNCStorage</a></h4>
-      <section></section>
+      <section><p>The auxiliary object that contains the output binary files data and additional implements two important things:</p>
+<ul><li></li><li></li></ul>
+Usually you don&apos;t need to use this object by yourself directly.
+It is used internally by the <a class="xref" href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html">TBinaryNCFile</a> class.
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.IBooleanNamedPropertyIndexer.html">IBooleanNamedPropertyIndexer</a></h4>
       <section><p>A helper interface that allows you to quickly get the boolean value of a nested property by its
 unique name using a convenient syntax with square brackets <code>Bol[&quot;NestedPropName&quot;]</code>.</p>
@@ -1084,7 +1112,9 @@ combo box when user clicks to the value field of the property.</p>
 unique name using a convenient syntax with square brackets <code>Int[&quot;NestedPropName&quot;]</code>.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.INamedPropertiesCollection.html">INamedPropertiesCollection</a></h4>
-      <section></section>
+      <section><p>Collection of a named properties. May contain child properties that are not unique by name,
+which can be accessed by index.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.INamedProperty.html">INamedProperty</a></h4>
       <section><p>Some property object that can have a unique name and a value of one of standard types: string, double, integer
 or boolean. The property can be complex or array type also. It means that it can contain nested properties.</p>
@@ -1096,7 +1126,14 @@ using a convenient syntax with square brackets <code>Ptr[&quot;NestedPropName&qu
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.INCBlockOwner.html">INCBlockOwner</a></h4>
       <section></section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.INCFileOwner.html">INCFileOwner</a></h4>
-      <section></section>
+      <section><p>This is an interface that allows us to abstract, weaken the connection with the object that is the owner of
+an output file formed by the postprocessor. Usually the owner is a postprocessor itself. Using this interface
+the output NCFile can notify the postprocessor about the actions of this file.
+For example, if you try to add a new string to the file, then you must notify the postprocessor
+so that it should call an OnFilterString handler, which can produce some additional conversion
+over the string before it will be written to the file.</p>
+<p>It is used internally by the inheritors of <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html">TNCFile</a> so usually you don&apos;t need to call it directly.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></h4>
       <section><p>The INCLabel is a special object that allows writing to an arbitrary location in the output file
 (at the beginning or middle, not just at the end). The label points to a specific position within
@@ -1110,9 +1147,16 @@ position at which to insert new text.
 </p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.INCStorage.html">INCStorage</a></h4>
-      <section></section>
+      <section><p>The auxiliary object that contains the output files data and additional implements two important things:</p>
+<ul><li></li><li></li></ul>
+Usually you don&apos;t need to use this object by yourself directly.
+It is used internally by classes as <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> and <a class="xref" href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html">TBinaryNCFile</a>.
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.INCStorageManager.html">INCStorageManager</a></h4>
-      <section></section>
+      <section><p>Auxiliary object that helps to create new <a class="xref" href="SprutTechnology.SCPostprocessor.INCStorage.html">INCStorage</a> instances and maintains the list of output files.
+Usually you don't need to use it directly. It is used internally by the classes <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a>,
+<a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> and <a class="xref" href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html">TBinaryNCFile</a>.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.IPostprocessingLogReceiver.html">IPostprocessingLogReceiver</a></h4>
       <section></section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.IPPFunTechInfo.html">IPPFunTechInfo</a></h4>
@@ -1129,7 +1173,11 @@ position at which to insert new text.
 unique name using a convenient syntax with square brackets <code>Str[&quot;NestedPropName&quot;]</code>.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.ITextNCStorage.html">ITextNCStorage</a></h4>
-      <section></section>
+      <section><p>The auxiliary object that contains the output text files data and additional implements two important things:</p>
+<ul><li></li><li></li></ul>
+Usually you don&apos;t need to use this object by yourself directly.
+It is used internally by the <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> class.
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.IToolGeometry.html">IToolGeometry</a></h4>
       <section><p>Auxiliary object to describe main geometrical parameters of a tool.</p>
 </section>
@@ -1221,7 +1269,8 @@ numbers only or output it always for fractional and integer numbers.</p>
       <section><p>Enumeration that defines convention of rotation (orientation) TInpRotation(A, B, C, D).</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TNCStorageType.html">TNCStorageType</a></h4>
-      <section></section>
+      <section><p>The type of an INCStorage object that contains the output files data. It can be only two possible types: Binary or Text.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TrailingZeroesMode.html">TrailingZeroesMode</a></h4>
       <section><p>The enumeration defines how to output trailing insignificant zeroes (after decimal point) for numbers:
 don't output, output all zeroes or output only one first zero after decimal point.</p>

@@ -7137,6 +7137,19 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.SCPostprocessor.ICLDSub.CLDFile
   nameWithType: ICLDSub.CLDFile
+- uid: SprutTechnology.SCPostprocessor.ICLDSub.Data
+  name: Data
+  href: api/SprutTechnology.SCPostprocessor.ICLDSub.html#SprutTechnology_SCPostprocessor_ICLDSub_Data
+  commentId: P:SprutTechnology.SCPostprocessor.ICLDSub.Data
+  fullName: SprutTechnology.SCPostprocessor.ICLDSub.Data
+  nameWithType: ICLDSub.Data
+- uid: SprutTechnology.SCPostprocessor.ICLDSub.Data*
+  name: Data
+  href: api/SprutTechnology.SCPostprocessor.ICLDSub.html#SprutTechnology_SCPostprocessor_ICLDSub_Data_
+  commentId: Overload:SprutTechnology.SCPostprocessor.ICLDSub.Data
+  isSpec: "True"
+  fullName: SprutTechnology.SCPostprocessor.ICLDSub.Data
+  nameWithType: ICLDSub.Data
 - uid: SprutTechnology.SCPostprocessor.ICLDSub.EndCaption
   name: EndCaption
   href: api/SprutTechnology.SCPostprocessor.ICLDSub.html#SprutTechnology_SCPostprocessor_ICLDSub_EndCaption
@@ -18035,6 +18048,22 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.VecMatrLib.VML.GeWatch
   nameWithType: VML.GeWatch
+- uid: SprutTechnology.VecMatrLib.VML.IsGeWatchAssigned(SprutTechnology.VecMatrLib.ISTGeWatchClient@)
+  name: IsGeWatchAssigned(out ISTGeWatchClient)
+  href: api/SprutTechnology.VecMatrLib.VML.html#SprutTechnology_VecMatrLib_VML_IsGeWatchAssigned_SprutTechnology_VecMatrLib_ISTGeWatchClient__
+  commentId: M:SprutTechnology.VecMatrLib.VML.IsGeWatchAssigned(SprutTechnology.VecMatrLib.ISTGeWatchClient@)
+  name.vb: IsGeWatchAssigned(ByRef ISTGeWatchClient)
+  fullName: SprutTechnology.VecMatrLib.VML.IsGeWatchAssigned(out SprutTechnology.VecMatrLib.ISTGeWatchClient)
+  fullName.vb: SprutTechnology.VecMatrLib.VML.IsGeWatchAssigned(ByRef SprutTechnology.VecMatrLib.ISTGeWatchClient)
+  nameWithType: VML.IsGeWatchAssigned(out ISTGeWatchClient)
+  nameWithType.vb: VML.IsGeWatchAssigned(ByRef ISTGeWatchClient)
+- uid: SprutTechnology.VecMatrLib.VML.IsGeWatchAssigned*
+  name: IsGeWatchAssigned
+  href: api/SprutTechnology.VecMatrLib.VML.html#SprutTechnology_VecMatrLib_VML_IsGeWatchAssigned_
+  commentId: Overload:SprutTechnology.VecMatrLib.VML.IsGeWatchAssigned
+  isSpec: "True"
+  fullName: SprutTechnology.VecMatrLib.VML.IsGeWatchAssigned
+  nameWithType: VML.IsGeWatchAssigned
 - uid: SprutTechnology.VecMatrLib.VML.p2d(System.Double,System.Double)
   name: p2d(Double, Double)
   href: api/SprutTechnology.VecMatrLib.VML.html#SprutTechnology_VecMatrLib_VML_p2d_System_Double_System_Double_

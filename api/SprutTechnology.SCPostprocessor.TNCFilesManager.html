@@ -654,7 +654,7 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_TNCFilesManager" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager" class="text-break">Class TNCFilesManager
   </h1>
-  <div class="markdown level0 summary"><p>A special class that contains a list of output files.</p>
+  <div class="markdown level0 summary"><p>A special class that contains a list of output files formed by postprocessor.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -698,7 +698,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager__ctor_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager__ctor_SprutTechnology_SCPostprocessor_INCStorageManager_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.#ctor(SprutTechnology.SCPostprocessor.INCStorageManager)">TNCFilesManager(INCStorageManager)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the TNCFilesManager class. Usually you don't need to create this class manually
+because there is already a globally accessible static instance <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html#SprutTechnology_SCPostprocessor_TNCFilesManager_Singletone">Singletone</a>, and
+must exist only one instance of this class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -717,7 +720,9 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCStorageManager.html">INCStorageManager</a></td>
         <td><span class="parametername">ncStorageManager</span></td>
-        <td></td>
+        <td><p>Link to the internal object <a class="xref" href="SprutTechnology.SCPostprocessor.INCStorageManager.html">INCStorageManager</a> of the postprocessing
+system that can create new <a class="xref" href="SprutTechnology.SCPostprocessor.INCStorage.html">INCStorage</a> instances.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -727,7 +732,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_DefaultNCFilesOwner_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.DefaultNCFilesOwner*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_DefaultNCFilesOwner" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.DefaultNCFilesOwner">DefaultNCFilesOwner</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This property contains a link to a global instance of <a class="xref" href="SprutTechnology.SCPostprocessor.INCFileOwner.html">INCFileOwner</a> interface.
+In fact, this reference usually indicates the current postprocessor <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html">TPostprocessor</a> object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -752,7 +759,7 @@
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_FileCount_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.FileCount*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_FileCount" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.FileCount">FileCount</h4>
-  <div class="markdown level1 summary"><p>The count of files in the list.</p>
+  <div class="markdown level1 summary"><p>The count of output files in the list.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -823,7 +830,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_OutputDisabled_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.OutputDisabled*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_OutputDisabled" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.OutputDisabled">OutputDisabled</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This property contains &quot;true&quot; only if the writing to an output files was disabled by the call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html#SprutTechnology_SCPostprocessor_TNCFilesManager_DisableOutput">DisableOutput()</a> method. All implementations of <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html">TNCFile</a> should check this
+property and skip real writing if it is &quot;true&quot;.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -849,7 +859,7 @@
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_Singletone_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.Singletone*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_Singletone" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.Singletone">Singletone</h4>
   <div class="markdown level1 summary"><p>The single global instance of the <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a> class.
-It contains the list of output files.</p>
+It contains the list of output files formed by postprocessor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -877,7 +887,8 @@ It contains the list of output files.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_Add_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.Add*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_Add_SprutTechnology_SCPostprocessor_TNCFile_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.Add(SprutTechnology.SCPostprocessor.TNCFile)">Add(TNCFile)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a new file (existing instance of <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html">TNCFile</a>) to the end of the list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -896,7 +907,8 @@ It contains the list of output files.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html">TNCFile</a></td>
         <td><span class="parametername">file</span></td>
-        <td></td>
+        <td><p>The file to add to the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -904,7 +916,14 @@ It contains the list of output files.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_AddExternalBinaryFile_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.AddExternalBinaryFile*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_AddExternalBinaryFile_System_String_System_String_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.AddExternalBinaryFile(System.String,System.String)">AddExternalBinaryFile(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new external file (instance of <a class="xref" href="SprutTechnology.SCPostprocessor.TExternalNCFile.html">TExternalNCFile</a> class, not the file itself),
+assigns it a specified name of the output file and adds it to the list.
+Unlike <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html#SprutTechnology_SCPostprocessor_TNCFilesManager_AddExternalFile_System_String_">AddExternalFile(String)</a> method, the added file will be marked as binary (not text,
+for the purpose of correctly displaying its contents to the user).
+It is assumed that this file was formed or obtained by a postprocessor in some special way,
+for example, through an external third-party program, and added to the list of postprocessor output files
+already in the finished form.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -923,12 +942,16 @@ It contains the list of output files.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">outputFileName</span></td>
-        <td></td>
+        <td><p>The full path to an external file you want to add to the list of output files.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">fileDescription</span></td>
-        <td></td>
+        <td><p>Short textual description of the file content that will be shown
+to the user instead of hexadecimal representation. If fileDescription is empty then
+hexadecimal representation of its bytes will be shown.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -936,7 +959,12 @@ It contains the list of output files.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_AddExternalFile_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.AddExternalFile*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_AddExternalFile_System_String_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.AddExternalFile(System.String)">AddExternalFile(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new external file (instance of <a class="xref" href="SprutTechnology.SCPostprocessor.TExternalNCFile.html">TExternalNCFile</a> class, not the file itself),
+assigns it a specified name of the output file and adds it to the list.
+It is assumed that this file was formed or obtained by a postprocessor in some special way,
+for example, through an external third-party program, and added to the list of postprocessor output files
+already in the finished form.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -955,7 +983,8 @@ It contains the list of output files.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">outputFileName</span></td>
-        <td></td>
+        <td><p>The full path to an external file you want to add to the list of output files.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -963,7 +992,12 @@ It contains the list of output files.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_AddExternalFile_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.AddExternalFile*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_AddExternalFile_System_String_SprutTechnology_SCPostprocessor_INCFileOwner_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.AddExternalFile(System.String,SprutTechnology.SCPostprocessor.INCFileOwner)">AddExternalFile(String, INCFileOwner)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new external file (instance of <a class="xref" href="SprutTechnology.SCPostprocessor.TExternalNCFile.html">TExternalNCFile</a> class, not the file itself),
+assigns it a specified name of the output file and adds it to the list.
+It is assumed that this file was formed or obtained by a postprocessor in some special way,
+for example, through an external third-party program, and added to the list of postprocessor output files
+already in the finished form.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -982,12 +1016,14 @@ It contains the list of output files.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">outputFileName</span></td>
-        <td></td>
+        <td><p>The full path to an external file you want to add to the list of output files.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCFileOwner.html">INCFileOwner</a></td>
         <td><span class="parametername">owner</span></td>
-        <td></td>
+        <td><p>The postprocessor that owns this file.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -995,7 +1031,15 @@ It contains the list of output files.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_DisableOutput_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.DisableOutput*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_DisableOutput" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.DisableOutput">DisableOutput()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Turns off the output to all output files. All writing commands (such as <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_WriteLine_System_String_">WriteLine(String)</a>)
+will simply ignored and the real addition of new data into the file will not happen.</p>
+<p>You can turn on it back using <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html#SprutTechnology_SCPostprocessor_TNCFilesManager_EnableOutput">EnableOutput()</a> method.</p>
+<p>While DisableOutput is active the property <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html#SprutTechnology_SCPostprocessor_TNCFilesManager_OutputDisabled">OutputDisabled</a> contains &quot;true&quot;.</p>
+<p>All CLData command handlers will continue to be called as it should be.</p>
+It is usefull when you want simply to ignore temporary some limited range of CLData commands 
+(for example, to emulate idle subroutine call, or to insert some block of text instead of 
+completely inappropriate set of CLData commands formed by SprutCAM). 
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1005,7 +1049,9 @@ It contains the list of output files.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_EnableOutput_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.EnableOutput*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_EnableOutput" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.EnableOutput">EnableOutput()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Turns on the output to all output files back if it was turned of before by <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html#SprutTechnology_SCPostprocessor_TNCFilesManager_DisableOutput">DisableOutput()</a> method.</p>
+<p>After that the property <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html#SprutTechnology_SCPostprocessor_TNCFilesManager_OutputDisabled">OutputDisabled</a> contains &quot;false&quot; again.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1015,7 +1061,10 @@ It contains the list of output files.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_Flush_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.Flush*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_Flush" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.Flush">Flush()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the buffered in memory data for the output files to a hard drive (to a temporary files,
+not to the final destination). Usually you don't need to call it manually, the postprocessing system
+calls it as needed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1025,7 +1074,8 @@ It contains the list of output files.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_IndexOf_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.IndexOf*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_IndexOf_SprutTechnology_SCPostprocessor_TNCFile_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.IndexOf(SprutTechnology.SCPostprocessor.TNCFile)">IndexOf(TNCFile)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Looking for the specified file in the list and returns its index.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1044,7 +1094,8 @@ It contains the list of output files.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html">TNCFile</a></td>
         <td><span class="parametername">item</span></td>
-        <td></td>
+        <td><p>The file to look for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1059,7 +1110,9 @@ It contains the list of output files.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>If the file has been found in the list then its index will return.
+If there is no such file the return is &quot;-1&quot;.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1067,7 +1120,12 @@ It contains the list of output files.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TNCFilesManager_SaveOuputFiles_" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.SaveOuputFiles*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TNCFilesManager_SaveOuputFiles" data-uid="SprutTechnology.SCPostprocessor.TNCFilesManager.SaveOuputFiles">SaveOuputFiles()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This method is called by the system automatically at the most final stage of the postprocessor's work.
+Here the contents of each of the output files are recorded from a temporary storage (in memory or temporary file)
+to the destination file specified in the <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html#SprutTechnology_SCPostprocessor_TNCFile_OutputFileName">OutputFileName</a> property.</p>
+<p>After this saving the <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnFinalizeNCFiles_SprutTechnology_SCPostprocessor_TNCFilesManager_">OnFinalizeNCFiles(TNCFilesManager)</a> handler of 
+the postprocessor is called where you can implement some additional actions on the output files.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
