@@ -504,9 +504,6 @@
                             <a href="SprutTechnology.SCPostprocessor.PostprocessorSettings.html" title="PostprocessorSettings" class="">PostprocessorSettings</a>
                           </li>
                           <li class="">
-                            <a href="SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html" title="SCPostprocessorSettingsAttribute" class="">SCPostprocessorSettingsAttribute</a>
-                          </li>
-                          <li class="">
                             <a href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html" title="TBinaryNCFile" class="">TBinaryNCFile</a>
                           </li>
                           <li class="">
@@ -741,9 +738,9 @@ If both of these values are the same, then re-output the value can be skipped au
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord__ctor_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord__ctor_System_String_System_Double_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.#ctor(System.String,System.Double)">NumericNCWord(String, Double)</h4>
   <div class="markdown level1 summary"><p>The main constructor to create a new instance of the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html">NumericNCWord</a>.
-It is used the <code>format&quot;</code> string parameter to define the all formatting rules
+It is used the <code>&quot;format&quot;</code> string parameter to define the all formatting rules
 for the NumericNCWord.</p>
-<p>For example, the <code>format&quot;</code> parameter can be: &quot;X = {-####!0##};&quot;. 
+<p>For example, the <code>&quot;format&quot;</code> parameter can be: &quot;X = {-####!0##};&quot;. 
 The formatting rules are below.</p>
 <ol><li>The curly braces divide the expression into three parts.</li><li>Anything to the left of the braces is assigned to the Address property and passed 
 to the output line unchanged (here is &quot;X = &quot;).</li><li>Anything to the right of the braces is assigned to the TailString property and also 
@@ -808,7 +805,8 @@ to the current v and the previous v0 values just after creation of the NumericNC
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord__ctor_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord__ctor_System_String_System_String_SprutTechnology_SCPostprocessor_NCWordSign_SprutTechnology_SCPostprocessor_NCWordDecPoint_System_Int32_System_Int32_System_Double_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.#ctor(System.String,System.String,SprutTechnology.SCPostprocessor.NCWordSign,SprutTechnology.SCPostprocessor.NCWordDecPoint,System.Int32,System.Int32,System.Double)">NumericNCWord(String, String, NCWordSign, NCWordDecPoint, Int32, Int32, Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new instance of a NumericNCWord register with the given parameters.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -827,37 +825,44 @@ to the current v and the previous v0 values just after creation of the NumericNC
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">address</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Address">Address</a> - start part of the register's output string.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">tailString</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_TailString">TailString</a> - final part of the register's output string.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWordSign.html">NCWordSign</a></td>
         <td><span class="parametername">signMode</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_SignMode">SignMode</a> - defines how to output the sign of the number.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWordDecPoint.html">NCWordDecPoint</a></td>
         <td><span class="parametername">pointMode</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a> - defines how to output the decimal point of the number.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">digitsBefore</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsBeforePoint">DigitsBeforePoint</a> - count of digits before decimal point of the number.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">digitsAfter</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsAfterPoint">DigitsAfterPoint</a> - count of digits after decimal point of the number.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">defaultValue</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DefaultValue">DefaultValue</a> - default value of the register.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -865,7 +870,8 @@ to the current v and the previous v0 values just after creation of the NumericNC
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord__ctor_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord__ctor_System_String_System_String_SprutTechnology_SCPostprocessor_NCWordSign_SprutTechnology_SCPostprocessor_NCWordDecPoint_System_Int32_System_Int32_System_Double_System_Boolean_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.#ctor(System.String,System.String,SprutTechnology.SCPostprocessor.NCWordSign,SprutTechnology.SCPostprocessor.NCWordDecPoint,System.Int32,System.Int32,System.Double,System.Boolean)">NumericNCWord(String, String, NCWordSign, NCWordDecPoint, Int32, Int32, Double, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new instance of a NumericNCWord register with the given parameters.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -884,42 +890,51 @@ to the current v and the previous v0 values just after creation of the NumericNC
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">address</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Address">Address</a> - start part of the register's output string.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">tailString</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_TailString">TailString</a> - final part of the register's output string.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWordSign.html">NCWordSign</a></td>
         <td><span class="parametername">signMode</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_SignMode">SignMode</a> - defines how to output the sign of the number.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWordDecPoint.html">NCWordDecPoint</a></td>
         <td><span class="parametername">pointMode</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a> - defines how to output the decimal point of the number.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">digitsBefore</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsBeforePoint">DigitsBeforePoint</a> - count of digits before decimal point of the number.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">digitsAfter</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsAfterPoint">DigitsAfterPoint</a> - count of digits after decimal point of the number.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">defaultValue</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DefaultValue">DefaultValue</a> - default value of the register.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">autoUpdateState</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_AutoUpdateState">AutoUpdateState</a> - determines whether the State should be
+automatically updated when the current v or previous v0 value changes.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -981,7 +996,8 @@ to the current v and the previous v0 values just after creation of the NumericNC
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_DecimalSeparator_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.DecimalSeparator*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_DecimalSeparator" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.DecimalSeparator">DecimalSeparator</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The decimal separator char that be used to output fractional numbers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1034,7 +1050,13 @@ to the current v and the previous v0 values just after creation of the NCWord or
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_DigitsAfterPoint_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.DigitsAfterPoint*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_DigitsAfterPoint" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.DigitsAfterPoint">DigitsAfterPoint</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The count of digits after decimal point to output. The value of the register will be rounded to this
+count of digits before output.</p>
+<p>
+If <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_TrailingZeroes">TrailingZeroes</a> property is enabled and the actual number of meaningfull digits is
+less than defined in this property then missing digits will be filled by zeroes.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1059,7 +1081,18 @@ to the current v and the previous v0 values just after creation of the NCWord or
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_DigitsBeforePoint_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.DigitsBeforePoint*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_DigitsBeforePoint" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.DigitsBeforePoint">DigitsBeforePoint</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The count of digits before decimal point to output.</p>
+<p>
+It affects only if the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_LeadingZeroes">LeadingZeroes</a> 
+property enabled and the actual count of digits of the register&apos;s value is less than defined in this
+property. In this case missing digits will be filled by zeroes. It doesn&apos;t truncate numbers which
+actual count of digits is more than defined in the property.
+</p>
+<p>
+For the <a class="xref" href="SprutTechnology.SCPostprocessor.CountingNCWord.html">CountingNCWord</a> it defines the maximal possible value after exceeding which 
+the value of the register will be changed to default again.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1084,7 +1117,9 @@ to the current v and the previous v0 values just after creation of the NCWord or
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_LeadingZeroes_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.LeadingZeroes*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_LeadingZeroes" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.LeadingZeroes">LeadingZeroes</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This property in connection with the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsBeforePoint">DigitsBeforePoint</a> property determines whether
+leading insignificant zeros of the number should be output (like <code>&quot;005.249&quot;</code> or like <code>&quot;5.249&quot;</code>).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1109,7 +1144,9 @@ to the current v and the previous v0 values just after creation of the NCWord or
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_PointMode_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.PointMode*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_PointMode" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.PointMode">PointMode</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The property defines how to output decimal point for numbers: don't output, output for fractional
+numbers only or output it always for fractional and integer numbers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1134,7 +1171,8 @@ to the current v and the previous v0 values just after creation of the NCWord or
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_SignMode_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.SignMode*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_SignMode" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.SignMode">SignMode</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The property shows how to output a sign for numbers: don't output, minus only or plus and minus always.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1159,7 +1197,9 @@ to the current v and the previous v0 values just after creation of the NCWord or
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_TrailingZeroes_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.TrailingZeroes*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_TrailingZeroes" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.TrailingZeroes">TrailingZeroes</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This property in connection with the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsAfterPoint">DigitsAfterPoint</a> property determines whether
+trailing insignificant zeros of the number should be output (like <code>&quot;27.000&quot;</code>, <code>&quot;27.0&quot;</code> or like <code>&quot;27&quot;</code>).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1184,7 +1224,12 @@ to the current v and the previous v0 values just after creation of the NCWord or
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_Unstable_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.Unstable*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_Unstable" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.Unstable">Unstable</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns &quot;True&quot; if the NCWord is in the so-called &quot;Unstable&quot; state after the call of <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Reset">Reset()</a> method.
+Actually it checks that the previous v0 value is equal to the &quot;undefined&quot; value (&quot;double.MaxValue&quot;).
+This state means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will NOT output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>. But it will output just after the first change of
+the current v value.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1270,7 +1315,9 @@ will not include this NumericNCWord (it will be skipped).</p>
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_ValuesDiffer_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.ValuesDiffer*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_ValuesDiffer" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.ValuesDiffer">ValuesDiffer</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The property is &quot;True&quot; only if the current value v and the previous value v0 form a different
+output string.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1297,7 +1344,9 @@ will not include this NumericNCWord (it will be skipped).</p>
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_ValuesSame_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.ValuesSame*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_ValuesSame" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.ValuesSame">ValuesSame</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The property is &quot;True&quot; only if the current value v and the previous value v0 form a completely
+identical output string.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1326,7 +1375,15 @@ will not include this NumericNCWord (it will be skipped).</p>
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_Hide_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.Hide*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_Hide_System_Double_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.Hide(System.Double)">Hide(Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Switches the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> to the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Unchanged">Unchanged</a> state.
+It means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will NOT output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>.</p>
+<p>Additionally it assigns the speciefied number to the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a>
+value of the register.</p>
+<p>It doesn&apos;t change the previous <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> value of the NCWord.</p> 
+<p>Later you can use the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_UpdateState">UpdateState()</a> method to restore the changed-unchanged state 
+depend on equality ot the v and v0.</p> 
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1366,7 +1423,14 @@ will not include this NumericNCWord (it will be skipped).</p>
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_Reset_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.Reset*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_Reset" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.Reset">Reset()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Switches the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> to the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Unchanged">Unchanged</a> state and changes the previous v0 value
+to an undefined value (&quot;double.MaxValue&quot;).
+It means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will NOT output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>. But it will output just after the first change of
+the current v value.</p>
+<p>It is the so-called &quot;<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_Unstable">Unstable</a>&quot; state.</p>
+<p>It doesn&apos;t change the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> value of the NCWord.</p> 
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1378,7 +1442,15 @@ will not include this NumericNCWord (it will be skipped).</p>
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_Reset_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.Reset*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_Reset_System_Double_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.Reset(System.Double)">Reset(Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Switches the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> to the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Unchanged">Unchanged</a> state and changes the previous v0 value
+to an undefined value (&quot;double.MaxValue&quot;).
+It means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will NOT output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>. But it will output just after the first change of
+the current v value.</p>
+<p>It is the so-called &quot;<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_Unstable">Unstable</a>&quot; state.</p>
+<p>Additionally it assigns the speciefied number to the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a>
+value of the register.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1438,7 +1510,13 @@ then it switches the state to Changed.</p>
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_Show_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.Show*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_Show_System_Double_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.Show(System.Double)">Show(Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Switches the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> to the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Changed">Changed</a> state.
+It means that the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a> <strong>will output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>.</p>
+<p>Additionally it assigns the speciefied number to the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a>
+value of the register.</p>
+<p>It doesn&apos;t change the previous <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> value of the NCWord.</p> 
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1465,7 +1543,10 @@ then it switches the state to Changed.</p>
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_ToString_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.ToString*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_ToString" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts the current v value of the NumericNCWord to the output string using all the rules of formatting
+like in calls of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>. But this method does not check
+the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_State">State</a> of the NumericNCWord (changed it or not), so you will get the output string anyway.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1482,7 +1563,9 @@ then it switches the state to Changed.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Returns the current v value with all the formatting rules defined for the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html">NumericNCWord</a>
+(<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Address">Address</a>, <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_TailString">TailString</a>, <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a>, etc.)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1492,7 +1575,12 @@ then it switches the state to Changed.</p>
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_ToString_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.ToString*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_ToString_System_Double_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.ToString(System.Double)">ToString(Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts the specified value to the output string using all the rules of formatting
+like in calls of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>. But this method does not check
+the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_State">State</a> of the NumericNCWord (changed it or not), so you will get the output string anyway.</p>
+<p>It doesn&apos;t change the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> or previous 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> value of the NCWord.</p> 
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1526,7 +1614,9 @@ then it switches the state to Changed.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Returns the specified value with all the formatting rules defined for the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html">NumericNCWord</a>
+(<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Address">Address</a>, <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_TailString">TailString</a>, <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a>, etc.)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1534,7 +1624,12 @@ then it switches the state to Changed.</p>
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_UpdateState_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.UpdateState*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_UpdateState" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.UpdateState">UpdateState()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Switches the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_State">State</a> of the NCWord to <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Changed">Changed</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Unchanged">Unchanged</a>
+depend on the current v and previous v0 values. If the values are same then the state will be
+&quot;Unchanged&quot;, otherwise it will be &quot;Changed&quot;.</p>
+<p>If the NCWord is <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Disabled">Disabled</a> or has the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_AutoUpdateState">AutoUpdateState</a>=false then 
+the method does nothing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1548,7 +1643,8 @@ then it switches the state to Changed.</p>
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_op_Implicit_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.op_Implicit*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_op_Implicit_SprutTechnology_SCPostprocessor_NumericNCWord__System_Double" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.op_Implicit(SprutTechnology.SCPostprocessor.NumericNCWord)~System.Double">Implicit(NumericNCWord to Double)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements a trivial casting of the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> value of the register to a double type number.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1567,7 +1663,8 @@ then it switches the state to Changed.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html">NumericNCWord</a></td>
         <td><span class="parametername">nw</span></td>
-        <td></td>
+        <td><p>The register which value to cast.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1590,7 +1687,8 @@ then it switches the state to Changed.</p>
   
   <a id="SprutTechnology_SCPostprocessor_NumericNCWord_op_Implicit_" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.op_Implicit*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NumericNCWord_op_Implicit_SprutTechnology_SCPostprocessor_NumericNCWord__System_Int32" data-uid="SprutTechnology.SCPostprocessor.NumericNCWord.op_Implicit(SprutTechnology.SCPostprocessor.NumericNCWord)~System.Int32">Implicit(NumericNCWord to Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements a trivial casting of the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> value of the register to an integer type number.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1609,7 +1707,8 @@ then it switches the state to Changed.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html">NumericNCWord</a></td>
         <td><span class="parametername">nw</span></td>
-        <td></td>
+        <td><p>The register which value to cast.</p>
+</td>
       </tr>
     </tbody>
   </table>

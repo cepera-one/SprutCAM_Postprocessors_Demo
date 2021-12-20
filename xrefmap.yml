@@ -11389,38 +11389,6 @@ references:
   isSpec: "True"
   fullName: SprutTechnology.SCPostprocessor.PostprocessorSettings.Parse
   nameWithType: PostprocessorSettings.Parse
-- uid: SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute
-  name: SCPostprocessorSettingsAttribute
-  href: api/SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html
-  commentId: T:SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute
-  fullName: SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute
-  nameWithType: SCPostprocessorSettingsAttribute
-- uid: SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.#ctor(System.String)
-  name: SCPostprocessorSettingsAttribute(String)
-  href: api/SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html#SprutTechnology_SCPostprocessor_SCPostprocessorSettingsAttribute__ctor_System_String_
-  commentId: M:SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.#ctor(System.String)
-  fullName: SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.SCPostprocessorSettingsAttribute(System.String)
-  nameWithType: SCPostprocessorSettingsAttribute.SCPostprocessorSettingsAttribute(String)
-- uid: SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.#ctor*
-  name: SCPostprocessorSettingsAttribute
-  href: api/SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html#SprutTechnology_SCPostprocessor_SCPostprocessorSettingsAttribute__ctor_
-  commentId: Overload:SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.#ctor
-  isSpec: "True"
-  fullName: SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.SCPostprocessorSettingsAttribute
-  nameWithType: SCPostprocessorSettingsAttribute.SCPostprocessorSettingsAttribute
-- uid: SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.Settings
-  name: Settings
-  href: api/SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html#SprutTechnology_SCPostprocessor_SCPostprocessorSettingsAttribute_Settings
-  commentId: P:SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.Settings
-  fullName: SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.Settings
-  nameWithType: SCPostprocessorSettingsAttribute.Settings
-- uid: SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.Settings*
-  name: Settings
-  href: api/SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html#SprutTechnology_SCPostprocessor_SCPostprocessorSettingsAttribute_Settings_
-  commentId: Overload:SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.Settings
-  isSpec: "True"
-  fullName: SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.Settings
-  nameWithType: SCPostprocessorSettingsAttribute.Settings
 - uid: SprutTechnology.SCPostprocessor.TBinaryNCFile
   name: TBinaryNCFile
   href: api/SprutTechnology.SCPostprocessor.TBinaryNCFile.html

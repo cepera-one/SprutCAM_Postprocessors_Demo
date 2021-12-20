@@ -504,9 +504,6 @@
                             <a href="SprutTechnology.SCPostprocessor.PostprocessorSettings.html" title="PostprocessorSettings" class="">PostprocessorSettings</a>
                           </li>
                           <li class="">
-                            <a href="SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html" title="SCPostprocessorSettingsAttribute" class="">SCPostprocessorSettingsAttribute</a>
-                          </li>
-                          <li class="">
                             <a href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html" title="TBinaryNCFile" class="">TBinaryNCFile</a>
                           </li>
                           <li class="">
@@ -654,7 +651,8 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_IPostprocessingLogReceiver" data-uid="SprutTechnology.SCPostprocessor.IPostprocessingLogReceiver" class="text-break">Interface IPostprocessingLogReceiver
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The interface for a global object which receives logging messages that be shown to the user at the finish of postprocessing.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SprutTechnology.SCPostprocessor.html">SprutTechnology.SCPostprocessor</a></h6>
   <h6><strong>Assembly</strong>: SCPostprocessor.dll</h6>
@@ -668,7 +666,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_IPostprocessingLogReceiver_AddMessage_" data-uid="SprutTechnology.SCPostprocessor.IPostprocessingLogReceiver.AddMessage*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_IPostprocessingLogReceiver_AddMessage_SprutTechnology_SCPostprocessor_LogMessageType_System_String_" data-uid="SprutTechnology.SCPostprocessor.IPostprocessingLogReceiver.AddMessage(SprutTechnology.SCPostprocessor.LogMessageType,System.String)">AddMessage(LogMessageType, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a message to the list of logging messages which will be shown to the user at the finish of postprocessing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -687,12 +686,14 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.LogMessageType.html">LogMessageType</a></td>
         <td><span class="parametername">messageType</span></td>
-        <td></td>
+        <td><p>The type of message (info, warning or error).</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">msg</span></td>
-        <td></td>
+        <td><p>The text of the message.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -700,7 +701,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_IPostprocessingLogReceiver_MessageBox_" data-uid="SprutTechnology.SCPostprocessor.IPostprocessingLogReceiver.MessageBox*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_IPostprocessingLogReceiver_MessageBox_System_String_System_String_SprutTechnology_SCPostprocessor_MsgType_SprutTechnology_SCPostprocessor_MsgBtnSet_SprutTechnology_SCPostprocessor_MsgDefBtn_" data-uid="SprutTechnology.SCPostprocessor.IPostprocessingLogReceiver.MessageBox(System.String,System.String,SprutTechnology.SCPostprocessor.MsgType,SprutTechnology.SCPostprocessor.MsgBtnSet,SprutTechnology.SCPostprocessor.MsgDefBtn)">MessageBox(String, String, MsgType, MsgBtnSet, MsgDefBtn)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Shows the standard message box window immediately.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -719,27 +721,32 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The text of the message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">caption</span></td>
-        <td></td>
+        <td><p>The header for the window.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.MsgType.html">MsgType</a></td>
         <td><span class="parametername">messageType</span></td>
-        <td></td>
+        <td><p>The type of message (error, question, warning, info).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.MsgBtnSet.html">MsgBtnSet</a></td>
         <td><span class="parametername">buttons</span></td>
-        <td></td>
+        <td><p>The set of buttons that should be shown in the window.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.MsgDefBtn.html">MsgDefBtn</a></td>
         <td><span class="parametername">defaultButton</span></td>
-        <td></td>
+        <td><p>The button that should be default.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -754,7 +761,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.MsgClickedBtn.html">MsgClickedBtn</a></td>
-        <td></td>
+        <td><p>Returns the type of button the user clicked.</p>
+</td>
       </tr>
     </tbody>
   </table>

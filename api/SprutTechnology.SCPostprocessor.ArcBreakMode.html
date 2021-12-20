@@ -504,9 +504,6 @@
                             <a href="SprutTechnology.SCPostprocessor.PostprocessorSettings.html" title="PostprocessorSettings" class="">PostprocessorSettings</a>
                           </li>
                           <li class="">
-                            <a href="SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html" title="SCPostprocessorSettingsAttribute" class="">SCPostprocessorSettingsAttribute</a>
-                          </li>
-                          <li class="">
                             <a href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html" title="TBinaryNCFile" class="">TBinaryNCFile</a>
                           </li>
                           <li class="">
@@ -654,7 +651,8 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_ArcBreakMode" data-uid="SprutTechnology.SCPostprocessor.ArcBreakMode" class="text-break">Enum ArcBreakMode
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The mode to break circular arcs: do not break, break to cuts, to halfs or to quarters.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SprutTechnology.SCPostprocessor.html">SprutTechnology.SCPostprocessor</a></h6>
   <h6><strong>Assembly</strong>: SCPostprocessor.dll</h6>
@@ -674,19 +672,23 @@
     <tbody>
       <tr>
         <td id="SprutTechnology_SCPostprocessor_ArcBreakMode_Cuts">Cuts</td>
-        <td></td>
+        <td><p>Break to cuts. <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnGoto_SprutTechnology_SCPostprocessor_ICLDGotoCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnGoto(ICLDGotoCommand, CLDArray)</a> handler will be called several times instead of each <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnCircle_SprutTechnology_SCPostprocessor_ICLDCircleCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnCircle(ICLDCircleCommand, CLDArray)</a>.</p>
+</td>
       </tr>
       <tr>
         <td id="SprutTechnology_SCPostprocessor_ArcBreakMode_Halfs">Halfs</td>
-        <td></td>
+        <td><p>Each arc over 180 degrees will be split in halfs.</p>
+</td>
       </tr>
       <tr>
         <td id="SprutTechnology_SCPostprocessor_ArcBreakMode_No">No</td>
-        <td></td>
+        <td><p>Do not break arcs. The arcs will be handled as they are.</p>
+</td>
       </tr>
       <tr>
         <td id="SprutTechnology_SCPostprocessor_ArcBreakMode_Quaters">Quaters</td>
-        <td></td>
+        <td><p>Each arc over 90 degrees will be split in quarters.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

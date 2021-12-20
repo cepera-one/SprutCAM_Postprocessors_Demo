@@ -504,9 +504,6 @@
                             <a href="SprutTechnology.SCPostprocessor.PostprocessorSettings.html" title="PostprocessorSettings" class="">PostprocessorSettings</a>
                           </li>
                           <li class="">
-                            <a href="SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html" title="SCPostprocessorSettingsAttribute" class="">SCPostprocessorSettingsAttribute</a>
-                          </li>
-                          <li class="">
                             <a href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html" title="TBinaryNCFile" class="">TBinaryNCFile</a>
                           </li>
                           <li class="">
@@ -654,7 +651,10 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_TransliterationTable" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable" class="text-break">Class TransliterationTable
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The table which contains the list of string pairs of type <a class="xref" href="SprutTechnology.SCPostprocessor.TranslitPair.html">TranslitPair</a> for one exact language to be possible to do
+transliteration of text from this language to english.</p>
+<p>You can easily create the new table using the code example below.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -691,13 +691,55 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class TransliterationTable</code></pre>
   </div>
+  <h5 id="SprutTechnology_SCPostprocessor_TransliterationTable_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><example>
+<pre><code>myTable = new TransliterationTable(
+    new TranslitPair[] {
+        new TranslitPair(&quot;а&quot;, &quot;a&quot;),
+        new TranslitPair(&quot;б&quot;, &quot;b&quot;),
+        new TranslitPair(&quot;в&quot;, &quot;v&quot;),
+        new TranslitPair(&quot;г&quot;, &quot;g&quot;),
+        new TranslitPair(&quot;д&quot;, &quot;d&quot;),
+        new TranslitPair(&quot;е&quot;, &quot;e&quot;),
+        new TranslitPair(&quot;ё&quot;, &quot;yo&quot;),
+        new TranslitPair(&quot;ж&quot;, &quot;zh&quot;),
+        new TranslitPair(&quot;з&quot;, &quot;z&quot;),
+        new TranslitPair(&quot;и&quot;, &quot;i&quot;),
+        new TranslitPair(&quot;й&quot;, &quot;i&quot;),
+        new TranslitPair(&quot;к&quot;, &quot;k&quot;),
+        new TranslitPair(&quot;л&quot;, &quot;l&quot;),
+        new TranslitPair(&quot;м&quot;, &quot;m&quot;),
+        new TranslitPair(&quot;н&quot;, &quot;n&quot;),
+        new TranslitPair(&quot;о&quot;, &quot;o&quot;),
+        new TranslitPair(&quot;п&quot;, &quot;p&quot;),
+        new TranslitPair(&quot;р&quot;, &quot;r&quot;),
+        new TranslitPair(&quot;с&quot;, &quot;s&quot;),
+        new TranslitPair(&quot;т&quot;, &quot;t&quot;),
+        new TranslitPair(&quot;у&quot;, &quot;u&quot;),
+        new TranslitPair(&quot;ф&quot;, &quot;f&quot;),
+        new TranslitPair(&quot;х&quot;, &quot;h&quot;),
+        new TranslitPair(&quot;ц&quot;, &quot;c&quot;),
+        new TranslitPair(&quot;ч&quot;, &quot;ch&quot;),
+        new TranslitPair(&quot;ш&quot;, &quot;sh&quot;),
+        new TranslitPair(&quot;щ&quot;, &quot;shh&quot;),
+        new TranslitPair(&quot;ъ&quot;, &quot;&quot;),
+        new TranslitPair(&quot;ы&quot;, &quot;y&quot;),
+        new TranslitPair(&quot;ь&quot;, &quot;&quot;),
+        new TranslitPair(&quot;э&quot;, &quot;e&quot;),
+        new TranslitPair(&quot;ю&quot;, &quot;yu&quot;),
+        new TranslitPair(&quot;я&quot;, &quot;ya&quot;)
+    }
+);</code></pre>
+</example>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="SprutTechnology_SCPostprocessor_TransliterationTable__ctor_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TransliterationTable__ctor" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.#ctor">TransliterationTable()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of TransliterationTable.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -707,7 +749,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TransliterationTable__ctor_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TransliterationTable__ctor_SprutTechnology_SCPostprocessor_TranslitPair___" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.#ctor(SprutTechnology.SCPostprocessor.TranslitPair[])">TransliterationTable(TranslitPair[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of TransliterationTable. Takes as an input an array of character pairs used to replace national characters with English.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -726,7 +769,8 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.TranslitPair.html">TranslitPair</a>[]</td>
         <td><span class="parametername">dictionary</span></td>
-        <td></td>
+        <td><p>An array of character pairs used to replace national characters with English.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -736,7 +780,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TransliterationTable_Item_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.Item*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TransliterationTable_Item_System_Int32_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.Item(System.Int32)">Item[Int32]</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the character pair by index [0..(Length-1)].</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -755,7 +800,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The index [0..(Length-1)] of pair you want to get.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -770,7 +816,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.TranslitPair.html">TranslitPair</a></td>
-        <td></td>
+        <td><p>Returns <a class="xref" href="SprutTechnology.SCPostprocessor.TranslitPair.html">TranslitPair</a> of the index. It will throw an exception if the index exceeds the range.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -778,7 +825,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TransliterationTable_Length_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.Length*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TransliterationTable_Length" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.Length">Length</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The count of character pairs in the table.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -805,7 +853,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TransliterationTable_AddPair_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.AddPair*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TransliterationTable_AddPair_System_String_System_String_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.AddPair(System.String,System.String)">AddPair(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a new transliteration pair to the end of table.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -824,12 +873,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">original</span></td>
-        <td></td>
+        <td><p>The original (natinal) character to be transliterated.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">replacing</span></td>
-        <td></td>
+        <td><p>The resulting english character (or few characters) which replaces the original.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -837,7 +888,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TransliterationTable_DeletePair_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.DeletePair*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TransliterationTable_DeletePair_System_Int32_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.DeletePair(System.Int32)">DeletePair(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes the pair with specified index from the table.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -856,7 +908,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The index of pair to delete.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -864,7 +917,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TransliterationTable_IndexOf_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.IndexOf*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TransliterationTable_IndexOf_System_String_System_String_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.IndexOf(System.String,System.String)">IndexOf(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Searches the index of a pair in the table.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -883,12 +937,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">original</span></td>
-        <td></td>
+        <td><p>The original character to search.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">replacing</span></td>
-        <td></td>
+        <td><p>The replacing character to search.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -903,7 +959,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Returns the index of the found pair. If there is no such pair in the table the result is &quot;-1&quot;.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -911,7 +968,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TransliterationTable_IndexOfOriginal_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.IndexOfOriginal*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TransliterationTable_IndexOfOriginal_System_String_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.IndexOfOriginal(System.String)">IndexOfOriginal(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Searches the index of a pair in the table by original character.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -930,7 +988,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">original</span></td>
-        <td></td>
+        <td><p>The original character to search.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -945,7 +1004,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Returns the index of the found pair. If there is no such pair in the table the result is &quot;-1&quot;.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -953,7 +1013,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TransliterationTable_IndexOfReplacing_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.IndexOfReplacing*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TransliterationTable_IndexOfReplacing_System_String_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.IndexOfReplacing(System.String)">IndexOfReplacing(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Searches the index of a pair in the table by replacing character.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -972,7 +1033,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">replacing</span></td>
-        <td></td>
+        <td><p>The replacing character to search.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -987,7 +1049,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Returns the index of the found pair. If there is no such pair in the table the result is &quot;-1&quot;.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -995,7 +1058,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_TransliterationTable_InsertPair_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.InsertPair*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TransliterationTable_InsertPair_System_Int32_System_String_System_String_" data-uid="SprutTechnology.SCPostprocessor.TransliterationTable.InsertPair(System.Int32,System.String,System.String)">InsertPair(Int32, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserts a new transliteration pair to specifed position of table. The existing pairs starting from defined index will be moved down.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1014,17 +1078,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">toIndex</span></td>
-        <td></td>
+        <td><p>The index in the table the new pair should add.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">original</span></td>
-        <td></td>
+        <td><p>The original (natinal) character to be transliterated.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">replacing</span></td>
-        <td></td>
+        <td><p>The resulting english character (or few characters) which replaces the original.</p>
+</td>
       </tr>
     </tbody>
   </table>

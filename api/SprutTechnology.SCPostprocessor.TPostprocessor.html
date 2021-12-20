@@ -504,9 +504,6 @@
                             <a href="SprutTechnology.SCPostprocessor.PostprocessorSettings.html" title="PostprocessorSettings" class="">PostprocessorSettings</a>
                           </li>
                           <li class="">
-                            <a href="SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html" title="SCPostprocessorSettingsAttribute" class="">SCPostprocessorSettingsAttribute</a>
-                          </li>
-                          <li class="">
                             <a href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html" title="TBinaryNCFile" class="">TBinaryNCFile</a>
                           </li>
                           <li class="">
@@ -771,7 +768,9 @@ Later at a runtime you can ask the value of a property by it&apos;s name using s
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_CLDProject_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.CLDProject*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_CLDProject" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.CLDProject">CLDProject</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The current translating CLData project (SprutCAM project). It's main content is a list of files
+each of which contains the list of CLData commands.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -796,7 +795,8 @@ Later at a runtime you can ask the value of a property by it&apos;s name using s
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_CLDSub_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.CLDSub*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_CLDSub" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.CLDSub">CLDSub</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The list of CLD-subroutines of the current project.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -821,7 +821,10 @@ Later at a runtime you can ask the value of a property by it&apos;s name using s
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_CLDTranslator_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.CLDTranslator*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_CLDTranslator" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.CLDTranslator">CLDTranslator</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>CLDTranslator is a base working object of the postprocessing system. It opens SprutCAM's project and starts
+translation of CLData files and commands placed inside this project. It also opens the exact postprocessor
+and sends all the CLData commands to the corresponding command handlers of the postprocessor.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -846,7 +849,11 @@ Later at a runtime you can ask the value of a property by it&apos;s name using s
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_CurrentCmd_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.CurrentCmd*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_CurrentCmd" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.CurrentCmd">CurrentCmd</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The current translating CLData command. You can check the <a class="xref" href="SprutTechnology.SCPostprocessor.ICLDCommand.html#SprutTechnology_SCPostprocessor_ICLDCommand_CmdType">CmdType</a> to
+define exact type of the command and the cast this object to the corresponding command using
+&quot;as&quot; keyword. For example:</p>
+<pre><code>var gotoCmd = CurrentCmd as ICLDGotoCommand</code></pre> 
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -871,7 +878,8 @@ Later at a runtime you can ask the value of a property by it&apos;s name using s
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_CurrentFile_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.CurrentFile*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_CurrentFile" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.CurrentFile">CurrentFile</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The current translating CLDFile. It contains the list of CLData commands.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -896,7 +904,9 @@ Later at a runtime you can ask the value of a property by it&apos;s name using s
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_CurrentOperation_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.CurrentOperation*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_CurrentOperation" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.CurrentOperation">CurrentOperation</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The current translating technological operation. You can get some additional information about
+the operation using this object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -948,7 +958,14 @@ the <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#Sp
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_NCFiles_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.NCFiles*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_NCFiles" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.NCFiles">NCFiles</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The list of the resulting output files formed by the postprocessor.</p>
+<p>
+If you use an ancestors of <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> calss then when you create a new instance, 
+it is automatically added to the list. 
+</p>
+You can also use <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html#SprutTechnology_SCPostprocessor_TNCFilesManager_AddExternalFile_System_String_">AddExternalFile(String)</a> method to add any other file
+to the list of output files.
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1160,7 +1177,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnAfterCommandHandle_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnAfterCommandHandle*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnAfterCommandHandle_SprutTechnology_SCPostprocessor_ICLDCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnAfterCommandHandle(SprutTechnology.SCPostprocessor.ICLDCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnAfterCommandHandle(ICLDCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>After each CLData command</p>
+  <div class="markdown level1 summary"><p>This handler performs after each CLData command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1180,12 +1197,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDCommand.html">ICLDCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The CLData command whose translation is finishing.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1193,7 +1212,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnAfterMovement_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnAfterMovement*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnAfterMovement_SprutTechnology_SCPostprocessor_ICLDMotionCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnAfterMovement(SprutTechnology.SCPostprocessor.ICLDMotionCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnAfterMovement(ICLDMotionCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>After Goto, Circle, MultiGoto, MultiArc, PhysicGoto, From, Origin, EdmMove</p>
+  <div class="markdown level1 summary"><p>This handler performs after the each movement command like Goto, Circle, MultiGoto, MultiArc,
+PhysicGoto, From, Origin, EdmMove.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1213,12 +1233,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDMotionCommand.html">ICLDMotionCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The CLData command whose translation is finishing.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1226,7 +1248,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnAxesBrake_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnAxesBrake*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnAxesBrake_SprutTechnology_SCPostprocessor_ICLDAxesBrakeCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnAxesBrake(SprutTechnology.SCPostprocessor.ICLDAxesBrakeCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnAxesBrake(ICLDAxesBrakeCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>AXESBRAKE</p>
+  <div class="markdown level1 summary"><p>This handler performs on AXESBRAKE CLData command which means switching on-off for brakes of machine's axes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1246,12 +1268,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDAxesBrakeCommand.html">ICLDAxesBrakeCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1259,7 +1283,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnBeforeCommandHandle_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnBeforeCommandHandle*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnBeforeCommandHandle_SprutTechnology_SCPostprocessor_ICLDCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnBeforeCommandHandle(SprutTechnology.SCPostprocessor.ICLDCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnBeforeCommandHandle(ICLDCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>Before each CLData command</p>
+  <div class="markdown level1 summary"><p>This handler performs before each CLData command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1279,12 +1303,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDCommand.html">ICLDCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The CLData command whose translation is starting.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1292,7 +1318,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnBeforeMovement_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnBeforeMovement*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnBeforeMovement_SprutTechnology_SCPostprocessor_ICLDMotionCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnBeforeMovement(SprutTechnology.SCPostprocessor.ICLDMotionCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnBeforeMovement(ICLDMotionCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>Before Goto, Circle, MultiGoto, MultiArc, PhysicGoto, From, Origin, EdmMove</p>
+  <div class="markdown level1 summary"><p>This handler performs before the each movement command like Goto, Circle, MultiGoto, MultiArc,
+PhysicGoto, From, Origin, EdmMove.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1312,12 +1339,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDMotionCommand.html">ICLDMotionCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The CLData command whose translation is starting.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1325,7 +1354,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnCallNCSub_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnCallNCSub*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnCallNCSub_SprutTechnology_SCPostprocessor_ICLDSub_SprutTechnology_SCPostprocessor_ICLDPPFunCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnCallNCSub(SprutTechnology.SCPostprocessor.ICLDSub,SprutTechnology.SCPostprocessor.ICLDPPFunCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnCallNCSub(ICLDSub, ICLDPPFunCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>PPFUN CallSub</p>
+  <div class="markdown level1 summary"><p>This handler performs at the calling of CLD subroutine on PPFun CallSub command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1345,17 +1374,20 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDSub.html">ICLDSub</a></td>
         <td><span class="parametername">cldSub</span></td>
-        <td></td>
+        <td><p>The CLD subroutine whose calling is performed.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDPPFunCommand.html">ICLDPPFunCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>PPFun CallSub command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the PPFun CallSub command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1363,7 +1395,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnCircle_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnCircle*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnCircle_SprutTechnology_SCPostprocessor_ICLDCircleCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnCircle(SprutTechnology.SCPostprocessor.ICLDCircleCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnCircle(ICLDCircleCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>CIRCLE</p>
+  <div class="markdown level1 summary"><p>This handler performs on CIRCLE CLData command which means tool movement by planar circular arc.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1383,12 +1415,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDCircleCommand.html">ICLDCircleCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1396,7 +1430,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnComment_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnComment*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnComment_SprutTechnology_SCPostprocessor_ICLDCommentCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnComment(SprutTechnology.SCPostprocessor.ICLDCommentCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnComment(ICLDCommentCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>COMMENT</p>
+  <div class="markdown level1 summary"><p>This handler performs on COMMENT CLData command which should write some auxiliary textual comments to an output file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1416,12 +1450,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDCommentCommand.html">ICLDCommentCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1429,7 +1465,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnCoolant_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnCoolant*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnCoolant_SprutTechnology_SCPostprocessor_ICLDCoolantCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnCoolant(SprutTechnology.SCPostprocessor.ICLDCoolantCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnCoolant(ICLDCoolantCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>COOLANT</p>
+  <div class="markdown level1 summary"><p>This handler performs on COOLANT CLData command which means switching on-off for the cooling system of machine (like M8-M9).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1449,12 +1485,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDCoolantCommand.html">ICLDCoolantCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1462,7 +1500,9 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnCutCom_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnCutCom*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnCutCom_SprutTechnology_SCPostprocessor_ICLDCutComCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnCutCom(SprutTechnology.SCPostprocessor.ICLDCutComCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnCutCom(ICLDCutComCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>CUTCOM</p>
+  <div class="markdown level1 summary"><p>This handler performs on CUTCOM CLData command which means the enabling-disabling of tool length or radius compensation modes.
+You can also use <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnLengthCompensation_SprutTechnology_SCPostprocessor_ICLDCutComCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnLengthCompensation(ICLDCutComCommand, CLDArray)</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnRadiusCompensation_SprutTechnology_SCPostprocessor_ICLDCutComCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnRadiusCompensation(ICLDCutComCommand, CLDArray)</a> handlers instead of this one
+to narrow down the applicability to the length or radius compensation case.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1482,12 +1522,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDCutComCommand.html">ICLDCutComCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1495,7 +1537,9 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnCycle_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnCycle*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnCycle_SprutTechnology_SCPostprocessor_ICLDCycleCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnCycle(SprutTechnology.SCPostprocessor.ICLDCycleCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnCycle(ICLDCycleCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>CYCLE</p>
+  <div class="markdown level1 summary"><p>This handler performs on CYCLE CLData command which means the hole machining cycles (like G80-G89). But SprutCAM will generates this
+command for the projects created in very old versions of SprutCAM only. For the modern project it is enough to implement
+<a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnExtCycle_SprutTechnology_SCPostprocessor_ICLDExtCycleCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnExtCycle(ICLDExtCycleCommand, CLDArray)</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnHoleExtCycle_SprutTechnology_SCPostprocessor_ICLDExtCycleCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnHoleExtCycle(ICLDExtCycleCommand, CLDArray)</a> handlers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1515,12 +1559,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDCycleCommand.html">ICLDCycleCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1528,7 +1574,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnDelay_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnDelay*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnDelay_SprutTechnology_SCPostprocessor_ICLDDelayCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnDelay(SprutTechnology.SCPostprocessor.ICLDDelayCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnDelay(ICLDDelayCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>DELAY</p>
+  <div class="markdown level1 summary"><p>This handler performs on DELAY CLData command which should write the command of a pause in the execution of a program of a given duration
+(like G04 on Fanuc).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1548,12 +1595,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDDelayCommand.html">ICLDDelayCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1561,7 +1610,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnEDMMove_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnEDMMove*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnEDMMove_SprutTechnology_SCPostprocessor_ICLDEDMMoveCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnEDMMove(SprutTechnology.SCPostprocessor.ICLDEDMMoveCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnEDMMove(ICLDEDMMoveCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>EDMMOVE</p>
+  <div class="markdown level1 summary"><p>This handler performs on EDMMOVE CLData command which means the movement of a wire guides of EDM machines.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1581,12 +1630,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDEDMMoveCommand.html">ICLDEDMMoveCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1594,7 +1645,10 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnExtCycle_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnExtCycle*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnExtCycle_SprutTechnology_SCPostprocessor_ICLDExtCycleCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnExtCycle(SprutTechnology.SCPostprocessor.ICLDExtCycleCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnExtCycle(ICLDExtCycleCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>EXTCYCLE</p>
+  <div class="markdown level1 summary"><p>This handler performs on EXTCYCLE CLData command which should write the call of different kind of canned cycles
+(like G70-G89 for lathe and hole machinig cycles of Fanuc or various probing cycles).
+Optionally you can also use <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnTurnExtCycle_SprutTechnology_SCPostprocessor_ICLDExtCycleCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnTurnExtCycle(ICLDExtCycleCommand, CLDArray)</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnHoleExtCycle_SprutTechnology_SCPostprocessor_ICLDExtCycleCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnHoleExtCycle(ICLDExtCycleCommand, CLDArray)</a> handlers instead of this one
+to narrow down the applicability to the exact cycles' group.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1614,12 +1668,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDExtCycleCommand.html">ICLDExtCycleCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1627,7 +1683,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFeedrate_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFeedrate*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFeedrate_SprutTechnology_SCPostprocessor_ICLDFeedrateCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFeedrate(SprutTechnology.SCPostprocessor.ICLDFeedrateCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnFeedrate(ICLDFeedrateCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>FEDRAT</p>
+  <div class="markdown level1 summary"><p>This handler performs on FEDRAT CLData command which defines the velocity of the movement, a type of the movement
+(working, approach, return, plunge, etc.) and turns off the rapid (G0, point to point) interpolation mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1647,12 +1704,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDFeedrateCommand.html">ICLDFeedrateCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1705,7 +1764,15 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFinalizeNCFiles_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFinalizeNCFiles*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFinalizeNCFiles_SprutTechnology_SCPostprocessor_TNCFilesManager_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFinalizeNCFiles(SprutTechnology.SCPostprocessor.TNCFilesManager)">OnFinalizeNCFiles(TNCFilesManager)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This handler performs after the finish of translation of the all CLData commands in the project
+and even after the <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnFinishProject_SprutTechnology_SCPostprocessor_ICLDProject_">OnFinishProject(ICLDProject)</a>.
+At this moment the all output files already written to their final location and you no longer
+have to add anything inside these files. But you can use this handler to make additional actions on files.</p>
+<p>For example you can start any external util and
+transfer the list of output files to it.</p>
+<p>One more case - you can copy the resulting files to another location or to 
+CNC controller directly.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1724,7 +1791,8 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a></td>
         <td><span class="parametername">ncFiles</span></td>
-        <td></td>
+        <td><p>The list of output files, formed by the postprocessor.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1732,7 +1800,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFini_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFini*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFini_SprutTechnology_SCPostprocessor_ICLDFiniCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFini(SprutTechnology.SCPostprocessor.ICLDFiniCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnFini(ICLDFiniCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>FINI. Use <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnFinishProject_SprutTechnology_SCPostprocessor_ICLDProject_">OnFinishProject(ICLDProject)</a> instead.</p>
+  <div class="markdown level1 summary"><p>This handler performs on FINI CLData command which is always the last in the project. We recomment to use <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnFinishProject_SprutTechnology_SCPostprocessor_ICLDProject_">OnFinishProject(ICLDProject)</a> instead.
+This handler is left only for ideological compatibility with the Postprocessors generator.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1752,12 +1821,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDFiniCommand.html">ICLDFiniCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1765,7 +1836,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFinishNCSub_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFinishNCSub*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFinishNCSub_SprutTechnology_SCPostprocessor_ICLDSub_SprutTechnology_SCPostprocessor_ICLDPPFunCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFinishNCSub(SprutTechnology.SCPostprocessor.ICLDSub,SprutTechnology.SCPostprocessor.ICLDPPFunCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnFinishNCSub(ICLDSub, ICLDPPFunCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>PPFUN EndSub</p>
+  <div class="markdown level1 summary"><p>This handler performs after finish of CLD subroutine translation on PPFUN EndSub command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1785,17 +1856,20 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDSub.html">ICLDSub</a></td>
         <td><span class="parametername">cldSub</span></td>
-        <td></td>
+        <td><p>The CLD subroutine whose translation is finishing.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDPPFunCommand.html">ICLDPPFunCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>PPFun EndSub command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the PPFun EndSub command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1803,7 +1877,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFinishProject_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFinishProject*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFinishProject_SprutTechnology_SCPostprocessor_ICLDProject_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFinishProject(SprutTechnology.SCPostprocessor.ICLDProject)">OnFinishProject(ICLDProject)</h4>
-  <div class="markdown level1 summary"><p>FINI</p>
+  <div class="markdown level1 summary"><p>This is the final handler which performs at the finish of translation after the last CLData command
+in the project (like a FINI command inside Postprocessors generator).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1823,7 +1898,8 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDProject.html">ICLDProject</a></td>
         <td><span class="parametername">prj</span></td>
-        <td></td>
+        <td><p>The project of SprutCAM's CLData.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1831,7 +1907,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFinishTechOperation_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFinishTechOperation*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFinishTechOperation_SprutTechnology_SCPostprocessor_ICLDTechOperation_SprutTechnology_SCPostprocessor_ICLDPPFunCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFinishTechOperation(SprutTechnology.SCPostprocessor.ICLDTechOperation,SprutTechnology.SCPostprocessor.ICLDPPFunCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnFinishTechOperation(ICLDTechOperation, ICLDPPFunCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>PPFUN EndTechInfo(59)</p>
+  <div class="markdown level1 summary"><p>This handler performs after translation of the each technological operation on PPFUN EndTechInfo(59)
+CLData command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1851,17 +1928,20 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDTechOperation.html">ICLDTechOperation</a></td>
         <td><span class="parametername">op</span></td>
-        <td></td>
+        <td><p>The operation whose translation is finishing.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDPPFunCommand.html">ICLDPPFunCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>PPFun EndTechInfo(59) command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the PPFun EndTechInfo(59) command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1869,7 +1949,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFrom_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFrom*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnFrom_SprutTechnology_SCPostprocessor_ICLDFromCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnFrom(SprutTechnology.SCPostprocessor.ICLDFromCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnFrom(ICLDFromCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>FROM</p>
+  <div class="markdown level1 summary"><p>This handler performs on FROM CLData command which defines the start position for a toolpath of technological operation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1889,12 +1969,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDFromCommand.html">ICLDFromCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1902,7 +1984,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnGoHome_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnGoHome*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnGoHome_SprutTechnology_SCPostprocessor_ICLDGoHomeCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnGoHome(SprutTechnology.SCPostprocessor.ICLDGoHomeCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnGoHome(ICLDGoHomeCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>GOHOME</p>
+  <div class="markdown level1 summary"><p>This handler performs on GOHOME CLData command which means the movement to a home position of machine or robot.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1922,12 +2004,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDGoHomeCommand.html">ICLDGoHomeCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1935,7 +2019,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnGoto_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnGoto*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnGoto_SprutTechnology_SCPostprocessor_ICLDGotoCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnGoto(SprutTechnology.SCPostprocessor.ICLDGotoCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnGoto(ICLDGotoCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>GOTO</p>
+  <div class="markdown level1 summary"><p>This handler performs on GOTO CLData command which means the linear movement to the position defined by the point (X, Y, Z) in 3D cartesian space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1955,12 +2039,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDGotoCommand.html">ICLDGotoCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1968,7 +2054,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnHoleExtCycle_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnHoleExtCycle*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnHoleExtCycle_SprutTechnology_SCPostprocessor_ICLDExtCycleCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnHoleExtCycle(SprutTechnology.SCPostprocessor.ICLDExtCycleCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnHoleExtCycle(ICLDExtCycleCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>EXTCYCLE on hole machining cycles</p>
+  <div class="markdown level1 summary"><p>This handler performs on EXTCYCLE CLData command for the hole machining cycles case (like G80-G89 of Fanuc).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1988,12 +2074,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDExtCycleCommand.html">ICLDExtCycleCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2001,7 +2089,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnInsert_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnInsert*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnInsert_SprutTechnology_SCPostprocessor_ICLDInsertCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnInsert(SprutTechnology.SCPostprocessor.ICLDInsertCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnInsert(ICLDInsertCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>INSERT</p>
+  <div class="markdown level1 summary"><p>This handler performs on INSERT CLData command which should write the specified textual string to the output file directly
+without significant modifications.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2021,12 +2110,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDInsertCommand.html">ICLDInsertCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2034,7 +2125,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnInterp5x_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnInterp5x*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnInterp5x_SprutTechnology_SCPostprocessor_ICLDInterpolationCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnInterp5x(SprutTechnology.SCPostprocessor.ICLDInterpolationCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnInterp5x(ICLDInterpolationCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>INTERPOLATION MultiAxis (TCPM)</p>
+  <div class="markdown level1 summary"><p>This handler performs on INTERPOLATION MultiAxis CLData command which means enabling or disabling of TCPM (tool center point management,
+Heidenhain - M128/M129, Sinumerik TRAORI, Fanuc - G43.4).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2054,12 +2146,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDInterpolationCommand.html">ICLDInterpolationCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2067,7 +2161,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnInterpCylindrical_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnInterpCylindrical*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnInterpCylindrical_SprutTechnology_SCPostprocessor_ICLDInterpolationCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnInterpCylindrical(SprutTechnology.SCPostprocessor.ICLDInterpolationCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnInterpCylindrical(ICLDInterpolationCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>INTERPOLATION Cylindrical</p>
+  <div class="markdown level1 summary"><p>This handler performs on INTERPOLATION Cylindrical CLData command which means enabling or disabling of cylindrical interpolation mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2087,12 +2181,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDInterpolationCommand.html">ICLDInterpolationCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2100,7 +2196,10 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnInterpolation_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnInterpolation*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnInterpolation_SprutTechnology_SCPostprocessor_ICLDInterpolationCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnInterpolation(SprutTechnology.SCPostprocessor.ICLDInterpolationCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnInterpolation(ICLDInterpolationCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>INTERPOLATION</p>
+  <div class="markdown level1 summary"><p>This handler performs on INTERPOLATION CLData command which means switching on-off of different kind of interpolation modes like
+polar, cylindrical, TCPM (5-axis) mode etc.
+Optionally you can also use <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnInterpPolar_SprutTechnology_SCPostprocessor_ICLDInterpolationCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnInterpPolar(ICLDInterpolationCommand, CLDArray)</a>, <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnInterpCylindrical_SprutTechnology_SCPostprocessor_ICLDInterpolationCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnInterpCylindrical(ICLDInterpolationCommand, CLDArray)</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnInterp5x_SprutTechnology_SCPostprocessor_ICLDInterpolationCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnInterp5x(ICLDInterpolationCommand, CLDArray)</a> handlers
+instead of this one to narrow down the range of interpolation types under consideration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2120,12 +2219,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDInterpolationCommand.html">ICLDInterpolationCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2133,7 +2234,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnInterpPolar_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnInterpPolar*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnInterpPolar_SprutTechnology_SCPostprocessor_ICLDInterpolationCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnInterpPolar(SprutTechnology.SCPostprocessor.ICLDInterpolationCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnInterpPolar(ICLDInterpolationCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>INTERPOLATION Polar</p>
+  <div class="markdown level1 summary"><p>This handler performs on INTERPOLATION Polar CLData command which means enabling or disabling of polar interpolation mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2153,12 +2254,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDInterpolationCommand.html">ICLDInterpolationCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2166,7 +2269,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnLengthCompensation_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnLengthCompensation*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnLengthCompensation_SprutTechnology_SCPostprocessor_ICLDCutComCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnLengthCompensation(SprutTechnology.SCPostprocessor.ICLDCutComCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnLengthCompensation(ICLDCutComCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>CUTCOM Length</p>
+  <div class="markdown level1 summary"><p>This handler performs on CUTCOM Length CLData command which means enabling or disabling a tool length compensation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2186,12 +2289,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDCutComCommand.html">ICLDCutComCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2199,7 +2304,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnLoadTool_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnLoadTool*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnLoadTool_SprutTechnology_SCPostprocessor_ICLDLoadToolCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnLoadTool(SprutTechnology.SCPostprocessor.ICLDLoadToolCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnLoadTool(ICLDLoadToolCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>LOADTL</p>
+  <div class="markdown level1 summary"><p>This handler performs on LOADTL CLData command which means the loading of the exact working tool (mill, drill, lathe cutter etc.)
+to the active position of a tool changer (like loading to spindle from tools magazine or rotation of a turret head to exact position).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2219,12 +2325,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDLoadToolCommand.html">ICLDLoadToolCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2232,7 +2340,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnLocalCS_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnLocalCS*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnLocalCS_SprutTechnology_SCPostprocessor_ICLDOriginCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnLocalCS(SprutTechnology.SCPostprocessor.ICLDOriginCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnLocalCS(ICLDOriginCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>ORIGIN Local CS</p>
+  <div class="markdown level1 summary"><p>This handler performs on ORIGIN Local CS CLData command which means activation or deactivation of LCS (local coordinate system, like
+Heidenhain - PLANE SPATIAL  or Sinumerik - CYCLE800 or Fanuc - G68.2 etc.).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2252,12 +2361,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDOriginCommand.html">ICLDOriginCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2265,7 +2376,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnMoveVelocity_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnMoveVelocity*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnMoveVelocity_SprutTechnology_SCPostprocessor_ICLDMoveVelocityCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnMoveVelocity(SprutTechnology.SCPostprocessor.ICLDMoveVelocityCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnMoveVelocity(ICLDMoveVelocityCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>RAPID + FEEDRATE</p>
+  <div class="markdown level1 summary"><p>This handler performs on RAPID and on FEEDRATE CLData commands and defines the velocity of movements and
+the type of movements (approach, working, return, etc.).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2285,12 +2397,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDMoveVelocityCommand.html">ICLDMoveVelocityCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2298,7 +2412,9 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnMultiArc_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnMultiArc*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnMultiArc_SprutTechnology_SCPostprocessor_ICLDMultiArcCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnMultiArc(SprutTechnology.SCPostprocessor.ICLDMultiArcCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnMultiArc(ICLDMultiArcCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>MULTIARC</p>
+  <div class="markdown level1 summary"><p>This handler performs on MULTIARC CLData command which means the circular arc movement at arbitrary plane in 3D cartesian space.
+Here, the arc is defined by three points in space - the first point is the current tool position, the second and third points specified
+in parameters of the command with additional information about the changed physical axes coordinates of machine or robot.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2318,12 +2434,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDMultiArcCommand.html">ICLDMultiArcCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2331,7 +2449,9 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnMultiGoto_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnMultiGoto*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnMultiGoto_SprutTechnology_SCPostprocessor_ICLDMultiGotoCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnMultiGoto(SprutTechnology.SCPostprocessor.ICLDMultiGotoCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnMultiGoto(ICLDMultiGotoCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>MULTIGOTO</p>
+  <div class="markdown level1 summary"><p>This handler performs on MULTIGOTO CLData command which means the linear movement in 3D cartesian space.
+Here, the movement is defined by two points in space - the first point is the current tool position, the second point specified
+in parameters of the command with additional information about the changed physical axes coordinates of machine or robot.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2351,12 +2471,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDMultiGotoCommand.html">ICLDMultiGotoCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2364,7 +2486,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnOpStop_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnOpStop*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnOpStop_SprutTechnology_SCPostprocessor_ICLDOpStopCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnOpStop(SprutTechnology.SCPostprocessor.ICLDOpStopCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnOpStop(ICLDOpStopCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>OPSTOP</p>
+  <div class="markdown level1 summary"><p>This handler performs on OPSTOP CLData command which means the optional stop of the programm execution (like M1 in ISO G-codes of CNC machines).
+The optional word means that the actual execution of the stop depends on an additional switch on the equipment control panel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2384,12 +2507,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDOpStopCommand.html">ICLDOpStopCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2397,7 +2522,14 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnOrigin_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnOrigin*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnOrigin_SprutTechnology_SCPostprocessor_ICLDOriginCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnOrigin(SprutTechnology.SCPostprocessor.ICLDOriginCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnOrigin(ICLDOriginCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>ORIGIN</p>
+  <div class="markdown level1 summary"><p>This handler performs on ORIGIN CLData command which means the activation of a coordinate system (CS, base, frame) that be used for
+the following points of movements and some additional data of toolpath. There are two types of CS which can be activated using
+this command: standard workpiece CS selection by it's number (like G54-G59 on CNC machines) or the local CS definition using
+translation and rotation by specified values (like G68.2, PLANE SPATIAL or CYCLE800 on CNC machines).</p>
+<p>
+Optionally you can also use <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnWorkpieceCS_SprutTechnology_SCPostprocessor_ICLDOriginCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnWorkpieceCS(ICLDOriginCommand, CLDArray)</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnLocalCS_SprutTechnology_SCPostprocessor_ICLDOriginCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnLocalCS(ICLDOriginCommand, CLDArray)</a> handlers 
+instead of this one to narrow down the range of coordinate system types under consideration.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2417,12 +2549,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDOriginCommand.html">ICLDOriginCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2430,7 +2564,9 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPartNo_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPartNo*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPartNo_SprutTechnology_SCPostprocessor_ICLDPartNoCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPartNo(SprutTechnology.SCPostprocessor.ICLDPartNoCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnPartNo(ICLDPartNoCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>PARTNO. Use <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnStartProject_SprutTechnology_SCPostprocessor_ICLDProject_">OnStartProject(ICLDProject)</a> instead.</p>
+  <div class="markdown level1 summary"><p>This handler performs on PARTNO CLData command which is always the first in the project.
+We recomment to use <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnStartProject_SprutTechnology_SCPostprocessor_ICLDProject_">OnStartProject(ICLDProject)</a> handler instead.
+PARTNO handler is left only for ideological compatibility with the Postprocessors generator.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2450,12 +2586,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDPartNoCommand.html">ICLDPartNoCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2463,7 +2601,12 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPhysicGoto_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPhysicGoto*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPhysicGoto_SprutTechnology_SCPostprocessor_ICLDPhysicGotoCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPhysicGoto(SprutTechnology.SCPostprocessor.ICLDPhysicGotoCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnPhysicGoto(ICLDPhysicGotoCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>PHYSICGOTO</p>
+  <div class="markdown level1 summary"><p>This handler performs on PHYSICGOTO CLData command which is the movement of physical axes.
+It contains the physical coordinate values ​​relative to machine zeros for each axis, and the base
+axes interpolation does not perform control of the intermediate points of the toolpath, and checked
+only the reachability of the endpoint. In the ISO codes, it corresponds to the G53 move command
+(SUPA in Sinumerik, M91 in HEIDENHAIN). In the robot control system it corresponds to the movement type
+Joint move (J, MOVEJ), Point-to-point (PTP) motion.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2483,12 +2626,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDPhysicGotoCommand.html">ICLDPhysicGotoCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2496,7 +2641,9 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPlane_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPlane*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPlane_SprutTechnology_SCPostprocessor_ICLDPlaneCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPlane(SprutTechnology.SCPostprocessor.ICLDPlaneCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnPlane(ICLDPlaneCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>PLANE</p>
+  <div class="markdown level1 summary"><p>This handler performs on PLANE CLData command which is used to define the active machining plane.
+Commonly this command is processed into G17, G18, G19 G-codes. Active plane is used in circular
+interpolation (it defines plane of arcs), to implement tool radius offset, to define hole machining cycles etc.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2516,12 +2663,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDPlaneCommand.html">ICLDPlaneCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2529,7 +2678,9 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPower_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPower*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPower_SprutTechnology_SCPostprocessor_ICLDPowerCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPower(SprutTechnology.SCPostprocessor.ICLDPowerCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnPower(ICLDPowerCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>POWER</p>
+  <div class="markdown level1 summary"><p>This handler performs on POWER CLData command which specifies the percent of a nominal power (defined in
+the operation parameters of SprutCAM) for the exact active effector (laser, jet nozzle, arc welder etc.)
+that should be used for the following movements.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2549,12 +2700,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDPowerCommand.html">ICLDPowerCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2562,7 +2715,23 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPPFun_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPPFun*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPPFun_SprutTechnology_SCPostprocessor_ICLDPPFunCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPPFun(SprutTechnology.SCPostprocessor.ICLDPPFunCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnPPFun(ICLDPPFunCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>PPFUN</p>
+  <div class="markdown level1 summary"><p>This handler performs on PPFUN CLData command which can be used to transfer various kinds of data to the postprocessor.
+To determine the exact type of transfered data, use the cld[1] or cmd.SubCode (<a class="xref" href="SprutTechnology.SCPostprocessor.ICLDPPFunCommand.html#SprutTechnology_SCPostprocessor_ICLDPPFunCommand_SubCode">SubCode</a>) parameter.</p>
+<p>
+For example, SprutCAM use this command to transfer the rich set of the technological operation parameters 
+(PPFun StartTechInfo SubCode=58 and PPFun EndTechInfo SubCode=59). 
+We recommend you to use <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnStartTechOperation_SprutTechnology_SCPostprocessor_ICLDTechOperation_SprutTechnology_SCPostprocessor_ICLDPPFunCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnStartTechOperation(ICLDTechOperation, ICLDPPFunCommand, CLDArray)</a> and <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnFinishTechOperation_SprutTechnology_SCPostprocessor_ICLDTechOperation_SprutTechnology_SCPostprocessor_ICLDPPFunCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnFinishTechOperation(ICLDTechOperation, ICLDPPFunCommand, CLDArray)</a> handlers for this exact purpose 
+instead of this one.
+</p>
+<p>
+SprutCAM also use this command to mark the beginning, end or call of subroutines which should be written to ouput files
+(PPFun StartSub SubCode=50, PPFun EndSub SubCode=51 and PPFun CallSub SubCode=52). 
+We recommend you to use <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnStartNCSub_SprutTechnology_SCPostprocessor_ICLDSub_SprutTechnology_SCPostprocessor_ICLDPPFunCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnStartNCSub(ICLDSub, ICLDPPFunCommand, CLDArray)</a>, <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnFinishNCSub_SprutTechnology_SCPostprocessor_ICLDSub_SprutTechnology_SCPostprocessor_ICLDPPFunCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnFinishNCSub(ICLDSub, ICLDPPFunCommand, CLDArray)</a> and <a class="xref" href="SprutTechnology.SCPostprocessor.TPostprocessor.html#SprutTechnology_SCPostprocessor_TPostprocessor_OnCallNCSub_SprutTechnology_SCPostprocessor_ICLDSub_SprutTechnology_SCPostprocessor_ICLDPPFunCommand_SprutTechnology_SCPostprocessor_CLDArray_">OnCallNCSub(ICLDSub, ICLDPPFunCommand, CLDArray)</a> handlers for this exact 
+purpose instead of this one.
+</p>
+<p>It is also possible to specify in SprutCAM the PPFun command with an arbitrary SubCode value to transfer any user defined data
+to the postprocessor. See the &quot;Toolpath template&quot; feature of SprutCAM to get an additional information.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2582,12 +2751,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDPPFunCommand.html">ICLDPPFunCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2595,7 +2766,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPrint_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPrint*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnPrint_SprutTechnology_SCPostprocessor_ICLDPrintCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnPrint(SprutTechnology.SCPostprocessor.ICLDPrintCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnPrint(ICLDPrintCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>PRINT</p>
+  <div class="markdown level1 summary"><p>This handler performs on PRINT CLData command which transfers a textual data to postprocessor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2615,12 +2786,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDPrintCommand.html">ICLDPrintCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2628,7 +2801,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnRadiusCompensation_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnRadiusCompensation*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnRadiusCompensation_SprutTechnology_SCPostprocessor_ICLDCutComCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnRadiusCompensation(SprutTechnology.SCPostprocessor.ICLDCutComCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnRadiusCompensation(ICLDCutComCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>CUTCOM Radius</p>
+  <div class="markdown level1 summary"><p>This handler performs on CUTCOM Radius CLData command which means enabling or disabling a tool radius compensation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2648,12 +2821,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDCutComCommand.html">ICLDCutComCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2661,7 +2836,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnRapid_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnRapid*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnRapid_SprutTechnology_SCPostprocessor_ICLDRapidCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnRapid(SprutTechnology.SCPostprocessor.ICLDRapidCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnRapid(ICLDRapidCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>RAPID</p>
+  <div class="markdown level1 summary"><p>This handler performs on RAPID CLData command which activates a rapid motion mode (G-code G00).
+All further movements are done in rapid mode until FEEDRATE command is received.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2681,12 +2857,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDRapidCommand.html">ICLDRapidCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2694,7 +2872,10 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnSelWorkpiece_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnSelWorkpiece*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnSelWorkpiece_SprutTechnology_SCPostprocessor_ICLDSelWorkpieceCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnSelWorkpiece(SprutTechnology.SCPostprocessor.ICLDSelWorkpieceCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnSelWorkpiece(ICLDSelWorkpieceCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>SELWORKPIECE</p>
+  <div class="markdown level1 summary"><p>This handler performs on SELWORKPIECE CLData command which is used to specify the active workpiece connector.
+The workpiece connector is a machine unit that is used to fix the workpiece. For the multi-spindle lathe
+machines this command specifies the active spindle. For the milling machines the workpiece connector can be
+the pallet for example. All machining commands will relate to the workpiece fixed in the active connector.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2714,12 +2895,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDSelWorkpieceCommand.html">ICLDSelWorkpieceCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2727,7 +2910,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnSinglePassThread_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnSinglePassThread*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnSinglePassThread_SprutTechnology_SCPostprocessor_ICLDSinglePassThreadCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnSinglePassThread(SprutTechnology.SCPostprocessor.ICLDSinglePassThreadCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnSinglePassThread(ICLDSinglePassThreadCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>SINGLETHREAD</p>
+  <div class="markdown level1 summary"><p>This handler performs on SINGLETHREAD CLData command which is used in continuous cylindrical or
+conical thread cutting with constant step by a lathe tool. Commonly this is the G32 or G33 G-codes in NC-programs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2747,12 +2931,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDSinglePassThreadCommand.html">ICLDSinglePassThreadCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2760,7 +2946,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnSpindle_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnSpindle*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnSpindle_SprutTechnology_SCPostprocessor_ICLDSpindleCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnSpindle(SprutTechnology.SCPostprocessor.ICLDSpindleCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnSpindle(ICLDSpindleCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>SPINDLE</p>
+  <div class="markdown level1 summary"><p>This handler performs on SPINDLE CLData command which is used to define the spindle switching on-off, rotation velocity,
+surface speed, gear range etc.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2780,12 +2967,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDSpindleCommand.html">ICLDSpindleCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2793,7 +2982,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnStartNCSub_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnStartNCSub*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnStartNCSub_SprutTechnology_SCPostprocessor_ICLDSub_SprutTechnology_SCPostprocessor_ICLDPPFunCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnStartNCSub(SprutTechnology.SCPostprocessor.ICLDSub,SprutTechnology.SCPostprocessor.ICLDPPFunCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnStartNCSub(ICLDSub, ICLDPPFunCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>PPFUN StartSub</p>
+  <div class="markdown level1 summary"><p>This handler performs before start of CLD subroutine translation on PPFUN StartSub command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2813,17 +3002,20 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDSub.html">ICLDSub</a></td>
         <td><span class="parametername">cldSub</span></td>
-        <td></td>
+        <td><p>The CLD subroutine whose translation is starting.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDPPFunCommand.html">ICLDPPFunCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>PPFun StartSub command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the PPFun StartSub command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2831,7 +3023,9 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnStartProject_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnStartProject*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnStartProject_SprutTechnology_SCPostprocessor_ICLDProject_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnStartProject(SprutTechnology.SCPostprocessor.ICLDProject)">OnStartProject(ICLDProject)</h4>
-  <div class="markdown level1 summary"><p>PARTNO</p>
+  <div class="markdown level1 summary"><p>This is the first handler which performs at the start of translation before the all CLData commands
+in the project (like a PARTNO command inside Postprocessors generator). You can implement initial
+actions here like an output files initializaion.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2851,7 +3045,8 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDProject.html">ICLDProject</a></td>
         <td><span class="parametername">prj</span></td>
-        <td></td>
+        <td><p>The project of SprutCAM's CLData.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2859,7 +3054,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnStartTechOperation_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnStartTechOperation*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnStartTechOperation_SprutTechnology_SCPostprocessor_ICLDTechOperation_SprutTechnology_SCPostprocessor_ICLDPPFunCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnStartTechOperation(SprutTechnology.SCPostprocessor.ICLDTechOperation,SprutTechnology.SCPostprocessor.ICLDPPFunCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnStartTechOperation(ICLDTechOperation, ICLDPPFunCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>PPFUN TechInfo(58)</p>
+  <div class="markdown level1 summary"><p>This handler performs before translation of the each technological operation on PPFUN TechInfo(58)
+CLData command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2879,17 +3075,20 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDTechOperation.html">ICLDTechOperation</a></td>
         <td><span class="parametername">op</span></td>
-        <td></td>
+        <td><p>The operation whose translation is starting.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDPPFunCommand.html">ICLDPPFunCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>PPFun TechInfo(58) command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the PPFun TechInfo(58) command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2897,7 +3096,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnStop_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnStop*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnStop_SprutTechnology_SCPostprocessor_ICLDStopCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnStop(SprutTechnology.SCPostprocessor.ICLDStopCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnStop(ICLDStopCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>STOP</p>
+  <div class="markdown level1 summary"><p>This handler performs on STOP CLData command which means the stop of the programm execution
+(like M0 in ISO G-codes of CNC machines).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2917,12 +3117,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDStopCommand.html">ICLDStopCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2930,7 +3132,9 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnStructure_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnStructure*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnStructure_SprutTechnology_SCPostprocessor_ICLDStructureCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnStructure(SprutTechnology.SCPostprocessor.ICLDStructureCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnStructure(ICLDStructureCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>STRUCTURE</p>
+  <div class="markdown level1 summary"><p>This handler performs on STRUCTURE CLData command which is used to combine individual CLData commands into groups.
+All commands that are placed between the pair of STRUCTURE ON(71) ... STRUCTURE OFF(72) commands belong to the same group.
+Groups can be nested within each other.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2950,12 +3154,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDStructureCommand.html">ICLDStructureCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2963,7 +3169,10 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnSyncAxes_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnSyncAxes*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnSyncAxes_SprutTechnology_SCPostprocessor_ICLDSyncAxesCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnSyncAxes(SprutTechnology.SCPostprocessor.ICLDSyncAxesCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnSyncAxes(ICLDSyncAxesCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>SYNCAXES</p>
+  <div class="markdown level1 summary"><p>This handler performs on SYNCAXES CLData command which activates-deactivates the synchronous mode of movements
+between two different axes of machine. For example you can use this command for multi-spindle lathe or
+lathe-milling machines to syncronize the speed of rotation of main and counter spindles or synchronize
+the movements of Z1 and Z2 axes when the workpiece fixed in both axes at the same time.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2983,12 +3192,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDSyncAxesCommand.html">ICLDSyncAxesCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2996,7 +3207,10 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnSyncWait_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnSyncWait*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnSyncWait_SprutTechnology_SCPostprocessor_ICLDSyncWaitCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnSyncWait(SprutTechnology.SCPostprocessor.ICLDSyncWaitCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnSyncWait(ICLDSyncWaitCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>WAIT</p>
+  <div class="markdown level1 summary"><p>This handler performs on WAIT CLData command which is used to synchronize multiple concurrent threads of control
+(several NC-programs, each of which can control a separate working element of the machine). To achieve this you
+should write frames (labels) to the output files, implementing the suspension of the program until the achievement
+of a similar label in another (concurrent) program.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3016,12 +3230,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDSyncWaitCommand.html">ICLDSyncWaitCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3029,7 +3245,10 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnTakeover_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnTakeover*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnTakeover_SprutTechnology_SCPostprocessor_ICLDTakeoverCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnTakeover(SprutTechnology.SCPostprocessor.ICLDTakeoverCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnTakeover(ICLDTakeoverCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>TAKEOVER</p>
+  <div class="markdown level1 summary"><p>This handler performs on TAKEOVER CLData command which is used to take workpiece over from the active connector into
+the connector specified in the command parameter. The active workpiece connector is specified by the SELWORKPIECE command.
+The workpiece connector is a machine unit that is used to fix the workpiece. Use this command for multi-spindle lathe or
+lathe-milling machines to perform workpiece takeover from one spindle into another.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3049,12 +3268,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDTakeoverCommand.html">ICLDTakeoverCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3062,7 +3283,10 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnTLContact_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnTLContact*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnTLContact_SprutTechnology_SCPostprocessor_ICLDTLContactCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnTLContact(SprutTechnology.SCPostprocessor.ICLDTLContactCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnTLContact(ICLDTLContactCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>TLCONTACT</p>
+  <div class="markdown level1 summary"><p>This handler performs on TLCONTACT CLData command which provides information about the normal to the machining
+surface at the point of contact of the tool with this surface. This is used to calculate 5D correction.
+In fact, this information determines in which direction (along which vector) the tool needs to be shifted in space
+by the amount of correction (the difference between the radius of the theoretical and actual tool).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3082,12 +3306,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDTLContactCommand.html">ICLDTLContactCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3095,7 +3321,7 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnTurnExtCycle_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnTurnExtCycle*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnTurnExtCycle_SprutTechnology_SCPostprocessor_ICLDExtCycleCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnTurnExtCycle(SprutTechnology.SCPostprocessor.ICLDExtCycleCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnTurnExtCycle(ICLDExtCycleCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>EXTCYCLE on lathe cycles</p>
+  <div class="markdown level1 summary"><p>This handler performs on EXTCYCLE CLData command for the lathe cycles case (like G70-G76 of Fanuc).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3115,12 +3341,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDExtCycleCommand.html">ICLDExtCycleCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3128,7 +3356,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_OnWorkpieceCS_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnWorkpieceCS*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_OnWorkpieceCS_SprutTechnology_SCPostprocessor_ICLDOriginCommand_SprutTechnology_SCPostprocessor_CLDArray_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.OnWorkpieceCS(SprutTechnology.SCPostprocessor.ICLDOriginCommand,SprutTechnology.SCPostprocessor.CLDArray)">OnWorkpieceCS(ICLDOriginCommand, CLDArray)</h4>
-  <div class="markdown level1 summary"><p>ORIGIN Standard WCS</p>
+  <div class="markdown level1 summary"><p>This handler performs on ORIGIN Standard WCS CLData command which means activation or deactivation of WCS (workpiece coordinate system,
+like G54-G59) by it's number.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3148,12 +3377,14 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDOriginCommand.html">ICLDOriginCommand</a></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>The current CLData command.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.CLDArray.html">CLDArray</a></td>
         <td><span class="parametername">cld</span></td>
-        <td></td>
+        <td><p>The cld array of the command.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3161,7 +3392,9 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_SetCLDTranslator_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.SetCLDTranslator*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_SetCLDTranslator_SprutTechnology_SCPostprocessor_ICLDTranslator_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.SetCLDTranslator(SprutTechnology.SCPostprocessor.ICLDTranslator)">SetCLDTranslator(ICLDTranslator)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Assigns the instance of <a class="xref" href="SprutTechnology.SCPostprocessor.ICLDTranslator.html">ICLDTranslator</a> to the postprocessor.
+Usually you don't need to call it manually. The system calls it automatically on the start of translation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3180,7 +3413,8 @@ such as the end of the file.</p>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.ICLDTranslator.html">ICLDTranslator</a></td>
         <td><span class="parametername">cldTranslator</span></td>
-        <td></td>
+        <td><p>The instance of <a class="xref" href="SprutTechnology.SCPostprocessor.ICLDTranslator.html">ICLDTranslator</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3188,12 +3422,22 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_StopOnCLData_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.StopOnCLData*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_StopOnCLData" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.StopOnCLData">StopOnCLData()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The method does nothing but you can override it inside exact postprocessor to be possible to use
+CLData breakpoints.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void StopOnCLData()</code></pre>
   </div>
+  <h5 id="SprutTechnology_SCPostprocessor_TPostprocessor_StopOnCLData_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The steps to use CLData breakpoints.</p>
+<ul><li>Override the &quot;StopOnCLData&quot; method (if it is not still exists).</li><li>You should add the &quot;Function breakpoint&quot; to the breakpoints list of 
+Visual Studio Code. Specify the name &quot;StopOnCLData&quot; for it.</li><li>Go to CLData Viewer, open the CLData tab and select the command you want to 
+break on. Click to the left field next to the line of this command.</li><li>Go back to Visual Studio Code and start debugging using &quot;Run and debug&quot; button
+or just press &quot;F5&quot;.</li><li>When the translation process will reach the desired command it will be stopped
+inside the &quot;StopOnCLData&quot; method of your postprocessor.</li><li>After that you can start to press &quot;F10&quot; to continue debugging.</li></ul>
+</div>
   
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_ToolChange_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.ToolChange*"></a>
@@ -3225,7 +3469,9 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_Transliterate_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.Transliterate*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_Transliterate_System_String_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.Transliterate(System.String)">Transliterate(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Transliterates the specified string using a default transliteration table
+<a class="xref" href="SprutTechnology.SCPostprocessor.Transliterator.html#SprutTechnology_SCPostprocessor_Transliterator_Default">Default</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3244,7 +3490,8 @@ such as the end of the file.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The string to transliterate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3259,7 +3506,8 @@ such as the end of the file.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Returns a transliterated string.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3267,7 +3515,8 @@ such as the end of the file.</p>
   
   <a id="SprutTechnology_SCPostprocessor_TPostprocessor_Transliterate_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.Transliterate*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_TPostprocessor_Transliterate_System_String_SprutTechnology_SCPostprocessor_TransliterationTable_" data-uid="SprutTechnology.SCPostprocessor.TPostprocessor.Transliterate(System.String,SprutTechnology.SCPostprocessor.TransliterationTable)">Transliterate(String, TransliterationTable)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Transliterates the specified string using defined transliteration table <a class="xref" href="SprutTechnology.SCPostprocessor.TransliterationTable.html">TransliterationTable</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -3286,12 +3535,14 @@ such as the end of the file.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The string to transliterate.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.TransliterationTable.html">TransliterationTable</a></td>
         <td><span class="parametername">table</span></td>
-        <td></td>
+        <td><p>Transliteration table to convert the string (<a class="xref" href="SprutTechnology.SCPostprocessor.TransliterationTable.html">TransliterationTable</a>).</p>
+</td>
       </tr>
     </tbody>
   </table>

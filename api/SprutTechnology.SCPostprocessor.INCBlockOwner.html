@@ -504,9 +504,6 @@
                             <a href="SprutTechnology.SCPostprocessor.PostprocessorSettings.html" title="PostprocessorSettings" class="">PostprocessorSettings</a>
                           </li>
                           <li class="">
-                            <a href="SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html" title="SCPostprocessorSettingsAttribute" class="">SCPostprocessorSettingsAttribute</a>
-                          </li>
-                          <li class="">
                             <a href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html" title="TBinaryNCFile" class="">TBinaryNCFile</a>
                           </li>
                           <li class="">
@@ -654,7 +651,9 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_INCBlockOwner" data-uid="SprutTechnology.SCPostprocessor.INCBlockOwner" class="text-break">Interface INCBlockOwner
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>An interface that provides limited access to some methods of the owner object of the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a>.
+Usually this is a <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> to which the output string should be written.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SprutTechnology.SCPostprocessor.html">SprutTechnology.SCPostprocessor</a></h6>
   <h6><strong>Assembly</strong>: SCPostprocessor.dll</h6>
@@ -668,7 +667,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCBlockOwner_Write_" data-uid="SprutTechnology.SCPostprocessor.INCBlockOwner.Write*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCBlockOwner_Write_System_String_" data-uid="SprutTechnology.SCPostprocessor.INCBlockOwner.Write(System.String)">Write(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the specified string to a file. No line break is added. If the <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_DefaultLabel">DefaultLabel</a> property is
+not &quot;null&quot;, then the string will be written to the position this label points to. Otherwise,
+the text will be written to the end of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -687,7 +689,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">s</span></td>
-        <td></td>
+        <td><p>The string you want to write.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -695,7 +698,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCBlockOwner_Write_" data-uid="SprutTechnology.SCPostprocessor.INCBlockOwner.Write*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCBlockOwner_Write_System_String_SprutTechnology_SCPostprocessor_INCLabel_" data-uid="SprutTechnology.SCPostprocessor.INCBlockOwner.Write(System.String,SprutTechnology.SCPostprocessor.INCLabel)">Write(String, INCLabel)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the specified string to a file. No line break is added. If the &quot;label&quot; parameter is
+not &quot;null&quot;, then the string will be written to the position this label points to. Otherwise,
+the text will be written to the end of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -714,12 +720,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">s</span></td>
-        <td></td>
+        <td><p>The string you want to write.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>The label determines position in the file to which the string will be written.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -727,7 +735,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCBlockOwner_WriteLine_" data-uid="SprutTechnology.SCPostprocessor.INCBlockOwner.WriteLine*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCBlockOwner_WriteLine_System_String_" data-uid="SprutTechnology.SCPostprocessor.INCBlockOwner.WriteLine(System.String)">WriteLine(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the specified string to the file with a line break. If the <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_DefaultLabel">DefaultLabel</a> property is
+not &quot;null&quot;, then the string will be written to the position this label points to. Otherwise,
+the text will be written to the end of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -746,7 +757,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">s</span></td>
-        <td></td>
+        <td><p>The string you want to write.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -754,7 +766,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_INCBlockOwner_WriteLine_" data-uid="SprutTechnology.SCPostprocessor.INCBlockOwner.WriteLine*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_INCBlockOwner_WriteLine_System_String_SprutTechnology_SCPostprocessor_INCLabel_" data-uid="SprutTechnology.SCPostprocessor.INCBlockOwner.WriteLine(System.String,SprutTechnology.SCPostprocessor.INCLabel)">WriteLine(String, INCLabel)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the specified string to the file with a line break. If the &quot;label&quot; parameter is
+not &quot;null&quot;, then the string will be written to the position this label points to. Otherwise,
+the text will be written to the end of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -773,12 +788,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">s</span></td>
-        <td></td>
+        <td><p>The string you want to write.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>The label determines position in the file to which the string will be written.</p>
+</td>
       </tr>
     </tbody>
   </table>

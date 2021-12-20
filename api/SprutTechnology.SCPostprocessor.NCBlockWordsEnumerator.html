@@ -504,9 +504,6 @@
                             <a href="SprutTechnology.SCPostprocessor.PostprocessorSettings.html" title="PostprocessorSettings" class="">PostprocessorSettings</a>
                           </li>
                           <li class="">
-                            <a href="SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html" title="SCPostprocessorSettingsAttribute" class="">SCPostprocessorSettingsAttribute</a>
-                          </li>
-                          <li class="">
                             <a href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html" title="TBinaryNCFile" class="">TBinaryNCFile</a>
                           </li>
                           <li class="">
@@ -654,7 +651,11 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_NCBlockWordsEnumerator" data-uid="SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator" class="text-break">Class NCBlockWordsEnumerator
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Auxiliary object that can enumerate the registers (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) of an <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a>.
+Using it you can easily loop through the registers with foreach cycle.
+Usually you don't need to create it manually because it is created automatically when you try to use
+for example the &quot;foreach&quot; cycle with an NCBlock.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -702,7 +703,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlockWordsEnumerator__ctor_" data-uid="SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlockWordsEnumerator__ctor_SprutTechnology_SCPostprocessor_NCBlock_System_Boolean_System_Boolean_" data-uid="SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator.#ctor(SprutTechnology.SCPostprocessor.NCBlock,System.Boolean,System.Boolean)">NCBlockWordsEnumerator(NCBlock, Boolean, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of NCBlockWordsEnumerator.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -721,17 +723,20 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a></td>
         <td><span class="parametername">block</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a> the words of which it should enumerate.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">marked</span></td>
-        <td></td>
+        <td><p>If it is true then only <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Marked">Marked</a> words will be enumerated.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">unmarked</span></td>
-        <td></td>
+        <td><p>If it is true then only non <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Marked">Marked</a> words will be enumerated.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -741,7 +746,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlockWordsEnumerator_GetEnumerator_" data-uid="SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator.GetEnumerator*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlockWordsEnumerator_GetEnumerator" data-uid="SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator.GetEnumerator">GetEnumerator()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Return &quot;this&quot; instance as an IEnumerator.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -766,7 +772,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlockWordsEnumerator_MoveNext_" data-uid="SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator.MoveNext*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlockWordsEnumerator_MoveNext" data-uid="SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator.MoveNext">MoveNext()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Tries to move the current position of the enumerator to the next item.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -783,7 +790,9 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>Returns &quot;true&quot; if the position has been increased to the next item. Returns &quot;false&quot; if
+there is no next item in the list to be possible to move.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -791,7 +800,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlockWordsEnumerator_Reset_" data-uid="SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator.Reset*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlockWordsEnumerator_Reset" data-uid="SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator.Reset">Reset()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Resets the position of the enumerator to an initial state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

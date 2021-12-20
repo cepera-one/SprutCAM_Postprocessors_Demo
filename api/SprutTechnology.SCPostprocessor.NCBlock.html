@@ -504,9 +504,6 @@
                             <a href="SprutTechnology.SCPostprocessor.PostprocessorSettings.html" title="PostprocessorSettings" class="">PostprocessorSettings</a>
                           </li>
                           <li class="">
-                            <a href="SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html" title="SCPostprocessorSettingsAttribute" class="">SCPostprocessorSettingsAttribute</a>
-                          </li>
-                          <li class="">
                             <a href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html" title="TBinaryNCFile" class="">TBinaryNCFile</a>
                           </li>
                           <li class="">
@@ -654,7 +651,10 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_NCBlock" data-uid="SprutTechnology.SCPostprocessor.NCBlock" class="text-break">Class NCBlock
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The object that contains the list of registers (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) and helps make output lines for a resulting file (G-code, <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a>).
+First, it organizes the formatted output of the register values from its list. Secondly, it filters (excludes from the output string)
+those registers whose values have not changed since the previous output.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -701,7 +701,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock__ctor_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock__ctor_SprutTechnology_SCPostprocessor_INCBlockOwner_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.#ctor(SprutTechnology.SCPostprocessor.INCBlockOwner)">NCBlock(INCBlockOwner)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes the new instance of the NCBlock and assigns the specified object as an owner of this block.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -720,7 +721,8 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCBlockOwner.html">INCBlockOwner</a></td>
         <td><span class="parametername">owner</span></td>
-        <td></td>
+        <td><p>The owner object of the NCBlock. Usually this is a <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> to which the output string should be written.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -728,7 +730,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock__ctor_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock__ctor_SprutTechnology_SCPostprocessor_INCBlockOwner_SprutTechnology_SCPostprocessor_NCWord___" data-uid="SprutTechnology.SCPostprocessor.NCBlock.#ctor(SprutTechnology.SCPostprocessor.INCBlockOwner,SprutTechnology.SCPostprocessor.NCWord[])">NCBlock(INCBlockOwner, NCWord[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes the new instance of the NCBlock and assigns the specified object as an owner of this block.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -747,12 +750,14 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCBlockOwner.html">INCBlockOwner</a></td>
         <td><span class="parametername">owner</span></td>
-        <td></td>
+        <td><p>The owner object of the NCBlock. Usually this is a <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> to which the output string should be written.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>[]</td>
         <td><span class="parametername">words</span></td>
-        <td></td>
+        <td><p>A comma-separated list of registers that should be added to this block.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -760,7 +765,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock__ctor_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock__ctor_SprutTechnology_SCPostprocessor_INCBlockOwner_System_String_SprutTechnology_SCPostprocessor_NCWord___" data-uid="SprutTechnology.SCPostprocessor.NCBlock.#ctor(SprutTechnology.SCPostprocessor.INCBlockOwner,System.String,SprutTechnology.SCPostprocessor.NCWord[])">NCBlock(INCBlockOwner, String, NCWord[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes the new instance of the NCBlock and assigns the specified object as an owner of this block.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -779,17 +785,21 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCBlockOwner.html">INCBlockOwner</a></td>
         <td><span class="parametername">owner</span></td>
-        <td></td>
+        <td><p>The owner object of the NCBlock. Usually this is a <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> to which the output string should be written.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">wordsSeparator</span></td>
-        <td></td>
+        <td><p>An additional string that will be added between each separate register value to the resulting output string of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> methods.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>[]</td>
         <td><span class="parametername">words</span></td>
-        <td></td>
+        <td><p>A comma-separated list of registers that should be added to this block.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -799,7 +809,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_FirstWord_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.FirstWord*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_FirstWord" data-uid="SprutTechnology.SCPostprocessor.NCBlock.FirstWord">FirstWord</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the first register (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) from the list of this NCBlock.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -824,7 +835,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_Item_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Item*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_Item_System_Int32_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Item(System.Int32)">Item[Int32]</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Provides access to an individual register from the block by its index in the list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -843,7 +855,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The zero based index of the register you want to get in the list of this block ([0..WordCount-1]).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -858,7 +871,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a></td>
-        <td></td>
+        <td><p>Returns the register (NCWord) with the specified index. It will throw an exception if the index is incorrect
+(exceeds the total count of registers)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -866,7 +881,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_LastWord_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.LastWord*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_LastWord" data-uid="SprutTechnology.SCPostprocessor.NCBlock.LastWord">LastWord</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the last register (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) from the list of this NCBlock.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -891,7 +907,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_MarkedWords_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.MarkedWords*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_MarkedWords" data-uid="SprutTechnology.SCPostprocessor.NCBlock.MarkedWords">MarkedWords</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the &quot;list&quot; of the register which has the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Marked">Marked</a> property equals to &quot;true&quot;.
+Using it you can easily loop through the all marked registers with foreach cycle.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -912,11 +930,26 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="SprutTechnology_SCPostprocessor_NCBlock_MarkedWords_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For example:</p>
+<example>
+<pre><code>nc.Block.SetMarks(false);
+nc.X.Marked = true;
+nc.Y.Marked = true;
+nc.Z.Marked = true;
+string s = &quot;&quot;;
+foreach (NCWord w in nc.Block.MarkedWords) {
+    s = s + w.ToString();
+}
+nc.WriteLine(s);</code></pre>
+</example>
+</div>
   
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_Owner_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Owner*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_Owner" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Owner">Owner</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The owner object of the NCBlock. Usually this is a <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> to which the output string should be written.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -941,7 +974,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_UnmarkedWords_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.UnmarkedWords*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_UnmarkedWords" data-uid="SprutTechnology.SCPostprocessor.NCBlock.UnmarkedWords">UnmarkedWords</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the &quot;list&quot; of the register which has the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Marked">Marked</a> property equals to &quot;false&quot;.
+Using it you can easily loop through the all unmarked registers with foreach cycle.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -962,11 +997,26 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="SprutTechnology_SCPostprocessor_NCBlock_UnmarkedWords_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For example:</p>
+<example>
+<pre><code>nc.Block.SetMarks(true);
+nc.X.Marked = false;
+nc.Y.Marked = false;
+nc.Z.Marked = false;
+string s = &quot;&quot;;
+foreach (NCWord w in nc.Block.UnmarkedWords) {
+    s = s + w.ToString();
+}
+nc.WriteLine(s);</code></pre>
+</example>
+</div>
   
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_WordCount_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.WordCount*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_WordCount" data-uid="SprutTechnology.SCPostprocessor.NCBlock.WordCount">WordCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The total number of NCWords contained in this block.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -991,7 +1041,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_WordsSeparator_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.WordsSeparator*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_WordsSeparator" data-uid="SprutTechnology.SCPostprocessor.NCBlock.WordsSeparator">WordsSeparator</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An additional string that will be added between each separate register value to the resulting output string of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> methods.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1018,7 +1070,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_AddWord_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.AddWord*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_AddWord_SprutTechnology_SCPostprocessor_NCWord_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.AddWord(SprutTechnology.SCPostprocessor.NCWord)">AddWord(NCWord)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds the specified register (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) to the end of list of this NCBlock.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1037,7 +1090,8 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a></td>
         <td><span class="parametername">word</span></td>
-        <td></td>
+        <td><p>The register (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) to add.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1045,7 +1099,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_AddWord_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.AddWord*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_AddWord_SprutTechnology_SCPostprocessor_NCWord_SprutTechnology_SCPostprocessor_NCWord_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.AddWord(SprutTechnology.SCPostprocessor.NCWord,SprutTechnology.SCPostprocessor.NCWord)">AddWord(NCWord, NCWord)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserts the specified register (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) to the exact position in the list of this NCBlock
+before the specified one.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1064,12 +1120,14 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a></td>
         <td><span class="parametername">word</span></td>
-        <td></td>
+        <td><p>The register (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) to add.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a></td>
         <td><span class="parametername">beforeWord</span></td>
-        <td></td>
+        <td><p>Some another word from the list before which you want to add the word.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1077,7 +1135,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_AddWord_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.AddWord*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_AddWord_SprutTechnology_SCPostprocessor_NCWord_System_Int32_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.AddWord(SprutTechnology.SCPostprocessor.NCWord,System.Int32)">AddWord(NCWord, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserts the specified register (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) to the exact position in the list of this NCBlock.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1096,12 +1155,15 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a></td>
         <td><span class="parametername">word</span></td>
-        <td></td>
+        <td><p>The register (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) to add.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The index in the list to which you want to add the register.
+The all following registers starting from this position will be moved further.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1109,7 +1171,14 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_Form_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Form*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_Form" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Form">Form()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Forms the output line of this NCBlock in accordance with the current state of its registers.</p>
+<p>It iterates through the all registers and if the register has a <a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html#SprutTechnology_SCPostprocessor_NCWordState_Changed">Changed</a> 
+state (often this means that the values of <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> and <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> 
+are different), it calls the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_ToString">ToString()</a> method of this register and 
+adds it&apos;s result to the common resulting output line.</p>
+<p>It doesn&apos;t write the resulting line to an output file.</p>
+<p>If there are no changed registers in the list then the result is the empty string.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1126,7 +1195,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The resulting output line with the content of all changed NCWords from the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1134,7 +1204,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_GetEnumerator_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.GetEnumerator*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_GetEnumerator" data-uid="SprutTechnology.SCPostprocessor.NCBlock.GetEnumerator">GetEnumerator()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns an enumerator of the all registers from this NCBlock to be possible to use for example
+the &quot;foreach&quot; cycle.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1151,7 +1223,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.IEnumerator</span></td>
-        <td></td>
+        <td><p>The enumerator of all registers from this NCBlock.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1159,7 +1232,14 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_Hide_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Hide*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_Hide_SprutTechnology_SCPostprocessor_NCWord___" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Hide(SprutTechnology.SCPostprocessor.NCWord[])">Hide(NCWord[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>It calls the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Hide">Hide()</a> method for the all specified registers.
+This means that it switches the registers to the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html#SprutTechnology_SCPostprocessor_NCWordState_Unchanged">Unchanged</a> state.
+It means that they <strong>will NOT output</strong> on the next call of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>.</p>
+<p>It doesn&apos;t change the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> or previous 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> value of the registers.</p> 
+<p>Later you can use the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_UpdateState_SprutTechnology_SCPostprocessor_NCWord___">UpdateState(NCWord[])</a> method to restore the changed-unchanged state 
+depend on equality ot the v and v0.</p> 
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1178,7 +1258,8 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>[]</td>
         <td><span class="parametername">words</span></td>
-        <td></td>
+        <td><p>The registers to be switched to unchanged state.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1186,7 +1267,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_IndexOfWord_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.IndexOfWord*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_IndexOfWord_SprutTechnology_SCPostprocessor_NCWord_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.IndexOfWord(SprutTechnology.SCPostprocessor.NCWord)">IndexOfWord(NCWord)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Allows to find the index of specified register (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) in the list of this NCBlock.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1205,7 +1287,8 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a></td>
         <td><span class="parametername">word</span></td>
-        <td></td>
+        <td><p>The register index of which to find.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1220,7 +1303,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Returns the index of the register. If there is no such register in the list the resilt is &quot;-1&quot;.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1228,7 +1312,16 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_Out_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Out*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_Out" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Out">Out()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Forms the output line of this NCBlock in accordance with the current state of its registers
+(using the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> method) and writes it to the output file which is the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Owner">Owner</a>.</p>
+<p>The writing performs to the position in file that the <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_DefaultLabel">DefaultLabel</a> 
+points (in the most cases it is the end of file).</p>
+<p>It writes the resulting string with the line break.</p>
+<p>If there are no changed registers in the list then the method does nothing.</p>
+<p>This method is fully the same with <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_WriteLine">WriteLine()</a> (it calls this inside). 
+So the purpose of this method is to be short and ideological compatibility with 
+the Postprocessors generator&apos;s <code>OutBlock</code> routine.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1238,7 +1331,16 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_Out_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Out*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_Out_SprutTechnology_SCPostprocessor_INCLabel_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Out(SprutTechnology.SCPostprocessor.INCLabel)">Out(INCLabel)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Forms the output line of this NCBlock in accordance with the current state of its registers
+(using the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> method) and writes it to the output file which is the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Owner">Owner</a>.</p>
+<p>The writing performs to the position in file that the specifed <a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a> 
+points.</p>
+<p>It writes the resulting string with the line break.</p>
+<p>If there are no changed registers in the list then the method does nothing.</p>
+<p>This method is fully the same with <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_WriteLine_SprutTechnology_SCPostprocessor_INCLabel_">WriteLine(INCLabel)</a> (it calls this inside). 
+So the purpose of this method is to be short and ideological compatibility with 
+the Postprocessors generator&apos;s <code>OutBlock</code> routine.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1257,7 +1359,9 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>The label that defines the position in file to which the resulting string should be
+written.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1265,7 +1369,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_RemoveWord_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.RemoveWord*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_RemoveWord_SprutTechnology_SCPostprocessor_NCWord_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.RemoveWord(SprutTechnology.SCPostprocessor.NCWord)">RemoveWord(NCWord)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes the specified register (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) from the list of this NCBlock.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1284,7 +1389,8 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a></td>
         <td><span class="parametername">word</span></td>
-        <td></td>
+        <td><p>The register to remove from the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1292,7 +1398,15 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_Reset_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Reset*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_Reset_SprutTechnology_SCPostprocessor_NCWord___" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Reset(SprutTechnology.SCPostprocessor.NCWord[])">Reset(NCWord[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>It calls the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Reset">Reset()</a> method for the all specified registers.
+This means that it switches the registers to the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html#SprutTechnology_SCPostprocessor_NCWordState_Unchanged">Unchanged</a> state and
+changes the previous v0 value to an undefined value (&quot;double.MaxValue&quot; for the NumericNCWord and
+&quot;null&quot; for the TextNCWord). It means that they <strong>will NOT output</strong> on the next call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>. But they will output just after
+the first change of the current v value.</p>
+<p>It is the so-called &quot;<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Unstable">Unstable</a>&quot; state of registers.</p>
+<p>It doesn&apos;t change the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> value of the registers.</p> 
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1311,7 +1425,8 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>[]</td>
         <td><span class="parametername">words</span></td>
-        <td></td>
+        <td><p>The registers to be switched to unstable state.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1319,7 +1434,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_SetMarks_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.SetMarks*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_SetMarks_System_Boolean_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.SetMarks(System.Boolean)">SetMarks(Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Marked">Marked</a> property to the specified value for the all registers of
+this NCBlock.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1338,7 +1455,8 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The value with which it should mark the registers.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1346,7 +1464,12 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_Show_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Show*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_Show_SprutTechnology_SCPostprocessor_NCWord___" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Show(SprutTechnology.SCPostprocessor.NCWord[])">Show(NCWord[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>It calls the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Show">Show()</a> method for the all specified registers.
+This means that it switches the registers to the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html#SprutTechnology_SCPostprocessor_NCWordState_Changed">Changed</a> state.
+It means that they <strong>will output</strong> on the next call of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>.</p>
+<p>It doesn&apos;t change the current <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> or previous 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v0">v0</a> value of the registers.</p> 
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1365,7 +1488,8 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>[]</td>
         <td><span class="parametername">words</span></td>
-        <td></td>
+        <td><p>The registers to be switched to changed state.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1373,7 +1497,11 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_UpdateState_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.UpdateState*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_UpdateState_SprutTechnology_SCPostprocessor_NCWord___" data-uid="SprutTechnology.SCPostprocessor.NCBlock.UpdateState(SprutTechnology.SCPostprocessor.NCWord[])">UpdateState(NCWord[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>It calls the <a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_UpdateState">UpdateState()</a> method for the all specified registers.
+This means that it switches the registers to <a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html#SprutTechnology_SCPostprocessor_NCWordState_Changed">Changed</a> or
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordState.html#SprutTechnology_SCPostprocessor_NCWordState_Unchanged">Unchanged</a> state depend on the current v and previous v0 values.
+If the values are same then the state will be &quot;Unchanged&quot;, otherwise it will be &quot;Changed&quot;.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1392,7 +1520,8 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>[]</td>
         <td><span class="parametername">words</span></td>
-        <td></td>
+        <td><p>The registers to update state.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1400,7 +1529,13 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_Write_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Write*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_Write" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Write">Write()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Forms the output line of this NCBlock in accordance with the current state of its registers
+(using the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> method) and writes it to the output file which is the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Owner">Owner</a>.</p>
+<p>The writing performs to the position in file that the <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_DefaultLabel">DefaultLabel</a> 
+points (in the most cases it is the end of file).</p>
+<p>No line break is added.</p>
+<p>If there are no changed registers in the list then the method does nothing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1410,7 +1545,13 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_Write_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Write*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_Write_SprutTechnology_SCPostprocessor_INCLabel_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.Write(SprutTechnology.SCPostprocessor.INCLabel)">Write(INCLabel)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Forms the output line of this NCBlock in accordance with the current state of its registers
+(using the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> method) and writes it to the output file which is the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Owner">Owner</a>.</p>
+<p>The writing performs to the position in file that the specifed <a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a> 
+points.</p>
+<p>No line break is added.</p>
+<p>If there are no changed registers in the list then the method does nothing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1429,7 +1570,9 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>The label that defines the position in file to which the resulting string should be
+written.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1437,7 +1580,13 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_WriteLine_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.WriteLine*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_WriteLine" data-uid="SprutTechnology.SCPostprocessor.NCBlock.WriteLine">WriteLine()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Forms the output line of this NCBlock in accordance with the current state of its registers
+(using the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> method) and writes it to the output file which is the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Owner">Owner</a>.</p>
+<p>The writing performs to the position in file that the <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_DefaultLabel">DefaultLabel</a> 
+points (in the most cases it is the end of file).</p>
+<p>It writes the resulting string with the line break.</p>
+<p>If there are no changed registers in the list then the method does nothing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1447,7 +1596,13 @@
   
   <a id="SprutTechnology_SCPostprocessor_NCBlock_WriteLine_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.WriteLine*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_NCBlock_WriteLine_SprutTechnology_SCPostprocessor_INCLabel_" data-uid="SprutTechnology.SCPostprocessor.NCBlock.WriteLine(SprutTechnology.SCPostprocessor.INCLabel)">WriteLine(INCLabel)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Forms the output line of this NCBlock in accordance with the current state of its registers
+(using the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> method) and writes it to the output file which is the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Owner">Owner</a>.</p>
+<p>The writing performs to the position in file that the specifed <a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a> 
+points.</p>
+<p>It writes the resulting string with the line break.</p>
+<p>If there are no changed registers in the list then the method does nothing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1466,7 +1621,9 @@
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.INCLabel.html">INCLabel</a></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>The label that defines the position in file to which the resulting string should be
+written.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -504,9 +504,6 @@
                             <a href="SprutTechnology.SCPostprocessor.PostprocessorSettings.html" title="PostprocessorSettings" class="">PostprocessorSettings</a>
                           </li>
                           <li class="">
-                            <a href="SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html" title="SCPostprocessorSettingsAttribute" class="">SCPostprocessorSettingsAttribute</a>
-                          </li>
-                          <li class="">
                             <a href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html" title="TBinaryNCFile" class="">TBinaryNCFile</a>
                           </li>
                           <li class="">
@@ -654,7 +651,11 @@
   
   <h1 id="SprutTechnology_SCPostprocessor_CountingNCWord" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord" class="text-break">Class CountingNCWord
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The special case of the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html">NumericNCWord</a> which automatically increments (or decrements) the value
+of the register with the defined step after each call of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>.</p>
+<p>The most useful application of this kind of register is blocks or lines numbering case.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -798,7 +799,38 @@
   
   <a id="SprutTechnology_SCPostprocessor_CountingNCWord__ctor_" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_CountingNCWord__ctor_System_String_System_Double_System_Double_System_Int32_" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.#ctor(System.String,System.Double,System.Double,System.Int32)">CountingNCWord(String, Double, Double, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new instance of the CountingNCWord and initializes it with the specified set of parameters.
+It is used the <code>&quot;format&quot;</code> string parameter to define the all formatting rules
+for the NumericNCWord.</p>
+<p>For example, the <code>&quot;format&quot;</code> parameter can be: &quot;X = {-####!0##};&quot;. 
+The formatting rules are below.</p>
+<ol><li>The curly braces divide the expression into three parts.</li><li>Anything to the left of the braces is assigned to the Address property and passed 
+to the output line unchanged (here is &quot;X = &quot;).</li><li>Anything to the right of the braces is assigned to the TailString property and also 
+goes to the output string as it is (here is &quot;;&quot;).</li><li>The expression inside the braces defines the formatting rules applied to the current 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> value (here is &quot;-####!0##&quot;). It can only include these characters &quot;-+.!_#0&quot;.</li><li>If the first character in braces is &quot;-&quot;, then the sign of the number will output only 
+for negative numbers. It corresponds to <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_SignMode">SignMode</a> property value 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordSign.html#SprutTechnology_SCPostprocessor_NCWordSign_Minus">Minus</a>.</li><li>If the first character in braces is &quot;+&quot;, then the sign of the number will output both 
+for positive and negative numbers. It corresponds to <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_SignMode">SignMode</a> property value 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordSign.html#SprutTechnology_SCPostprocessor_NCWordSign_PlusAndMinus">PlusAndMinus</a>.</li><li>If the first character in braces is not &quot;+&quot; or &quot;-&quot;, then the sign of the number will 
+not output at all. It corresponds to <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_SignMode">SignMode</a> property value 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordSign.html#SprutTechnology_SCPostprocessor_NCWordSign_No">No</a>.</li><li>One of the characters &quot;.!_&quot; in curly braces separates the integer part from the fractional 
+part and determines how to output the decimal point.</li><li>The point &quot;.&quot; means the optional output, so the decimal point will output for fractional numbers, 
+and for integers it will be skipped. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a> = 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordDecPoint.html#SprutTechnology_SCPostprocessor_NCWordDecPoint_No">No</a>.</li><li>An exclamation point &quot;!&quot; indicates a required output, so the decimal point will output both 
+for fractional and integer numbers. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a> = 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordDecPoint.html#SprutTechnology_SCPostprocessor_NCWordDecPoint_Always">Always</a>.</li><li>The underscore &quot;_&quot; or the absence of any of the characters &quot;.!_&quot; at all means that 
+the decimal point will never be output. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a> = 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordDecPoint.html#SprutTechnology_SCPostprocessor_NCWordDecPoint_No">No</a>.</li><li>The number of characters &quot;0&quot; or &quot;#&quot; before the characters &quot;.!_&quot; indicates the number of 
+characters allowed before the decimal point. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsBeforePoint">DigitsBeforePoint</a>.</li><li>If at least one of the characters before the point is zero &quot;0&quot;, then non-significant 
+zeros are required. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_LeadingZeroes">LeadingZeroes</a> = true.</li><li>If all characters before the point are &quot;#&quot;, then non-significant zeros will not output. 
+It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_LeadingZeroes">LeadingZeroes</a> = false.</li><li>The number of characters &quot;0&quot; or &quot;#&quot; after the characters &quot;.!_&quot; indicates the number of 
+characters allowed after the decimal point. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsAfterPoint">DigitsAfterPoint</a>.
+The number will be rounded to the specified number of digits before output.</li><li>If all characters after the point are &quot;#&quot;, then non-significant zeros will not output. 
+It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_TrailingZeroes">TrailingZeroes</a> = <a class="xref" href="SprutTechnology.SCPostprocessor.TrailingZeroesMode.html#SprutTechnology_SCPostprocessor_TrailingZeroesMode_No">No</a>.</li><li>If all characters after the point are &quot;0&quot;, then non-significant zeros are required. 
+It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_TrailingZeroes">TrailingZeroes</a> = <a class="xref" href="SprutTechnology.SCPostprocessor.TrailingZeroesMode.html#SprutTechnology_SCPostprocessor_TrailingZeroesMode_Yes">Yes</a>.</li><li>If the first character after the point is &quot;0&quot; and the rest are &quot;#&quot;, then only first non-significant 
+zero will output and the rest will be skipped. It corresponds to the property 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_TrailingZeroes">TrailingZeroes</a> = <a class="xref" href="SprutTechnology.SCPostprocessor.TrailingZeroesMode.html#SprutTechnology_SCPostprocessor_TrailingZeroesMode_OneOnly">OneOnly</a>.</li></ol>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -817,22 +849,32 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">format</span></td>
-        <td></td>
+        <td><p>The string that defines the formatting rules for the NumericNCWord.
+For example: &quot;X = {-####!0##};&quot;. See description of the constructor for more details.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">defaultValue</span></td>
-        <td></td>
+        <td><p>The parameter to define a default value for the NumericNCWord. It is used to assing initial values
+to the current v and the previous v0 values just after creation of the NumericNCWord or when you call
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_RestoreDefaultValue_System_Boolean_">RestoreDefaultValue(Boolean)</a> method manually.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">AutoIncrementStep</span></td>
-        <td></td>
+        <td><p>The numerical step that automatically will be added to the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> current value
+of the register after the each call of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> methods.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">outFrequence</span></td>
-        <td></td>
+        <td><p>Default value for the <a class="xref" href="SprutTechnology.SCPostprocessor.CountingNCWord.html#SprutTechnology_SCPostprocessor_CountingNCWord_Frequence">Frequence</a> property that means the count of iteration
+(calls of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> methods) after which the register will output
+the value instead of skipping it.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -840,7 +882,38 @@
   
   <a id="SprutTechnology_SCPostprocessor_CountingNCWord__ctor_" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_CountingNCWord__ctor_System_String_System_Double_System_Double_System_Int32_System_Boolean_" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.#ctor(System.String,System.Double,System.Double,System.Int32,System.Boolean)">CountingNCWord(String, Double, Double, Int32, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new instance of the CountingNCWord and initializes it with the specified set of parameters.
+It is used the <code>&quot;format&quot;</code> string parameter to define the all formatting rules
+for the NumericNCWord.</p>
+<p>For example, the <code>&quot;format&quot;</code> parameter can be: &quot;X = {-####!0##};&quot;. 
+The formatting rules are below.</p>
+<ol><li>The curly braces divide the expression into three parts.</li><li>Anything to the left of the braces is assigned to the Address property and passed 
+to the output line unchanged (here is &quot;X = &quot;).</li><li>Anything to the right of the braces is assigned to the TailString property and also 
+goes to the output string as it is (here is &quot;;&quot;).</li><li>The expression inside the braces defines the formatting rules applied to the current 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> value (here is &quot;-####!0##&quot;). It can only include these characters &quot;-+.!_#0&quot;.</li><li>If the first character in braces is &quot;-&quot;, then the sign of the number will output only 
+for negative numbers. It corresponds to <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_SignMode">SignMode</a> property value 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordSign.html#SprutTechnology_SCPostprocessor_NCWordSign_Minus">Minus</a>.</li><li>If the first character in braces is &quot;+&quot;, then the sign of the number will output both 
+for positive and negative numbers. It corresponds to <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_SignMode">SignMode</a> property value 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordSign.html#SprutTechnology_SCPostprocessor_NCWordSign_PlusAndMinus">PlusAndMinus</a>.</li><li>If the first character in braces is not &quot;+&quot; or &quot;-&quot;, then the sign of the number will 
+not output at all. It corresponds to <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_SignMode">SignMode</a> property value 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordSign.html#SprutTechnology_SCPostprocessor_NCWordSign_No">No</a>.</li><li>One of the characters &quot;.!_&quot; in curly braces separates the integer part from the fractional 
+part and determines how to output the decimal point.</li><li>The point &quot;.&quot; means the optional output, so the decimal point will output for fractional numbers, 
+and for integers it will be skipped. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a> = 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordDecPoint.html#SprutTechnology_SCPostprocessor_NCWordDecPoint_No">No</a>.</li><li>An exclamation point &quot;!&quot; indicates a required output, so the decimal point will output both 
+for fractional and integer numbers. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a> = 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordDecPoint.html#SprutTechnology_SCPostprocessor_NCWordDecPoint_Always">Always</a>.</li><li>The underscore &quot;_&quot; or the absence of any of the characters &quot;.!_&quot; at all means that 
+the decimal point will never be output. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a> = 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCWordDecPoint.html#SprutTechnology_SCPostprocessor_NCWordDecPoint_No">No</a>.</li><li>The number of characters &quot;0&quot; or &quot;#&quot; before the characters &quot;.!_&quot; indicates the number of 
+characters allowed before the decimal point. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsBeforePoint">DigitsBeforePoint</a>.</li><li>If at least one of the characters before the point is zero &quot;0&quot;, then non-significant 
+zeros are required. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_LeadingZeroes">LeadingZeroes</a> = true.</li><li>If all characters before the point are &quot;#&quot;, then non-significant zeros will not output. 
+It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_LeadingZeroes">LeadingZeroes</a> = false.</li><li>The number of characters &quot;0&quot; or &quot;#&quot; after the characters &quot;.!_&quot; indicates the number of 
+characters allowed after the decimal point. It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsAfterPoint">DigitsAfterPoint</a>.
+The number will be rounded to the specified number of digits before output.</li><li>If all characters after the point are &quot;#&quot;, then non-significant zeros will not output. 
+It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_TrailingZeroes">TrailingZeroes</a> = <a class="xref" href="SprutTechnology.SCPostprocessor.TrailingZeroesMode.html#SprutTechnology_SCPostprocessor_TrailingZeroesMode_No">No</a>.</li><li>If all characters after the point are &quot;0&quot;, then non-significant zeros are required. 
+It corresponds to the property <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_TrailingZeroes">TrailingZeroes</a> = <a class="xref" href="SprutTechnology.SCPostprocessor.TrailingZeroesMode.html#SprutTechnology_SCPostprocessor_TrailingZeroesMode_Yes">Yes</a>.</li><li>If the first character after the point is &quot;0&quot; and the rest are &quot;#&quot;, then only first non-significant 
+zero will output and the rest will be skipped. It corresponds to the property 
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_TrailingZeroes">TrailingZeroes</a> = <a class="xref" href="SprutTechnology.SCPostprocessor.TrailingZeroesMode.html#SprutTechnology_SCPostprocessor_TrailingZeroesMode_OneOnly">OneOnly</a>.</li></ol>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -859,27 +932,39 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">format</span></td>
-        <td></td>
+        <td><p>The string that defines the formatting rules for the NumericNCWord.
+For example: &quot;X = {-####!0##};&quot;. See description of the constructor for more details.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">defaultValue</span></td>
-        <td></td>
+        <td><p>The parameter to define a default value for the NumericNCWord. It is used to assing initial values
+to the current v and the previous v0 values just after creation of the NumericNCWord or when you call
+<a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_RestoreDefaultValue_System_Boolean_">RestoreDefaultValue(Boolean)</a> method manually.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">AutoIncrementStep</span></td>
-        <td></td>
+        <td><p>The numerical step that automatically will be added to the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> current value
+of the register after the each call of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> methods.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">outFrequence</span></td>
-        <td></td>
+        <td><p>Default value for the <a class="xref" href="SprutTechnology.SCPostprocessor.CountingNCWord.html#SprutTechnology_SCPostprocessor_CountingNCWord_Frequence">Frequence</a> property that means the count of iteration
+(calls of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> methods) after which the register will output
+the value instead of skipping it.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">preserveIndent</span></td>
-        <td></td>
+        <td><p>Default value for the <a class="xref" href="SprutTechnology.SCPostprocessor.CountingNCWord.html#SprutTechnology_SCPostprocessor_CountingNCWord_PreserveIndent">PreserveIndent</a> property that tries to preserve
+indentation when register's output is skipped due to Frequency property is greater than 1.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -887,7 +972,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_CountingNCWord__ctor_" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.#ctor*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_CountingNCWord__ctor_System_String_System_String_SprutTechnology_SCPostprocessor_NCWordSign_SprutTechnology_SCPostprocessor_NCWordDecPoint_System_Int32_System_Int32_System_Double_System_Double_System_Int32_System_Boolean_" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.#ctor(System.String,System.String,SprutTechnology.SCPostprocessor.NCWordSign,SprutTechnology.SCPostprocessor.NCWordDecPoint,System.Int32,System.Int32,System.Double,System.Double,System.Int32,System.Boolean)">CountingNCWord(String, String, NCWordSign, NCWordDecPoint, Int32, Int32, Double, Double, Int32, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new instance of a CountingNCWord register with the given parameters.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -906,52 +992,66 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">address</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_Address">Address</a> - start part of the register's output string.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">tailString</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_TailString">TailString</a> - final part of the register's output string.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWordSign.html">NCWordSign</a></td>
         <td><span class="parametername">signMode</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_SignMode">SignMode</a> - defines how to output the sign of the number.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="SprutTechnology.SCPostprocessor.NCWordDecPoint.html">NCWordDecPoint</a></td>
         <td><span class="parametername">pointMode</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_PointMode">PointMode</a> - defines how to output the decimal point of the number.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">digitsBefore</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsBeforePoint">DigitsBeforePoint</a> - count of digits before decimal point of the number.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">digitsAfter</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DigitsAfterPoint">DigitsAfterPoint</a> - count of digits after decimal point of the number.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">defaultValue</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_DefaultValue">DefaultValue</a> - default value of the register.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">AutoIncrementStep</span></td>
-        <td></td>
+        <td><p>The numerical step that automatically will be added to the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> current value
+of the register after the each call of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> methods.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">outFrequence</span></td>
-        <td></td>
+        <td><p>Default value for the <a class="xref" href="SprutTechnology.SCPostprocessor.CountingNCWord.html#SprutTechnology_SCPostprocessor_CountingNCWord_Frequence">Frequence</a> property that means the count of iteration
+(calls of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> methods) after which the register will output
+the value instead of skipping it.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">autoUpdateState</span></td>
-        <td></td>
+        <td><p><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html#SprutTechnology_SCPostprocessor_NCWord_AutoUpdateState">AutoUpdateState</a> - determines whether the State should be
+automatically updated when the current v or previous v0 value changes.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -960,7 +1060,8 @@
   
   
   <h4 id="SprutTechnology_SCPostprocessor_CountingNCWord_fFrequenceCounter" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.fFrequenceCounter">fFrequenceCounter</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The counter for the <a class="xref" href="SprutTechnology.SCPostprocessor.CountingNCWord.html#SprutTechnology_SCPostprocessor_CountingNCWord_Frequence">Frequence</a> property.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -987,7 +1088,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_CountingNCWord_AutoIncrementStep_" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.AutoIncrementStep*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_CountingNCWord_AutoIncrementStep" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.AutoIncrementStep">AutoIncrementStep</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The amount by which the current register value <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html#SprutTechnology_SCPostprocessor_NumericNCWord_v">v</a> is increased after each call of
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1012,7 +1115,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_CountingNCWord_Frequence_" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.Frequence*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_CountingNCWord_Frequence" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.Frequence">Frequence</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The number of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> method calls after which the register will be included
+in the output line of the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a>, and will not be skipped. If it is one then it will be presented in each output.
+If it is two then it will be presented in each second output etc.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1037,7 +1143,9 @@
   
   <a id="SprutTechnology_SCPostprocessor_CountingNCWord_FrequenceReached_" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.FrequenceReached*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_CountingNCWord_FrequenceReached" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.FrequenceReached">FrequenceReached</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This property is &quot;true&quot; only if the <a class="xref" href="SprutTechnology.SCPostprocessor.CountingNCWord.html#SprutTechnology_SCPostprocessor_CountingNCWord_Frequence">Frequence</a> counter has reached the limit value and the value of this CountingNCWord
+will be presented in the next call of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a> methods.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1062,7 +1170,10 @@
   
   <a id="SprutTechnology_SCPostprocessor_CountingNCWord_PreserveIndent_" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.PreserveIndent*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_CountingNCWord_PreserveIndent" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.PreserveIndent">PreserveIndent</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>If this property is &quot;true&quot; then when the <a class="xref" href="SprutTechnology.SCPostprocessor.CountingNCWord.html#SprutTechnology_SCPostprocessor_CountingNCWord_Frequence">Frequence</a> of the CountingNCWord is more than 1 and when the value of this register
+will be skipped then it will form spaces instead of the actual value of the register to preserve indents in the output line of
+the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1089,7 +1200,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_CountingNCWord_Init_" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.Init*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_CountingNCWord_Init" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.Init">Init()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This method initializes an internal state of the CountingNCWord just after creation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1101,7 +1213,8 @@
   
   <a id="SprutTechnology_SCPostprocessor_CountingNCWord_ResetFrequenceCounter_" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.ResetFrequenceCounter*"></a>
   <h4 id="SprutTechnology_SCPostprocessor_CountingNCWord_ResetFrequenceCounter" data-uid="SprutTechnology.SCPostprocessor.CountingNCWord.ResetFrequenceCounter">ResetFrequenceCounter()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Resets the internal counter of the <a class="xref" href="SprutTechnology.SCPostprocessor.CountingNCWord.html#SprutTechnology_SCPostprocessor_CountingNCWord_Frequence">Frequence</a> property to the default state to start the counting again.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

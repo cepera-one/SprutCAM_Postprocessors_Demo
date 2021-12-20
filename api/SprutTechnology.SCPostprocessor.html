@@ -504,9 +504,6 @@
                             <a href="SprutTechnology.SCPostprocessor.PostprocessorSettings.html" title="PostprocessorSettings" class="">PostprocessorSettings</a>
                           </li>
                           <li class="">
-                            <a href="SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html" title="SCPostprocessorSettingsAttribute" class="">SCPostprocessorSettingsAttribute</a>
-                          </li>
-                          <li class="">
                             <a href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html" title="TBinaryNCFile" class="">TBinaryNCFile</a>
                           </li>
                           <li class="">
@@ -683,7 +680,11 @@
       <section><p>Common functions</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.CountingNCWord.html">CountingNCWord</a></h4>
-      <section></section>
+      <section><p>The special case of the <a class="xref" href="SprutTechnology.SCPostprocessor.NumericNCWord.html">NumericNCWord</a> which automatically increments (or decrements) the value
+of the register with the defined step after each call of <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Out">Out()</a> or
+<a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html#SprutTechnology_SCPostprocessor_NCBlock_Form">Form()</a>.</p>
+<p>The most useful application of this kind of register is blocks or lines numbering case.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.EPostprocessorException.html">EPostprocessorException</a></h4>
       <section><p>Postprocessing error exception class.</p>
 </section>
@@ -693,7 +694,8 @@ Represents a strongly typed list of objects that can be accessed by index. Provi
 methods to search, sort, and manipulate lists.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.Log.html">Log</a></h4>
-      <section></section>
+      <section><p>The global object which receives logging messages that be shown to the user at the finish of postprocessing.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.MultiMotionAxesEnumerator.html">MultiMotionAxesEnumerator</a></h4>
       <section><p>Auxiliary object that implements enumerator for the multimotion's axes list and allows to use foreach syntax.</p>
 </section>
@@ -701,9 +703,16 @@ methods to search, sort, and manipulate lists.</p>
       <section><p>Static class, implementing the search for parameters for complex names that may include points and brackets.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a></h4>
-      <section></section>
+      <section><p>The object that contains the list of registers (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) and helps make output lines for a resulting file (G-code, <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a>).
+First, it organizes the formatted output of the register values from its list. Secondly, it filters (excludes from the output string)
+those registers whose values have not changed since the previous output.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.NCBlockWordsEnumerator.html">NCBlockWordsEnumerator</a></h4>
-      <section></section>
+      <section><p>Auxiliary object that can enumerate the registers (<a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a>) of an <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a>.
+Using it you can easily loop through the registers with foreach cycle.
+Usually you don't need to create it manually because it is created automatically when you try to use
+for example the &quot;foreach&quot; cycle with an NCBlock.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.NCWord.html">NCWord</a></h4>
       <section><p>
 &quot;NCWord&quot;, or in other words &quot;Register&quot;, is an object that helps you quickly and conveniently convert numeric or 
@@ -731,9 +740,10 @@ If both of these values are the same, then re-output the value can be skipped au
 </p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.PostprocessorSettings.html">PostprocessorSettings</a></h4>
-      <section></section>
-      <h4><a class="xref" href="SprutTechnology.SCPostprocessor.SCPostprocessorSettingsAttribute.html">SCPostprocessorSettingsAttribute</a></h4>
-      <section></section>
+      <section><p>The settings of postprocessor which defines it's descriptional properties, the way to handle circular arcs and
+the set of additional properties which the developer of a particular postprocessor can add at his own discretion.</p>
+<p>They are read automatically from the Settings.xml file of the postprocessor.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html">TBinaryNCFile</a></h4>
       <section><p>Some class to use for writing binary files. It automatically synchronizes with the postprocessing
 system and, when debugging via CLDViewer, allows you to see how the contents of the file change
@@ -782,9 +792,15 @@ the corresponding method with your own inside your inherited class.
 </p> 
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TransliterationTable.html">TransliterationTable</a></h4>
-      <section></section>
+      <section><p>The table which contains the list of string pairs of type <a class="xref" href="SprutTechnology.SCPostprocessor.TranslitPair.html">TranslitPair</a> for one exact language to be possible to do
+transliteration of text from this language to english.</p>
+<p>You can easily create the new table using the code example below.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.Transliterator.html">Transliterator</a></h4>
-      <section></section>
+      <section><p>The object which alows to make transliteration of text from any national language to the english.
+You can assign the <a class="xref" href="SprutTechnology.SCPostprocessor.Transliterator.html#SprutTechnology_SCPostprocessor_Transliterator_Default">Default</a> property as a convertion table to be possible to use specific language you want.
+If it is not changed explicit then the <a class="xref" href="SprutTechnology.SCPostprocessor.Transliterator.html#SprutTechnology_SCPostprocessor_Transliterator_Russian">Russian</a> table will be used.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TSimpleTextNCFile.html">TSimpleTextNCFile</a></h4>
       <section><p>Simplest implementation of the output file. It is just wrapper around <span class="xref">System.IO.StreamWriter</span> that inherits <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFile.html">TNCFile</a> to be possible
 to manage it using <a class="xref" href="SprutTechnology.SCPostprocessor.TNCFilesManager.html">TNCFilesManager</a>. It has no any integration with the CLData Viewer so you will not see in live time any changes of
@@ -810,7 +826,8 @@ methods for writing specific information, etc.</p>
     <h3 id="structs">Structs
   </h3>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.ArcSettings.html">ArcSettings</a></h4>
-      <section></section>
+      <section><p>The settings to handle circular arcs and helixes.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.InpNumber.html">InpNumber</a></h4>
       <section><p>Floating number that supports automatic implicit conversion to and from an integer number.</p>
 </section>
@@ -841,7 +858,8 @@ Depend on a convention of type TInpRotationConvention (outside of this structure
 <ul><li>Different kind of Euler angles.</li><li>Axis-angle representation (rotation vector).</li><li>Quaternion.</li><li>Normal vector.</li></ul>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.TranslitPair.html">TranslitPair</a></h4>
-      <section></section>
+      <section><p>The structure to store information about one transliterating replacement.</p>
+</section>
     <h3 id="interfaces">Interfaces
   </h3>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.IArrayNamedPropertyIndexer.html">IArrayNamedPropertyIndexer</a></h4>
@@ -1124,7 +1142,9 @@ or boolean. The property can be complex or array type also. It means that it can
 using a convenient syntax with square brackets <code>Ptr[&quot;NestedPropName&quot;]</code>.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.INCBlockOwner.html">INCBlockOwner</a></h4>
-      <section></section>
+      <section><p>An interface that provides limited access to some methods of the owner object of the <a class="xref" href="SprutTechnology.SCPostprocessor.NCBlock.html">NCBlock</a>.
+Usually this is a <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> to which the output string should be written.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.INCFileOwner.html">INCFileOwner</a></h4>
       <section><p>This is an interface that allows us to abstract, weaken the connection with the object that is the owner of
 an output file formed by the postprocessor. Usually the owner is a postprocessor itself. Using this interface
@@ -1139,6 +1159,8 @@ over the string before it will be written to the file.</p>
 (at the beginning or middle, not just at the end). The label points to a specific position within
 the output file. When editing a file, the label moves with the text. When adding new data to a file,
 you can use labels to specify where the data should be inserted.</p>
+<p>Use <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_CreateLabel">CreateLabel()</a> method to create new label that points to the current
+position in a file.</p>
 <p>
 When calling the <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_Write_System_String_SprutTechnology_SCPostprocessor_INCLabel_">Write(String, INCLabel)</a> or 
 <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html#SprutTechnology_SCPostprocessor_TTextNCFile_WriteLine_System_String_SprutTechnology_SCPostprocessor_INCLabel_">WriteLine(String, INCLabel)</a> methods, simply provide a label in 
@@ -1158,7 +1180,8 @@ Usually you don't need to use it directly. It is used internally by the classes 
 <a class="xref" href="SprutTechnology.SCPostprocessor.TTextNCFile.html">TTextNCFile</a> and <a class="xref" href="SprutTechnology.SCPostprocessor.TBinaryNCFile.html">TBinaryNCFile</a>.</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.IPostprocessingLogReceiver.html">IPostprocessingLogReceiver</a></h4>
-      <section></section>
+      <section><p>The interface for a global object which receives logging messages that be shown to the user at the finish of postprocessing.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.IPPFunTechInfo.html">IPPFunTechInfo</a></h4>
       <section><p>Some information about the technological operation.</p>
 </section>
@@ -1184,7 +1207,8 @@ It is used internally by the <a class="xref" href="SprutTechnology.SCPostprocess
     <h3 id="enums">Enums
   </h3>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.ArcBreakMode.html">ArcBreakMode</a></h4>
-      <section></section>
+      <section><p>The mode to break circular arcs: do not break, break to cuts, to halfs or to quarters.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.CLDCmdType.html">CLDCmdType</a></h4>
       <section><p>Enumeration to identify the types of CLData commands.</p>
 </section>
@@ -1233,15 +1257,20 @@ coordinate system switching (G68.2, PLANE SPATIAL, Cycle800...).</p>
 off, sharp, conical, cylindrical or fixed).</p>
 </section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.LogMessageType.html">LogMessageType</a></h4>
-      <section></section>
+      <section><p>The type of logging message.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.MsgBtnSet.html">MsgBtnSet</a></h4>
-      <section></section>
+      <section><p>The set of buttons which should be available in the message box.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.MsgClickedBtn.html">MsgClickedBtn</a></h4>
-      <section></section>
+      <section><p>The button user clicked.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.MsgDefBtn.html">MsgDefBtn</a></h4>
-      <section></section>
+      <section><p>The button that should be default.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.MsgType.html">MsgType</a></h4>
-      <section></section>
+      <section><p>The type of message to show for a user.</p>
+</section>
       <h4><a class="xref" href="SprutTechnology.SCPostprocessor.NamedParamType.html">NamedParamType</a></h4>
       <section><p>Enumeration to describe the type of a value which can be contained inside a property
 (boolean, integer or floating number, textual string or just an explicitly enumerated
